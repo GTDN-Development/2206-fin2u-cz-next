@@ -32,7 +32,7 @@ export default function Checkbox({
           border-white bg-white transition-shadow duration-150
           checked:bg-black checked:hover:bg-black
           focus:border-body focus:!outline-none focus:ring-4 focus:ring-primary/70 focus:ring-offset-0
-          checked:focus:bg-success
+          checked:focus:bg-black
           ${
             isDisabled
               ? "pointer-events-none cursor-not-allowed opacity-60"

@@ -1,22 +1,20 @@
-import AppLayout from "@layouts/AppLayout";
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { ToastContainer } from "react-toastify";
 
 // Fonts
-import "@fontsource/bebas-neue";
-import "@fontsource/inter/400.css";
-import "@fontsource/inter/500.css";
-import "@fontsource/inter/600.css";
-import "@fontsource/inter/700.css";
-import "@fontsource/inter/800.css";
+import "@fontsource/montserrat/400.css";
+import "@fontsource/montserrat/500.css";
+import "@fontsource/montserrat/600.css";
+import "@fontsource/montserrat/700.css";
+import "@fontsource/montserrat/800.css";
 
 // Styles
 import "../styles/main.css";
 
 // GA
-import GoogleAnalytics from "@bradgarropy/next-google-analytics";
+// import GoogleAnalytics from "@bradgarropy/next-google-analytics";
 
 // Disable smooth scroll on route change: https://github.com/vercel/next.js/issues/20125#issuecomment-757547865
 function useNormalScrollRoutes() {
@@ -35,8 +33,8 @@ function useNormalScrollRoutes() {
 function MyApp({ Component, pageProps }: AppProps) {
   useNormalScrollRoutes();
   return (
-    <AppLayout>
-      <GoogleAnalytics measurementId="G-RZB55HZCDW" />
+    <>
+      {/* <GoogleAnalytics measurementId="G-RZB55HZCDW" /> */}
       <Component {...pageProps} />
       <ToastContainer
         position="top-center"
@@ -49,7 +47,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         draggable
         pauseOnHover
       />
-    </AppLayout>
+    </>
   );
 }
 

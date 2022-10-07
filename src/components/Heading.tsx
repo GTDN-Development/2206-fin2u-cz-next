@@ -117,7 +117,7 @@ export default function Heading({
 
   return (
     <Tag
-      className={`leading-[1.15] 
+      className={`uppercase leading-[1.15]
       ${sizeClasses[size]} 
       ${colorClasses[color]}
       ${alignClasses[align]}

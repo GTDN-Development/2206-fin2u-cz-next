@@ -1,7 +1,7 @@
 import Button from "@components/Button";
 import SocialLinks from "@components/SocialLinks";
 import { ctaMenu } from "@configs/routes";
-import { HiCalendar } from "react-icons/hi";
+import { HiPhone } from "react-icons/hi";
 
 type NavbarAdditionalLinksOptions = {
   className?: string;
@@ -21,10 +21,10 @@ export default function NavbarAdditionalLinks({
         target="blank"
         rel="noopener noreferrer"
         size="sm"
-        leftIcon={<HiCalendar />}
+        leftIcon={<HiPhone />}
         className="hidden sm:inline-flex"
       >
-        Událost
+        +420 123 456 789
       </Button>
     </div>
   );

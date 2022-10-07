@@ -6,21 +6,22 @@ import { SkipToContent } from "@components/root/skipToContent";
 
 type AppShellOptions = {
   children: React.ReactNode;
+  navbarInitialStyle?: "dark" | "light";
 };
 
-export default function AppLayout({ children }: AppShellOptions) {
+export default function AppLayout({
+  children,
+  navbarInitialStyle = "dark",
+}: AppShellOptions) {
   return (
     <>
       <header>
         <SkipToContent />
         <Head />
-        <Navbar />
+        <Navbar initialStyle={navbarInitialStyle} />
       </header>
       <CookieConsentBar />
-      <main id="main">
-        <div className="pointer-events-none absolute top-0 right-0 -z-10 h-screen w-screen bg-gradient-to-tr from-body via-body to-secondary opacity-25 md:w-[90vw] md:opacity-40 lg:h-[1200px] 2xl:h-[1600px]"></div>
-        {children}
-      </main>
+      <main id="main">{children}</main>
       <Footer />
     </>
   );

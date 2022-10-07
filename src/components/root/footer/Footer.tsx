@@ -1,102 +1,53 @@
-import BrandLogo from "@components/BrandLogo";
-import Heading from "@components/Heading";
 import SocialLinks from "@components/SocialLinks";
 import Wrapper from "@components/Wrapper";
 import Link from "next/link";
-import { ctaMenu, mainRoutes } from "../../../configs/routes";
+import { mainRoutes } from "../../../configs/routes";
 import FooterAuthor from "./FooterAuthor";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-solid border-body-100">
+    <footer className="border-t border-solid border-body-100 bg-gradient-to-tl from-primary/20 via-white to-white">
+      {/* <div className="pointer-events-none absolute right-0 bottom-0 -z-10 h-full w-full bg-gradient-to-tl from-primary/30 via-white to-white"></div> */}
       <Wrapper
         size="lg"
-        className="grid grid-cols-1 gap-y-12 gap-x-12 py-16 md:grid-cols-2 md:gap-y-20 md:py-24 lg:grid-cols-4"
+        paddedContent="sm"
+        className="flex flex-col items-center justify-center gap-16"
       >
-        {/* Logo + copyright + socky */}
-        <div className="col-span-1 flex flex-col items-center justify-center gap-8 text-center md:items-start md:justify-start md:text-left">
-          <BrandLogo />
-          <span className="block">
-            Copyright © {new Date().getFullYear()} Fotofestplzen.cz
-          </span>
-          <SocialLinks />
-        </div>
-
-        {/* Navigace */}
-        <div className="col-span-1 flex flex-col items-center justify-center text-center md:items-start md:justify-start md:text-left">
-          <Heading level={3} size="sm">
-            Navigace
-          </Heading>
-          <ul className="mt-2 space-y-1">
-            {mainRoutes.map((route) => (
-              <li key={route.label}>
-                <Link href={route.path}>
-                  <a className="c-link-3-a text-base font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
-                    {route.label}
-                  </a>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Další odkazy */}
-        <div className="col-span-1 flex flex-col items-center justify-center text-center md:items-start md:justify-start md:text-left">
-          <Heading level={3} size="sm">
-            Další odkazy
-          </Heading>
-          <ul className="mt-2 space-y-1">
-            <li>
-              <Link href="/cookies">
-                <a className="c-link-3-a text-base font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
-                  Cookies
+        {/* Hlavní menu */}
+        <ul className="flex flex-col items-center gap-x-20 gap-y-4 lg:flex-row">
+          {mainRoutes.map((route) => (
+            <li key={route.label}>
+              <Link href={route.path}>
+                <a className="c-link-3-a font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
+                  {route.label}
                 </a>
               </Link>
             </li>
-            <li>
-              <Link href="/gdpr">
-                <a className="c-link-3-a text-base font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
-                  Zpracování osobních údajů
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/brand">
-                <a className="c-link-3-a text-base font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
-                  Grafické podklady
-                </a>
-              </Link>
-            </li>
-          </ul>
-        </div>
+          ))}
+        </ul>
 
-        {/* Kontakt - Jakub */}
-        <div className="col-span-1 flex flex-col items-center justify-center text-center md:items-start md:justify-start md:text-left">
-          <Heading level={3} size="sm">
-            Jakub Flaišman
-          </Heading>
-          <span className="block text-sm font-medium tracking-widest text-gray-400">
-            Jednatel
-          </span>
-          <ul className="mt-2 space-y-1">
-            <li>
-              <a
-                href={ctaMenu[1].link}
-                className="c-link-3-a text-base font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70"
-              >
-                {ctaMenu[1].label}
+        <SocialLinks />
+
+        <ul className="flex flex-col items-center gap-x-20 gap-y-4 lg:flex-row">
+          <li className="font-medium text-muted">
+            © {new Date().getFullYear()} Fin2u.cz
+          </li>
+          <li className="font-medium text-muted">Všechna práva vyhrazena</li>
+          <li>
+            <Link href="/cookies">
+              <a className="c-link-3-a font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
+                Cookies
               </a>
-            </li>
-            <li>
-              <a
-                href={ctaMenu[2].link}
-                className="c-link-3-a text-base font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70"
-              >
-                {ctaMenu[2].label}
+            </Link>
+          </li>
+          <li>
+            <Link href="/gdpr">
+              <a className="c-link-3-a font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
+                Zpracování osobních údajů
               </a>
-            </li>
-          </ul>
-        </div>
+            </Link>
+          </li>
+        </ul>
       </Wrapper>
 
       {/* Autor webu - podpis */}

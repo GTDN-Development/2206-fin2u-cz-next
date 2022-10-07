@@ -34,7 +34,7 @@ type ButtonOptions = {
 
 export type Ref = HTMLButtonElement;
 
-// Variant classes
+// Type classes
 const variantClasses = {
   filled: "text-opacity-95",
   tinted:
@@ -45,7 +45,7 @@ const variantClasses = {
     "bg-opacity-0 dark:bg-opacity-0 hover:bg-opacity-10 dark:hover:bg-opacity-10",
 };
 
-// Filled variant color classes
+// Filled type color classes
 const filledColorClasses = {
   primary: "bg-primary text-white",
   secondary: "bg-secondary text-white",
@@ -54,7 +54,7 @@ const filledColorClasses = {
   error: "bg-error text-white",
   warning: "bg-warning text-gray-900",
   info: "bg-info text-white",
-  light: "bg-gray-100 text-gray-900",
+  light: "bg-gray-100 text-secondary",
   dark: "bg-gray-900 text-white",
   muted: "bg-muted text-invert",
   rich: "bg-rich text-invert",
@@ -155,7 +155,7 @@ const Button = forwardRef<Ref, ButtonOptions>(
       as: Tag = "button",
       variant = "filled",
       color = "primary",
-      shape = "square",
+      shape = "rounded",
       size = "base",
       leftIcon = null,
       rightIcon = null,
@@ -171,7 +171,7 @@ const Button = forwardRef<Ref, ButtonOptions>(
   ) => (
     <Tag
       ref={ref}
-      className={`group relative isolate inline-flex items-center justify-center overflow-hidden font-semibold leading-none tracking-wide no-underline outline-none transition-colors duration-200 will-change-transform 
+      className={`group relative isolate inline-flex items-center justify-center overflow-hidden font-semibold leading-none tracking-wide no-underline outline-none transition duration-200 will-change-transform hover:scale-105 
       ${variantClasses[variant]}
       ${variant === "filled" ? filledColorClasses[color] : ""} 
       ${variant === "tinted" ? tintedColorClasses[color] : ""} 
@@ -204,7 +204,7 @@ const Button = forwardRef<Ref, ButtonOptions>(
       {variant === "filled" && (
         <span
           className={`absolute inset-0 z-[-1] opacity-0 transition-opacity duration-200 group-hover:opacity-20 ${
-            color === "dark" ? "bg-gray-400" : "bg-gray-900"
+            color === "dark" ? "bg-gray-400" : "bg-white"
           }`}
         ></span>
       )}

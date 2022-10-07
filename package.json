@@ -17,8 +17,7 @@
   "dependencies": {
     "@bradgarropy/next-google-analytics": "^1.0.2",
     "@emailjs/browser": "^3.6.2",
-    "@fontsource/bebas-neue": "^4.5.8",
-    "@fontsource/inter": "^4.5.11",
+    "@fontsource/montserrat": "^4.5.12",
     "@headlessui/react": "^1.6.5",
     "copy-to-clipboard": "^3.3.1",
     "next": "^12.2.2",

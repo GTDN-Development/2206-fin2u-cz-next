@@ -6,6 +6,7 @@
   "rules": {
     "@next/next/no-img-element": "off",
     "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": "off"
+    "@typescript-eslint/no-unused-vars": "off",
+    "no-control-regex": "off"
   }
 }

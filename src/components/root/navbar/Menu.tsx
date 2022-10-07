@@ -37,7 +37,7 @@ export default function Menu({ className = "" }: MenuOptions) {
         className={`relative z-[120] ${className}`}
       />
       <div
-        className={`fixed inset-0 z-[115] h-screen w-screen overflow-y-auto bg-body-100 transition-[opacity,visibility] ease-out ${
+        className={`dark fixed inset-0 z-[115] h-screen w-screen overflow-y-auto bg-gray-900 transition-[opacity,visibility] ease-out ${
           isOpen
             ? "visible opacity-100 duration-[400ms]"
             : "invisible opacity-0 duration-150"

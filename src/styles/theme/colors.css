@@ -1,8 +1,9 @@
-:root {
+:root,
+.light {
   /* Brand colors */
-  --color-primary: 299, 65%, 60%;
-  --color-secondary: 307, 52%, 36%;
-  --color-tertiary: 340, 82%, 58%;
+  --color-primary: 257, 65%, 58%;
+  --color-secondary: 260, 43%, 38%;
+  --color-tertiary: 251, 91%, 95%;
 
   /* Status colors */
   --color-success: 160, 84%, 31%;
@@ -11,15 +12,15 @@
   --color-info: 200, 98%, 39%;
 
   /* Text colors */
-  --color-muted: var(--color-gray-300);
-  --color-rich: var(--color-white);
-  --color-invert: var(--color-gray-900);
+  --color-muted: var(--color-gray-600);
+  --color-rich: var(--color-gray-900);
+  --color-invert: var(--color-white);
 
   /* Background colors */
-  --color-body: 269, 52%, 13%;
-  --color-body-50: 269, 52%, 18%;
-  --color-body-100: 269, 52%, 25%;
-  --color-body-200: 269, 52%, 32%;
+  --color-body: var(--color-white);
+  --color-body-50: var(--color-gray-50);
+  --color-body-100: var(--color-gray-100);
+  --color-body-200: var(--color-gray-200);
 
   /* Default grays */
   --color-gray-50: 216, 16%, 98%;
@@ -31,7 +32,17 @@
   --color-gray-600: 215, 12%, 34%;
   --color-gray-700: 217, 15%, 27%;
   --color-gray-800: 215, 21%, 16%;
-  --color-gray-900: 221, 24%, 11%;
+  --color-gray-900: 221, 24%, 7%;
   --color-white: 0, 0%, 100%;
   --color-black: 0, 0%, 0%;
+
+  /* Special colors */
+  --color-navbar-link: var(--color-secondary);
+}
+
+.dark {
+  --color-muted: var(--color-gray-300);
+  --color-rich: var(--color-white);
+  --color-invert: var(--color-gray-900);
+  --color-navbar-link: var(--color-white);
 }

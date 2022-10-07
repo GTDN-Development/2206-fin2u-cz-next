@@ -22,7 +22,7 @@ export default function SocialLinks({
             aria-label={socials.facebook.ariaLabel}
             target="blank"
             rel="noopener noreferrer"
-            className="text-xl text-white transition-colors duration-150 ease-in-out hover:text-primary"
+            className="text-xl text-rich transition-colors duration-150 ease-in-out hover:text-primary"
           >
             <FaFacebookF />
           </a>
@@ -33,7 +33,7 @@ export default function SocialLinks({
             aria-label={socials.instagram.ariaLabel}
             target="blank"
             rel="noopener noreferrer"
-            className="text-xl text-white transition-colors duration-150 ease-in-out hover:text-primary"
+            className="text-xl text-rich transition-colors duration-150 ease-in-out hover:text-primary"
           >
             <FaInstagram />
           </a>
@@ -44,7 +44,7 @@ export default function SocialLinks({
             aria-label={socials.youtube.ariaLabel}
             target="blank"
             rel="noopener noreferrer"
-            className="text-xl text-white transition-colors duration-150 ease-in-out hover:text-primary"
+            className="text-xl text-rich transition-colors duration-150 ease-in-out hover:text-primary"
           >
             <FaYoutube />
           </a>
@@ -55,7 +55,7 @@ export default function SocialLinks({
             aria-label={socials.spotify.ariaLabel}
             target="blank"
             rel="noopener noreferrer"
-            className="text-xl text-white transition-colors duration-150 ease-in-out hover:text-primary"
+            className="text-xl text-rich transition-colors duration-150 ease-in-out hover:text-primary"
           >
             <FaSpotify />
           </a>

@@ -7,7 +7,7 @@ import Menu from "./Menu";
 import NavbarAdditionalLinks from "./NavbarAdditionalLinks";
 import NavbarMainLinks from "./NavbarMainLinks";
 
-export default function Navbar() {
+export default function Navbar({ initialStyle = "dark" }) {
   // // State
   const [isNavbarScrolled, setIsNavbarScrolled] = useState(false);
   // const [isNavbarVisible, setIsNavbarVisible] = useState(true);
@@ -39,9 +39,14 @@ export default function Navbar() {
     //   } ${isNavbarVisible ? "translate-y-0" : "-translate-y-full shadow-none"}`}
     // >
     <nav
-      className={`fixed z-[100] h-20 w-screen transition-colors duration-500 ${
-        isNavbarScrolled ? "bg-body/70 backdrop-blur-lg" : "bg-transparent"
-      }`}
+      className={`fixed z-[100] h-20 w-screen transition duration-500 
+      ${
+        isNavbarScrolled
+          ? "bg-white/80 shadow-2xl backdrop-blur-md"
+          : "bg-transparent"
+      }
+      ${initialStyle === "dark" && !isNavbarScrolled ? "dark" : ""}
+      `}
     >
       <Wrapper
         size="lg"
@@ -50,8 +55,11 @@ export default function Navbar() {
         <NavbarMainLinks className="hidden lg:flex" />
         <Menu className="lg:hidden" />
         <Link href="/">
-          <a className="absolute top-1/2 left-1/2 z-[120] max-w-[128px] -translate-y-1/2 -translate-x-1/2 scale-[0.85] outline-none focus-visible:ring-4 focus-visible:ring-primary/70 sm:max-w-[160px] sm:scale-100">
-            <BrandLogo className="origin-left" />
+          <a className="absolute top-1/2 left-1/2 z-[110] max-w-[128px] -translate-y-1/2 -translate-x-1/2 scale-[0.85] outline-none focus-visible:ring-4 focus-visible:ring-primary/70 sm:max-w-[160px] sm:scale-100">
+            <BrandLogo
+              className="origin-left"
+              isInverted={initialStyle === "dark" && !isNavbarScrolled}
+            />
           </a>
         </Link>
         <NavbarAdditionalLinks />

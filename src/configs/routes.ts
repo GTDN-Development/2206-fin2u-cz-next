@@ -1,19 +1,23 @@
 export const mainRoutes = [
   {
-    label: "Hlavní strana",
+    label: "Domů",
     path: "/",
   },
   {
-    label: "Program a mapa",
-    path: "/program",
+    label: "Služby",
+    path: "/",
   },
   {
-    label: "FAQ",
-    path: "/#faq",
+    label: "Náš tým",
+    path: "/",
+  },
+  {
+    label: "Reference",
+    path: "/",
   },
   {
     label: "Kontakt",
-    path: "/#kontakt",
+    path: "/kontakt",
   },
 ];
 

@@ -19,20 +19,20 @@ export default function MenuButton({
       <span className="sr-only">Otevřít / zavřít menu</span>
       <span
         aria-hidden="true"
-        className={`block h-[2px] w-[28px] transform-gpu rounded-full bg-rich transition duration-300 ease-out-back ${
-          isActivated ? "translate-y-[7px] -rotate-45" : ""
+        className={`block h-[2px] w-[28px] transform-gpu rounded-full transition duration-300 ease-out-back ${
+          isActivated ? "translate-y-[7px] -rotate-45 bg-white" : "bg-rich"
         }`}
       ></span>
       <span
         aria-hidden="true"
-        className={`block h-[2px] w-[28px] transform-gpu rounded-full bg-rich transition duration-300 ease-out-back ${
-          isActivated ? "translate-x-1 opacity-0" : ""
+        className={`block h-[2px] w-[28px] transform-gpu rounded-full transition duration-300 ease-out-back ${
+          isActivated ? "translate-x-1 bg-white opacity-0" : "bg-rich"
         }`}
       ></span>
       <span
         aria-hidden="true"
-        className={`block h-[2px] w-[28px] transform-gpu rounded-full bg-rich transition duration-300 ease-out-back ${
-          isActivated ? "translate-y-[-7px] rotate-45" : ""
+        className={`block h-[2px] w-[28px] transform-gpu rounded-full transition duration-300 ease-out-back ${
+          isActivated ? "translate-y-[-7px] rotate-45 bg-white" : "bg-rich"
         }`}
       ></span>
     </button>
