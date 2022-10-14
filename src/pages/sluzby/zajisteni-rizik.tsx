@@ -121,12 +121,22 @@ const ZajisteniRizik: NextPage = () => {
       {/* CTA 1 */}
       <Wrapper size="lg" paddedContent="base">
         <ScrollReveal>
-          <LargeImageCTA>
-            <Button color="light" leftIcon={<HiMail />}>
-              David@fin2u.cz
+          <LargeImageCTA imageSrc="/images/meeting.jpg">
+            <Button
+              as="a"
+              href={contacts.rizika.emailLink}
+              color="light"
+              leftIcon={<HiMail />}
+            >
+              {contacts.rizika.emailLabel}
             </Button>
-            <Button color="light" leftIcon={<HiPhone />}>
-              +420 123 456 789
+            <Button
+              as="a"
+              href={contacts.rizika.phoneLink}
+              color="light"
+              leftIcon={<HiPhone />}
+            >
+              {contacts.rizika.phoneLabel}
             </Button>
           </LargeImageCTA>
         </ScrollReveal>

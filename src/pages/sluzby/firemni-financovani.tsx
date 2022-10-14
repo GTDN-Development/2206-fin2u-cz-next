@@ -134,12 +134,22 @@ const FiremniFinancovani: NextPage = () => {
       {/* CTA 1 */}
       <Wrapper size="lg" paddedContent="base">
         <ScrollReveal>
-          <LargeImageCTA>
-            <Button color="light" leftIcon={<HiMail />}>
-              Info@fin2u.cz
+          <LargeImageCTA imageSrc="/images/meeting.jpg">
+            <Button
+              as="a"
+              href={contacts.uvery.emailLink}
+              color="light"
+              leftIcon={<HiMail />}
+            >
+              {contacts.uvery.emailLabel}
             </Button>
-            <Button color="light" leftIcon={<HiPhone />}>
-              +420 123 456 789
+            <Button
+              as="a"
+              href={contacts.uvery.phoneLink}
+              color="light"
+              leftIcon={<HiPhone />}
+            >
+              {contacts.uvery.phoneLabel}
             </Button>
           </LargeImageCTA>
         </ScrollReveal>

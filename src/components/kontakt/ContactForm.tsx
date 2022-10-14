@@ -31,8 +31,8 @@ export default function ContactForm({ className = "" }: Props) {
     if (honeypot === "" || honeypot === null) {
       emailjs
         .sendForm(
-          "service_id",
-          "template_id",
+          "service_zvy683n",
+          "template_slf3tzq",
           e.target,
           "user_2tNsUaIQSULo6wFXKZVCs"
         )
@@ -81,7 +81,7 @@ export default function ContactForm({ className = "" }: Props) {
         {/* ---- Honeypot - anti spam ---- */}
 
         <Input type="tel" id="tel" name="tel" label="Telefon" isRequired />
-        <Input type="email" id="mail" name="mail" label="E-mail" isRequired />
+        <Input type="email" id="email" name="email" label="E-mail" isRequired />
         <Textarea id="message" name="message" label="Vaše zpráva" isRequired />
 
         <Checkbox id="gdpr" name="gdpr" label="gdpr" isRequired>
@@ -112,8 +112,8 @@ export default function ContactForm({ className = "" }: Props) {
             status="success"
             isDismissable={true}
             hasIcon={true}
-            title="Registrace byla odeslána"
-            text="Vaše registrace na workshop proběhla úspěšně. Děkujeme."
+            title="E-mail úspěšně odeslán"
+            text="Váš e-mail se podařilo úspěšně odeslat. Co nejdříve vám odpovíme. Děkujeme."
             className="my-6"
           />
         ) : null}
@@ -124,7 +124,7 @@ export default function ContactForm({ className = "" }: Props) {
             isDismissable={true}
             hasIcon={true}
             title="Něco se pokazilo"
-            text="Je nám líto, ale vaši registraci se nepodařilo odeslat. Zkuste to znovu později nebo využijte jinou možnost kontaktu."
+            text="Je nám líto, ale e-mail se nepodařilo odeslat. Zkuste to znovu později nebo využijte jinou možnost kontaktu."
             className="my-6"
           />
         ) : null}

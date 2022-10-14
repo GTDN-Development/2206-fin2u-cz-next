@@ -3,6 +3,7 @@ import Heading from "./Heading";
 
 type Props = {
   as?: React.ElementType;
+  imageSrc?: string;
   title?: string;
   text?: string;
   children: React.ReactNode;
@@ -12,6 +13,7 @@ type Props = {
 
 export default function LargeCTA({
   as: Tag = "div",
+  imageSrc = "/images/cung-s-doutnikem.jpg",
   title = "Lorem ipsum, dolor sit amet consectetur",
   text = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid architecto eveniet sint quia quis? Laudantium natus at accusamus.",
   className = "",
@@ -25,7 +27,7 @@ export default function LargeCTA({
       {...rest}
     >
       <ExportedImage
-        src={"/images/cung-s-doutnikem.jpg"}
+        src={imageSrc}
         alt={"alt"}
         width={800}
         height={500}
