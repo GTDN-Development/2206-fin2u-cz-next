@@ -1,6 +1,8 @@
+import { forwardRef } from "react";
 import { useInView } from "react-intersection-observer";
+import { mergeRefs } from "../utils/mergeRefs";
 
-type TemplateProps = {
+type ScrollRevealProps = {
   as?: React.ElementType;
   animation?:
     | "fade"
@@ -322,49 +324,61 @@ const staggerChildrenIncrementClasses = {
   "500": "sra-increment-500",
 };
 
-export default function Template({
-  as: Tag = "div",
-  animation = "slide-up",
-  duration = "900",
-  delay = "0",
-  xsDelay = "none",
-  smDelay = "none",
-  mdDelay = "none",
-  lgDelay = "none",
-  xlDelay = "none",
-  staggerChildren = false,
-  staggerChildrenIncrement = "200",
-  className = "",
-  children,
-  ...rest
-}: TemplateProps) {
-  const [element, view] = useInView({ threshold: 0.2, triggerOnce: true });
-  return (
-    <Tag
-      ref={element}
-      className={`
-        ${staggerChildren ? "lib-sra-children" : "lib-sra"}
-        ${animationHiddenClasses[animation]} 
-        ${view ? animationVisibleClasses[animation] : ""} 
-        ${durationClasses[duration]} 
-        ${
-          staggerChildren === false &&
-          delayClasses[delay] +
-            xsDelayClasses[xsDelay] +
-            smDelayClasses[smDelay] +
-            mdDelayClasses[mdDelay] +
-            lgDelayClasses[lgDelay] +
-            xlDelayClasses[xlDelay]
-        }
-        ${
-          staggerChildren &&
-          staggerChildrenIncrementClasses[staggerChildrenIncrement]
-        }
-        ${className}
-      `}
-      {...rest}
-    >
-      {children}
-    </Tag>
-  );
-}
+// forwardRef
+export type Ref = HTMLElement;
+
+const ScrollReveal = forwardRef<Ref, ScrollRevealProps>(
+  (
+    {
+      as: Tag = "div",
+      animation = "slide-up",
+      duration = "900",
+      delay = "0",
+      xsDelay = "none",
+      smDelay = "none",
+      mdDelay = "none",
+      lgDelay = "none",
+      xlDelay = "none",
+      staggerChildren = false,
+      staggerChildrenIncrement = "200",
+      className = "",
+      children,
+      ...rest
+    },
+    ref
+  ) => {
+    const [element, view] = useInView({ threshold: 0.2, triggerOnce: true });
+    return (
+      <Tag
+        ref={mergeRefs([element, ref])}
+        className={`
+          ${staggerChildren ? "lib-sra-children" : "lib-sra"}
+          ${animationHiddenClasses[animation]} 
+          ${view ? animationVisibleClasses[animation] : ""} 
+          ${durationClasses[duration]} 
+          ${
+            staggerChildren === false &&
+            delayClasses[delay] +
+              xsDelayClasses[xsDelay] +
+              smDelayClasses[smDelay] +
+              mdDelayClasses[mdDelay] +
+              lgDelayClasses[lgDelay] +
+              xlDelayClasses[xlDelay]
+          }
+          ${
+            staggerChildren &&
+            staggerChildrenIncrementClasses[staggerChildrenIncrement]
+          }
+          ${className}
+        `}
+        {...rest}
+      >
+        {children}
+      </Tag>
+    );
+  }
+);
+
+ScrollReveal.displayName = "ScrollReveal"; // viz: https://stackoverflow.com/questions/52992932/component-definition-is-missing-display-name-react-display-name
+
+export default ScrollReveal;

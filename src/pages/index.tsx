@@ -14,11 +14,24 @@ import Wrapper from "@components/Wrapper";
 import AppLayout from "@layouts/AppLayout";
 import type { NextPage } from "next";
 import ExportedImage from "next-image-export-optimizer";
+import Link from "next/link";
+import CountUp from "react-countup";
+import { HiArrowDown } from "react-icons/hi";
 
 // To Do
-// Counter komponent
-// Team - hover na kartách
-// Scroll animace
+// Integrace typeform -> Hotovo
+// Socky FB, IG, LinkedIN - X -> Doplnit finální odkazy
+// Kontakt - zprovoznit kontaktní formulář
+// Textace Daniel Říha - X - Chybí otázky
+// Textace David Šimana
+// Textace Čung
+// Textace Václav Kraut
+// Textace Jan Voves
+// Textace Zdeněk Zajíček
+// Textace Služby Hypotéky a refinancování - kalkulačka
+// Textace Služby Firemní a podnikatelské financování - kalkulačka
+// Textace Služby Finanční nezávislost - kalkulačka
+// Textace Služby Zajištění rizik - bez kalkulačky
 
 const Home: NextPage = () => {
   return (
@@ -32,22 +45,27 @@ const Home: NextPage = () => {
           className="flex flex-col items-center gap-8"
         >
           <Heading level={1} size="xl" align="center" color="white">
-            Lorem ipsum dolor sit amet
+            Ptal se vás Váš bankéř, na to kdy chcete být finančně nezávislý?
           </Heading>
           <p className="max-w-prose text-center text-lg text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt atque
-            ipsam, nulla similique voluptatibus laboriosam voluptatem accusamus
-            ducimus.
+            Řešíte rozvoj rozvoj firmy, financování bydlení, či ochranu majetku?
+            na cestě k finanční svobodě, jsme tu pro Vás!
           </p>
           <div className="mt-8 flex gap-5">
-            <Button>Call to action</Button>
-            <Button color="light">Call to action</Button>
+            <Button as="a" href="#sluzby" rightIcon={<HiArrowDown />}>
+              Co umíme
+            </Button>
+            <Link href="/kariera">
+              <Button as="a" color="light">
+                Pracovní příležitost
+              </Button>
+            </Link>
           </div>
         </ScrollReveal>
 
         <ScrollReveal delay="600" className="my-48">
           <ExportedImage
-            src="/images/team.jpg"
+            src="/images/cely-tym.jpg"
             alt="Náš tým"
             width={1920}
             height={1080}
@@ -61,26 +79,24 @@ const Home: NextPage = () => {
       </Hero>
 
       {/* Služby */}
-      <Wrapper paddedContent="base">
+      <Wrapper as="section" id="sluzby" paddedContent="base">
         <SectionHeader
           gradient="top"
           kicker="Nabízené služby"
-          heading="Lorem ipsum dolor"
-          caption={
-            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam vitae at vero explicabo perferendis rerum tempore, qui ipsa ratione incidunt."
-          }
+          heading="Správné plánování je klíčem k Vaším cílům?"
+          caption={"Vyberte oblast produtku, který Vás právě zajímá"}
         />
         <Services />
       </Wrapper>
 
       {/* Tým */}
-      <Wrapper paddedContent="base">
+      <Wrapper as={"section"} id="tym" paddedContent="base">
         <SectionHeader
           gradient="left"
-          kicker="Náš tým"
-          heading="Lorem ipsum dolor"
+          kicker="Náš tým specialistů"
+          heading="Vyber si svého konzultanta"
           caption={
-            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam vitae at vero explicabo perferendis rerum tempore, qui ipsa ratione incidunt."
+            "Naši konzultanti jsou odborníci na firemní a rodinné finance, svým klientům pomáháme lépe finančně plánovat a dosahovat strategických cílů."
           }
         />
         <Team />
@@ -88,6 +104,8 @@ const Home: NextPage = () => {
 
       {/* Reference */}
       <SectionHeader
+        as={"section"}
+        id="reference"
         gradient="top"
         kicker="Reference"
         heading="Naši klienti o nás napsali"
@@ -111,12 +129,106 @@ const Home: NextPage = () => {
       </div>
 
       {/* Counter */}
+      <Wrapper
+        paddedContent="sm"
+        className="grid grid-cols-2 gap-x-6 gap-y-12 md:grid-cols-4"
+      >
+        <CountUp
+          start={0}
+          end={167}
+          delay={0}
+          duration={4}
+          useEasing
+          enableScrollSpy
+          scrollSpyOnce
+          scrollSpyDelay={200}
+        >
+          {({ countUpRef }) => (
+            <ScrollReveal className="col-span-1 flex flex-col items-center justify-center gap-1">
+              <span
+                ref={countUpRef}
+                className="block text-4xl font-bold text-primary sm:text-6xl lg:text-8xl"
+              />
+              <span className="block font-medium uppercase tracking-wider">
+                Lorem ipsum
+              </span>
+            </ScrollReveal>
+          )}
+        </CountUp>
+        <CountUp
+          start={0}
+          end={24}
+          delay={0}
+          duration={4}
+          useEasing
+          enableScrollSpy
+          scrollSpyOnce
+          scrollSpyDelay={200}
+        >
+          {({ countUpRef }) => (
+            <ScrollReveal className="col-span-1 flex flex-col items-center justify-center gap-1">
+              <span
+                ref={countUpRef}
+                className="block text-4xl font-bold text-primary sm:text-6xl lg:text-8xl"
+              />
+              <span className="block font-medium uppercase tracking-wider">
+                Lorem ipsum
+              </span>
+            </ScrollReveal>
+          )}
+        </CountUp>
+        <CountUp
+          start={0}
+          end={76}
+          delay={0}
+          duration={4}
+          useEasing
+          enableScrollSpy
+          scrollSpyOnce
+          scrollSpyDelay={200}
+        >
+          {({ countUpRef }) => (
+            <ScrollReveal className="col-span-1 flex flex-col items-center justify-center gap-1">
+              <span
+                ref={countUpRef}
+                className="block text-4xl font-bold text-primary sm:text-6xl lg:text-8xl"
+              />
+              <span className="block font-medium uppercase tracking-wider">
+                Lorem ipsum
+              </span>
+            </ScrollReveal>
+          )}
+        </CountUp>
+        <CountUp
+          start={0}
+          end={194}
+          delay={0}
+          duration={4}
+          useEasing
+          enableScrollSpy
+          scrollSpyOnce
+          scrollSpyDelay={200}
+        >
+          {({ countUpRef }) => (
+            <ScrollReveal className="col-span-1 flex flex-col items-center justify-center gap-1">
+              <span
+                ref={countUpRef}
+                className="block text-4xl font-bold text-primary sm:text-6xl lg:text-8xl"
+              />
+              <span className="block font-medium uppercase tracking-wider">
+                Lorem ipsum
+              </span>
+            </ScrollReveal>
+          )}
+        </CountUp>
+      </Wrapper>
+
       {/* About us */}
       <Wrapper paddedContent="base">
         <div className="flex flex-col items-center justify-center">
           <Kicker className="text-center text-primary">O nás</Kicker>
           <Heading level={2} size="lg" className="mt-5" align="center">
-            Lorem ipsum dolor sit amet
+            poznejte tým fin2u
           </Heading>
         </div>
         <ScrollReveal
@@ -124,7 +236,7 @@ const Home: NextPage = () => {
           className="grid grid-cols-1 items-center gap-10 pt-10 md:grid-cols-2 md:pt-20"
         >
           <ExportedImage
-            src={"/images/team.jpg"}
+            src={"/images/cely-tym.jpg"}
             alt="Spokojený klient"
             width={500}
             height={400}
@@ -134,18 +246,14 @@ const Home: NextPage = () => {
           />
           <div className="col-span-1 flex flex-col gap-7">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-              vero voluptatem obcaecati, suscipit nulla dolores iste itaque
-              tempora. Placeat libero, nulla reiciendis necessitatibus eveniet
-              alias eaque rerum quas dolores facilis, in perspiciatis. Adipisci
-              ad pariatur, deleniti fugiat ipsa officiis culpa a sunt magnam
-              excepturi magni quo eos, praesentium numquam distinctio?
+              Proč Fin2u? Je to jednoduché, finance pro tebe, osobně – online,
+              transparentně. Díky kvalitnímu vzdělání vycházející z metodiky
+              EFPA a dlouholetých zkušeností jsme splustili exluzní projekt.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-              vero voluptatem obcaecati, suscipit nulla dolores iste itaque
-              tempora. Placeat libero, nulla reiciendis necessitatibus eveniet
-              alias.
+              Fin2U představuje moderní pohled nad zkostňatělý finanční trh v
+              České republice. Využítí technologií nám umožnuje rychlejší
+              propojení s klietny, máte vždy jasné a přesné informace.
             </p>
           </div>
         </ScrollReveal>

@@ -39,10 +39,10 @@ export default function Navbar({ initialStyle = "dark" }) {
     //   } ${isNavbarVisible ? "translate-y-0" : "-translate-y-full shadow-none"}`}
     // >
     <nav
-      className={`fixed z-[100] h-20 w-screen transition duration-500 
+      className={`fixed z-[100] h-20 w-screen transition duration-500 md:h-24 
       ${
         isNavbarScrolled
-          ? "bg-white/80 shadow-2xl backdrop-blur-md"
+          ? "bg-white/80 shadow-xl backdrop-blur-md"
           : "bg-transparent"
       }
       ${initialStyle === "dark" && !isNavbarScrolled ? "dark" : ""}
@@ -52,8 +52,8 @@ export default function Navbar({ initialStyle = "dark" }) {
         size="lg"
         className="flex h-full items-center justify-between gap-6 md:gap-10 xl:gap-16"
       >
-        <NavbarMainLinks className="hidden lg:flex" />
-        <Menu className="lg:hidden" />
+        <NavbarMainLinks className="hidden xl:flex" />
+        <Menu className="xl:hidden" />
         <Link href="/">
           <a className="absolute top-1/2 left-1/2 z-[110] max-w-[128px] -translate-y-1/2 -translate-x-1/2 scale-[0.85] outline-none focus-visible:ring-4 focus-visible:ring-primary/70 sm:max-w-[160px] sm:scale-100">
             <BrandLogo

@@ -25,7 +25,7 @@ export default function LargeCTA({
       {...rest}
     >
       <ExportedImage
-        src={"/images/carrier.jpg"}
+        src={"/images/cung-s-doutnikem.jpg"}
         alt={"alt"}
         width={800}
         height={500}

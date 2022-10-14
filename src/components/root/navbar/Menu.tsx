@@ -37,7 +37,7 @@ export default function Menu({ className = "" }: MenuOptions) {
         className={`relative z-[120] ${className}`}
       />
       <div
-        className={`dark fixed inset-0 z-[115] h-screen w-screen overflow-y-auto bg-gray-900 transition-[opacity,visibility] ease-out ${
+        className={`dark fixed inset-0 z-[115] h-screen w-screen overflow-y-auto bg-secondary transition-[opacity,visibility] ease-out ${
           isOpen
             ? "visible opacity-100 duration-[400ms]"
             : "invisible opacity-0 duration-150"
@@ -45,7 +45,7 @@ export default function Menu({ className = "" }: MenuOptions) {
       >
         <Wrapper
           size="lg"
-          className="flex flex-col items-start space-y-16 pt-28 pl-0 md:pt-36 lg:pl-[50%]"
+          className="flex flex-col items-start space-y-16 pt-28 pl-0 md:pt-36 xl:pl-[50%]"
         >
           <MenuMainLinks
             onEachLinkClick={closeMenu}

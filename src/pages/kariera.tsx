@@ -7,6 +7,7 @@ import Seo from "@components/Seo";
 import Wrapper from "@components/Wrapper";
 import AppLayout from "@layouts/AppLayout";
 import type { NextPage } from "next";
+import Link from "next/link";
 import { HiMail } from "react-icons/hi";
 
 const testimonials = [
@@ -114,9 +115,11 @@ const Carrier: NextPage = () => {
       <Wrapper size="lg" paddedContent="base">
         <ScrollReveal>
           <LargeImageCTA title="Chceš pracovat s námi?">
-            <Button color="light" leftIcon={<HiMail />}>
-              Přidej se k nám do týmu
-            </Button>
+            <Link href="/kariera-test">
+              <Button as="a" color="light" leftIcon={<HiMail />}>
+                Přidej se k nám do týmu
+              </Button>
+            </Link>
           </LargeImageCTA>
         </ScrollReveal>
       </Wrapper>

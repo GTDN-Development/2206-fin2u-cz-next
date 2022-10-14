@@ -1,6 +1,6 @@
 import Button from "@components/Button";
 import SocialLinks from "@components/SocialLinks";
-import { ctaMenu } from "@configs/routes";
+import { contacts } from "@configs/contacts";
 import { HiPhone } from "react-icons/hi";
 
 type NavbarAdditionalLinksOptions = {
@@ -17,14 +17,14 @@ export default function NavbarAdditionalLinks({
       <SocialLinks className="hidden lg:block" />
       <Button
         as="a"
-        href={ctaMenu[0].link}
+        href={contacts.main.phoneLink}
         target="blank"
         rel="noopener noreferrer"
         size="sm"
         leftIcon={<HiPhone />}
         className="hidden sm:inline-flex"
       >
-        +420 123 456 789
+        {contacts.main.phoneLabel}
       </Button>
     </div>
   );

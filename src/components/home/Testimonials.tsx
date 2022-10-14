@@ -108,7 +108,7 @@ const testimonials = [
 export default function Testimonials({ className = "" }: Props) {
   return (
     <div
-      className={`grid grid-cols-1 gap-10 sm:grid-cols-2 xl:grid-cols-3 ${className}`}
+      className={`grid grid-cols-1 items-start gap-10 sm:grid-cols-2 xl:grid-cols-3 ${className}`}
     >
       {testimonials.map((testimonial) => (
         <ScrollReveal

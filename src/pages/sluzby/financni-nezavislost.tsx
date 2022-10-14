@@ -7,7 +7,9 @@ import LargeImageCTA from "@components/LargeImageCTA";
 import ScrollReveal from "@components/ScrollReveal";
 import SectionHeader from "@components/SectionHeader";
 import Seo from "@components/Seo";
+import MortgageCalc from "@components/sluzby/MortgageCalc";
 import Wrapper from "@components/Wrapper";
+import { contacts } from "@configs/contacts";
 import AppLayout from "@layouts/AppLayout";
 import type { NextPage } from "next";
 import ExportedImage from "next-image-export-optimizer";
@@ -40,13 +42,14 @@ const testimonials = [
   },
 ];
 
-const Service: NextPage = () => {
+const FinancniNezavislost: NextPage = () => {
   return (
     <AppLayout navbarInitialStyle="dark">
-      <Seo title="Název služby" description="Popisek služby" />
+      <Seo title="Finanční nezávislost" description="Popisek služby" />
 
       {/* Hero */}
-      <Hero>
+      <Hero hasWatermark>
+        {/* Úvod Hero */}
         <ScrollReveal
           as={"div"}
           staggerChildren
@@ -54,7 +57,7 @@ const Service: NextPage = () => {
           className="flex flex-col items-center gap-8"
         >
           <Heading level={1} size="xl" align="center" color="white">
-            Lorem ipsum dolor sit amet
+            Finanční nezávislost
           </Heading>
           <p className="max-w-prose text-center text-lg text-white">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt atque
@@ -66,55 +69,63 @@ const Service: NextPage = () => {
             <Button color="light">Call to action</Button>
           </div>
         </ScrollReveal>
+
+        {/* Content Hero */}
+        <div className="mx-auto max-w-3xl py-24 xl:py-32">
+          <ScrollReveal
+            animation="slide-up"
+            className="mb-16 flex flex-col items-center justify-center sm:mb-28"
+          >
+            <Heading level={2} size="base" color="white">
+              <span className="mr-2 text-[1.25em] text-primary">1.</span> Lorem
+              ipsum dolor sit amet?
+            </Heading>
+            <p className="mt-8 text-center text-gray-200">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sed
+              veritatis ullam magnam quas molestias saepe aut facilis! Et
+              dolorum id nostrum labore corporis assumenda animi quaerat, quam
+              hic tempora!
+            </p>
+          </ScrollReveal>
+          <ScrollReveal
+            animation="slide-up"
+            className="my-16 flex flex-col items-center justify-center sm:my-28"
+          >
+            <Heading level={2} size="base" color="white">
+              <span className="mr-2 text-[1.25em] text-primary">2.</span> Lorem
+              ipsum dolor sit amet?
+            </Heading>
+            <p className="mt-8 text-center text-gray-200">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sed
+              veritatis ullam magnam quas molestias saepe aut facilis! Et
+              dolorum id nostrum labore corporis assumenda animi quaerat, quam
+              hic tempora!
+            </p>
+          </ScrollReveal>
+          <ScrollReveal
+            animation="slide-up"
+            className="mt-16 flex flex-col items-center justify-center sm:mt-28"
+          >
+            <Heading level={2} size="base" color="white">
+              <span className="mr-2 text-[1.25em] text-primary">3.</span> Lorem
+              ipsum dolor sit amet?
+            </Heading>
+            <p className="mt-8 text-center text-gray-200">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sed
+              veritatis ullam magnam quas molestias saepe aut facilis! Et
+              dolorum id nostrum labore corporis assumenda animi quaerat, quam
+              hic tempora!
+            </p>
+          </ScrollReveal>
+        </div>
+
+        {/* Spolupráce loga */}
+        <CollabLogos />
       </Hero>
 
       {/* Content */}
       <Wrapper size="sm" paddedContent="base">
-        <ScrollReveal
-          animation="slide-up"
-          className="mb-16 flex flex-col items-center justify-center sm:mb-28"
-        >
-          <Heading level={2} size="base">
-            <span className="mr-2 text-[1.25em] text-primary">1.</span> Lorem
-            ipsum dolor sit amet?
-          </Heading>
-          <p className="mt-8 text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sed
-            veritatis ullam magnam quas molestias saepe aut facilis! Et dolorum
-            id nostrum labore corporis assumenda animi quaerat, quam hic
-            tempora!
-          </p>
-        </ScrollReveal>
-        <ScrollReveal
-          animation="slide-up"
-          className="my-16 flex flex-col items-center justify-center sm:my-28"
-        >
-          <Heading level={2} size="base">
-            <span className="mr-2 text-[1.25em] text-primary">2.</span> Lorem
-            ipsum dolor sit amet?
-          </Heading>
-          <p className="mt-8 text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sed
-            veritatis ullam magnam quas molestias saepe aut facilis! Et dolorum
-            id nostrum labore corporis assumenda animi quaerat, quam hic
-            tempora!
-          </p>
-        </ScrollReveal>
-        <ScrollReveal
-          animation="slide-up"
-          className="mt-16 flex flex-col items-center justify-center sm:mt-28"
-        >
-          <Heading level={2} size="base">
-            <span className="mr-2 text-[1.25em] text-primary">3.</span> Lorem
-            ipsum dolor sit amet?
-          </Heading>
-          <p className="mt-8 text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sed
-            veritatis ullam magnam quas molestias saepe aut facilis! Et dolorum
-            id nostrum labore corporis assumenda animi quaerat, quam hic
-            tempora!
-          </p>
-        </ScrollReveal>
+        <MortgageCalc />
       </Wrapper>
 
       {/* CTA 1 */}
@@ -122,18 +133,13 @@ const Service: NextPage = () => {
         <ScrollReveal>
           <LargeImageCTA>
             <Button color="light" leftIcon={<HiMail />}>
-              David@fin2u.cz
+              Info@fin2u.cz
             </Button>
             <Button color="light" leftIcon={<HiPhone />}>
               +420 123 456 789
             </Button>
           </LargeImageCTA>
         </ScrollReveal>
-      </Wrapper>
-
-      {/* Spolupráce loga */}
-      <Wrapper>
-        <CollabLogos headingColor="primary" />
       </Wrapper>
 
       {/* Reference */}
@@ -145,7 +151,7 @@ const Service: NextPage = () => {
       />
       <Wrapper className="pb-20 sm:pb-28">
         <div
-          className={`grid grid-cols-1 gap-10 sm:grid-cols-2 xl:grid-cols-3`}
+          className={`grid grid-cols-1 items-start gap-10 sm:grid-cols-2 xl:grid-cols-3`}
         >
           {testimonials.map((testimonial) => (
             <ScrollReveal
@@ -187,11 +193,21 @@ const Service: NextPage = () => {
       <Wrapper size="lg" paddedContent="base">
         <ScrollReveal>
           <LargeCTA>
-            <Button color="light" leftIcon={<HiMail />}>
-              info@fin2u.cz
+            <Button
+              as="a"
+              href={contacts.investice.emailLink}
+              color="light"
+              leftIcon={<HiMail />}
+            >
+              {contacts.investice.emailLabel}
             </Button>
-            <Button color="light" leftIcon={<HiPhone />}>
-              +420 123 456 789
+            <Button
+              as="a"
+              href={contacts.investice.phoneLink}
+              color="light"
+              leftIcon={<HiPhone />}
+            >
+              {contacts.investice.phoneLabel}
             </Button>
           </LargeCTA>
         </ScrollReveal>
@@ -200,4 +216,4 @@ const Service: NextPage = () => {
   );
 };
 
-export default Service;
+export default FinancniNezavislost;

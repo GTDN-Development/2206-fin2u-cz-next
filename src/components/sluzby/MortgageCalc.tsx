@@ -1,6 +1,6 @@
 import Button from "@components/Button";
-import MultiRangeSlider from "@components/calculator/MultiRangeSlider";
 import RangeSlider from "@components/calculator/RangeSlider";
+import Input from "@components/forms/Input";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useEffect, useState } from "react";
 
@@ -30,22 +30,6 @@ export default function MortgageCalc({ className = "" }: MortgageCalcProps) {
   return (
     <div className={`flex flex-col p-5 ${className}`}>
       <div className="mt-24">
-        <MultiRangeSlider
-          changeData={changeData}
-          id={"vaha"}
-          min={0}
-          max={100}
-          title={"Lorem ipsum dolor?"}
-          unit={"Lorem"}
-        />
-        <MultiRangeSlider
-          changeData={changeData}
-          id={"vydelek"}
-          min={5000}
-          max={50000}
-          title={"Lorem ipsum dolor?"}
-          unit={"Lorem"}
-        />
         <RangeSlider
           changeData={changeData}
           id={"susenek"}
@@ -160,29 +144,28 @@ function Modal({ isModalOpen, setIsModalOpen, inputData }: ModalProps) {
                     as="h3"
                     className="text-lg font-medium leading-6 text-gray-900"
                   >
-                    Prosím zadejte email
+                    Zadejte e-mail
                   </Dialog.Title>
                   <p className="mt-2 text-sm text-gray-500">
-                    Pro zobrazení vašich výsledků prosím zadejte Vaší emailovou
+                    Pro zobrazení vašich výsledků prosím zadejte Vaší e-mailovou
                     adresu.
                   </p>
                   <p className="text-red-500">
                     {emailAlert && "Prosím zadejte platný email!"}
                   </p>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    className="mt-5 rounded-md border-2 border-blue-200 after:border-solid"
-                    onChange={(e) => setEmail(e.target.value)}
-                  />
-                  <button
-                    type="button"
-                    className="mt-4 inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-                    onClick={() => verifyEmail()}
-                  >
-                    Odeslat!
-                  </button>
+                  <div className="mt-5 flex flex-col gap-5">
+                    <Input
+                      type="email"
+                      id="email"
+                      name="email"
+                      isRequired
+                      label="Váš e-mail"
+                      onChange={(e: any) => setEmail(e.target.value)}
+                    />
+                    <Button type="button" onClick={() => verifyEmail()}>
+                      Odeslat!
+                    </Button>
+                  </div>
                 </Dialog.Panel>
               ) : (
                 <Dialog.Panel className="flex w-full max-w-md transform flex-col overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">

@@ -1,18 +1,14 @@
 export const socials = {
   facebook: {
     link: "https://www.facebook.com/",
-    ariaLabel: "odkaz na facebook",
+    ariaLabel: "Odkaz na Facebook",
   },
   instagram: {
     link: "https://www.instagram.com/",
-    ariaLabel: "odkaz na instagram",
+    ariaLabel: "Odkaz na Instagram",
   },
-  youtube: {
-    link: "https://www.youtube.com/",
-    ariaLabel: "odkaz na youtube",
-  },
-  spotify: {
-    link: "https://open.spotify.com/",
-    ariaLabel: "odkaz na spotify",
+  linkedin: {
+    link: "https://www.linkedin.com/",
+    ariaLabel: "Odkaz na LinkedIn",
   },
 };

@@ -9,53 +9,55 @@ type Props = {
 
 const team = [
   {
-    id: 1,
-    linkHref: "/tym/david",
-    photoSrc: "/images/team-member.jpg",
-    name: "Jméno Příjmení",
-    position: "Specializace",
+    name: "David Šimana",
+    position: "CEO, Hypoteční specialista",
+    linkHref: "/tym/david-simana",
+    photoSrc: "/images/poradci/david-simana.jpg",
   },
   {
-    id: 2,
-    linkHref: "/tym/david",
-    photoSrc: "/images/team-member.jpg",
-    name: "Jméno Příjmení",
-    position: "Specializace",
+    name: "Duc Trung Nguyen",
+    position: "Ředitel pro vzdělání",
+    linkHref: "/tym/duc-trung-nguyen",
+    photoSrc: "/images/poradci/duc-trung-nguyen.jpg",
   },
   {
-    id: 3,
-    linkHref: "/tym/david",
-    photoSrc: "/images/team-member.jpg",
-    name: "Jméno Příjmení",
-    position: "Specializace",
+    name: "Jan Voves",
+    position: "Obchodní konzultant",
+    linkHref: "/tym/jan-voves",
+    photoSrc: "/images/poradci/jan-voves.jpg",
   },
   {
-    id: 4,
-    linkHref: "/tym/david",
-    photoSrc: "/images/team-member.jpg",
-    name: "Jméno Příjmení",
-    position: "Specializace",
+    name: "Daniel Říha",
+    position: "Investiční poradce, Analytik",
+    linkHref: "/tym/daniel-riha",
+    photoSrc: "/images/poradci/daniel-riha.jpg",
   },
   {
-    id: 5,
-    linkHref: "/tym/david",
-    photoSrc: "/images/team-member.jpg",
-    name: "Jméno Příjmení",
-    position: "Specializace",
+    name: "Zdeněk Zajíček",
+    position: "Manažer, úvěrový specialisa",
+    linkHref: "/tym/zdenek-zajicek",
+    photoSrc: "/images/poradci/zdenek-zajicek.jpg",
+  },
+  {
+    name: "Václav Kraut",
+    position: "Investiční poradce",
+    linkHref: "/tym/vaclav-kraut",
+    photoSrc: "/images/poradci/vaclav-kraut.jpg",
   },
 ];
 
-export default function Services({ className = "" }: Props) {
+export default function Team({ className = "" }: Props) {
   return (
     <div
-      className={`team-cards-shifted grid grid-cols-1 gap-x-10 gap-y-10 sm:grid-cols-2 sm:gap-y-20 ${className}`}
+      className={`team-cards-shifted grid grid-cols-1 gap-x-10 gap-y-10 sm:grid-cols-2 sm:gap-y-20 sm:pb-64 ${className}`}
     >
       {team.map((member) => (
-        <Link href={member.linkHref} key={member.id}>
+        <Link href={member.linkHref} key={member.name}>
           <ScrollReveal
             as={"a"}
             animation="fade"
-            className="team-card-transition group flex cursor-pointer flex-col bg-white hover:shadow-2xl"
+            tabIndex="0"
+            className="team-card-transition group flex cursor-pointer flex-col bg-white outline-none hover:shadow-2xl focus-visible:ring-4 focus-visible:ring-primary/70"
           >
             <div className="aspect-[16/10] w-full">
               <ExportedImage

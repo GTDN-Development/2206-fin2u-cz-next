@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { HiMinus, HiPlus } from "react-icons/hi";
 
 interface BasicRangeSliderProps {
   changeData?: any;
@@ -34,12 +35,12 @@ export default function RangeSlider({
       </div>
       <div className="mt-6 flex w-full justify-between">
         <button
-          className="h-8 w-8 rounded-full border-2 border-black"
+          className="flex items-center justify-center rounded-full bg-primary/10 p-3 text-base text-secondary outline-none transition-colors duration-300 hover:bg-primary/25 focus-visible:ring-4 focus-visible:ring-primary/70"
           onClick={() =>
             value >= min + skip && setValueAndInputData(value - skip)
           }
         >
-          -
+          <HiMinus />
         </button>
         <div className="relative flex w-4/5 items-center">
           <input
@@ -47,20 +48,17 @@ export default function RangeSlider({
             min={min}
             max={max}
             value={value}
-            className="thumb z-[3] w-full"
+            className="slider h-2 w-full appearance-none rounded-lg bg-body-200 opacity-70 outline-none transition duration-200 hover:opacity-100"
             onChange={(e) => setValueAndInputData(parseInt(e.target.value))}
           />
-          <div className="relative w-full">
-            <div className="absolute z-[1] h-1.5 w-full rounded-sm bg-blue-200"></div>
-          </div>
         </div>
         <button
-          className="h-8 w-8 rounded-full border-2 border-black"
+          className="flex items-center justify-center rounded-full bg-primary/10 p-3 text-base text-secondary outline-none transition-colors duration-300 hover:bg-primary/25 focus-visible:ring-4 focus-visible:ring-primary/70"
           onClick={() =>
             value <= max - skip && setValueAndInputData(value + skip)
           }
         >
-          +
+          <HiPlus />
         </button>
       </div>
     </div>

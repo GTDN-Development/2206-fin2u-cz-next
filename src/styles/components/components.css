@@ -160,9 +160,81 @@
       transform: scale3d(1, 1, 1);
     }
   }
+  .lib-input-hp {
+    display: none;
+    visibility: hidden;
+  }
+
+  /*
+  .range-thumb::-webkit-slider-thumb,
+  .range-thumb::::-moz-range-thumb {
+    @apply appearance-none w-6 h-6 bg-primary cursor-pointer
+  }
+  */
+
+.slider::-webkit-slider-thumb {
+  @apply appearance-none w-7 h-7 bg-primary shadow-md cursor-pointer rounded-full outline-none focus-visible:ring-4 focus-visible:ring-primary/70
 }
 
-.lib-input-hp {
-  display: none;
-  visibility: hidden;
+.slider::-moz-range-thumb {
+  @apply appearance-none w-7 h-7 bg-primary shadow-md cursor-pointer rounded-full outline-none focus-visible:ring-4 focus-visible:ring-primary/70
 }
+
+.slider::-ms-thumb {
+  @apply appearance-none w-7 h-7 bg-primary shadow-md cursor-pointer rounded-full outline-none focus-visible:ring-4 focus-visible:ring-primary/70
+}
+
+/*
+.slider::-webkit-slider-runnable-track {
+  @apply bg-primary h-2
+}
+.slider::-moz-range-track {
+  @apply bg-primary h-2
+}
+.slider::-ms-track {
+  @apply bg-primary h-2
+}
+*/
+
+/* Removing the default appearance 
+.slider-silnge,
+.slider-silnge::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+.slider-silnge {
+  pointer-events: none;
+  position: absolute;
+  height: 0;
+  outline: none;
+}
+
+.slider-silnge::-webkit-slider-thumb {
+  background-color: purple;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 1px purple;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  margin-top: 4px;
+  pointer-events: all;
+  position: relative;
+}
+
+.slider-silnge::-moz-range-thumb {
+  background-color: #f1f5f7;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 1px purple;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  margin-top: 4px;
+  pointer-events: all;
+  position: relative;
+}
+*/
+
+}
+

@@ -34,10 +34,10 @@ export default function Textarea({
         cols={cols}
         rows={rows}
         className={`h-auto w-full resize-y rounded-md
-      border border-body bg-gray-100 px-4 py-3
+      border border-body bg-body-100 px-4 py-3
       text-base font-normal text-gray-900 transition duration-150
-      placeholder:text-body placeholder:opacity-60
-      focus:border-primary focus:bg-white focus:!outline-none focus:ring-4 focus:ring-primary ${
+      placeholder:text-rich placeholder:opacity-60
+      focus:border-primary/70 focus:bg-white focus:!outline-none focus:ring-4 focus:ring-primary ${
         isDisabled
           ? "pointer-events-none cursor-not-allowed opacity-60"
           : "cursor-text opacity-100"

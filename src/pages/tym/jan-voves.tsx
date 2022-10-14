@@ -6,6 +6,7 @@ import SectionHeader from "@components/SectionHeader";
 import Seo from "@components/Seo";
 import Question from "@components/tym/Question";
 import Wrapper from "@components/Wrapper";
+import { contacts } from "@configs/contacts";
 import AppLayout from "@layouts/AppLayout";
 import type { NextPage } from "next";
 import ExportedImage from "next-image-export-optimizer";
@@ -38,18 +39,18 @@ const testimonials = [
   },
 ];
 
-const Home: NextPage = () => {
+const JanVoves: NextPage = () => {
   return (
     <AppLayout navbarInitialStyle="light">
-      <Seo title="David Šimana" description="Hypoteční specialista" />
+      <Seo title="Jan Voves" description="Obchodní konzultant" />
 
       {/* Služby */}
       <Wrapper paddedContent="lg">
         {/* Úvod */}
         <SectionHeader
-          gradient="left"
-          kicker="Hypoteční specialista"
-          heading="David Šimana"
+          gradient="right"
+          kicker="Obchodní konzultant"
+          heading="Jan Voves"
           caption={
             "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam vitae at vero explicabo perferendis rerum tempore, qui ipsa ratione incidunt."
           }
@@ -62,7 +63,7 @@ const Home: NextPage = () => {
           className="grid grid-cols-1 items-center gap-10 pt-10 md:grid-cols-2 md:pt-20"
         >
           <ExportedImage
-            src={"/images/team-member.jpg"}
+            src={"/images/poradci/jan-voves.jpg"}
             alt="Profilovka"
             width={500}
             height={400}
@@ -128,7 +129,7 @@ const Home: NextPage = () => {
       />
       <Wrapper className="pb-20 sm:pb-28">
         <div
-          className={`grid grid-cols-1 gap-10 sm:grid-cols-2 xl:grid-cols-3`}
+          className={`grid grid-cols-1 items-start gap-10 sm:grid-cols-2 xl:grid-cols-3`}
         >
           {testimonials.map((testimonial) => (
             <ScrollReveal
@@ -170,11 +171,21 @@ const Home: NextPage = () => {
       <Wrapper size="lg" paddedContent="base">
         <ScrollReveal>
           <LargeCTA>
-            <Button color="light" leftIcon={<HiMail />}>
-              David@fin2u.cz
+            <Button
+              as="a"
+              href={contacts.janVoves.emailLink}
+              color="light"
+              leftIcon={<HiMail />}
+            >
+              {contacts.janVoves.emailLabel}
             </Button>
-            <Button color="light" leftIcon={<HiPhone />}>
-              +420 123 456 789
+            <Button
+              as="a"
+              href={contacts.janVoves.phoneLink}
+              color="light"
+              leftIcon={<HiPhone />}
+            >
+              {contacts.janVoves.phoneLabel}
             </Button>
           </LargeCTA>
         </ScrollReveal>
@@ -183,4 +194,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default JanVoves;

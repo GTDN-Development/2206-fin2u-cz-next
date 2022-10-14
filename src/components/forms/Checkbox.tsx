@@ -28,11 +28,11 @@ export default function Checkbox({
         type="checkbox"
         id={id}
         name={name}
-        className={`border-1 h-5 w-5 rounded
-          border-white bg-white transition-shadow duration-150
-          checked:bg-black checked:hover:bg-black
+        className={`h-5 w-5 rounded border-2
+          border-body-200 bg-white transition-shadow duration-150
+          checked:bg-primary checked:hover:bg-primary
           focus:border-body focus:!outline-none focus:ring-4 focus:ring-primary/70 focus:ring-offset-0
-          checked:focus:bg-black
+          checked:focus:bg-primary
           ${
             isDisabled
               ? "pointer-events-none cursor-not-allowed opacity-60"
@@ -42,7 +42,7 @@ export default function Checkbox({
         required={isRequired}
         {...rest}
       />
-      <label htmlFor={id} className="ml-3 text-white">
+      <label htmlFor={id} className="ml-3 text-muted">
         {children}
       </label>
     </Tag>
