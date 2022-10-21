@@ -20,7 +20,7 @@ export default function Question({
         <span className="block shrink-0 grow-0 text-xl font-semibold text-primary md:text-2xl">
           Q{number}
         </span>
-        <span className="block text-lg font-semibold text-rich md:text-xl">
+        <span className="block text-lg font-semibold leading-tight text-rich md:text-xl">
           {question}
         </span>
       </div>

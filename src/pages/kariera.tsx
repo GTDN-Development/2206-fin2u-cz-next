@@ -59,8 +59,8 @@ const Carrier: NextPage = () => {
             ducimus.
           </p>
           <div className="mt-8 flex gap-5 pb-28">
-            <Button>Call to action</Button>
-            <Button color="light">Call to action</Button>
+            <Button>Pracovní dotazník</Button> {/* -> Rovnou spustit */}
+            <Button color="light">Zjistit více</Button>
           </div>
         </ScrollReveal>
       </Hero>

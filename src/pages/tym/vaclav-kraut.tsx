@@ -16,25 +16,25 @@ const testimonials = [
   {
     id: 1,
     photoSrc: "/images/testimonial.jpg",
-    name: "Jméno Příjmení",
+    name: "Josef Lahodný",
     position: "Specializace",
-    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla est. Aliquam id dolor. Etiam commodo dui eget wisi. Maecenas lorem. Integer vulputate sem a nibh rutrum consequat.",
+    text: "Výborný a spolehlivý finanční poradce. Dělá svoji práci znamenitě, skvělá komunikace, profesionalita a ochota. Určitě není typ poradce, kterého zajímáte jen do podepsání smlouvy. Pomohl mi s revizí současného životního pojištění a uzavřením nového, mnohem výhodnějšího. Díky své preciznosti, vytrvalosti a profesionálnímu přístupu mi pomohl v získání hypotéky, abych mohl zrekonstruovat zděděný rodinný domek. Velice příjemné a přátelské jednání. Vřele doporučuji všem, co potřebují vyřešit jak jednodušší věc, třeba kde jsou nejvýhodnější podmínky pro bankovní účet, tak i složitější pojistné smlouvy, pojistné události, hypotéky. Budu-li potřebovat cokoli zajistit v rámci financí, obrátím se opět sem! Člověk si občas musí nechat poradit.",
     class: "flex",
   },
   {
     id: 2,
     photoSrc: "/images/testimonial.jpg",
-    name: "Jméno Příjmení",
+    name: "Ing. Marie Lahodná",
     position: "Specializace",
-    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla est. Aliquam id dolor. Etiam commodo dui eget wisi. Maecenas lorem. Integer vulputate sem a nibh rutrum consequat.",
+    text: "Investiční poradenství, které je transparentní, diskrétní a důvěryhodné, navíc s rozumnou výší odměn a jehož cílem je ochrana vašeho majetku. Ve srovnání s privátní bankou, kde jsem si nebyla jista, zda mi radí v můj prospěch, tady vím, že se mé prostředky zhodnocují a já mohu v klidu spát. Na spolupráci si nejvíce cením vysoké profesionality, transparentnosti, flexibility a jasných argumentů při návrzích na změnu portfolia, které reagují na měnící se podmínka finančního trhu. Komunikují se mnou pravidelně nejen formou kvartálních reportů, ale mohu sledovat online zhodnocování svých vkladů. Pokud hledáte poradce, který nabízí služby západního světa, tak tohle je jasná volba. Z vlastní zkušenosti doporučuji!",
     class: "flex sm:translate-y-10",
   },
   {
     id: 3,
     photoSrc: "/images/testimonial.jpg",
-    name: "Jméno Příjmení",
+    name: "Hana Hlavoňová",
     position: "Specializace",
-    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla est. Aliquam id dolor. Etiam commodo dui eget wisi. Maecenas lorem. Integer vulputate sem a nibh rutrum consequat.",
+    text: "Vašek mi pomohl s investicí se zajímavým výnosem. Pravidelně osobně kontroluje, jestli je vše v pořádku a nikdy není problém zavolat s jakýmkoliv dotazem. Doporučuji a těším se na další spolupráci.",
     class: "flex ",
   },
 ];
@@ -52,7 +52,7 @@ const VaclavKraut: NextPage = () => {
           kicker="Investiční poradce"
           heading="Václav Kraut"
           caption={
-            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam vitae at vero explicabo perferendis rerum tempore, qui ipsa ratione incidunt."
+            "Jmenuji se Václav a v podnikání se pohybuji již 9 let. Oblast investování mne zajímá již od střední školy a naplno se jí věnuji poslední 3 roky. Své portfolio jsem se nyní rozhodl rozšířit i o další finanční produkty jako jsou úvěry a pojištění."
           }
         />
 
@@ -73,19 +73,22 @@ const VaclavKraut: NextPage = () => {
           />
           <div className="col-span-1 flex flex-col gap-7">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-              vero voluptatem obcaecati, suscipit nulla dolores iste itaque
-              tempora. Placeat libero, nulla reiciendis necessitatibus eveniet
-              alias eaque rerum quas dolores facilis, in perspiciatis. Adipisci
-              ad pariatur, deleniti fugiat ipsa officiis culpa a sunt magnam
-              excepturi magni quo eos, praesentium numquam distinctio?
+              Zaměřuji se také na správu firemního majetku a firemní
+              financování, jelikož jsem v minulosti sám poznal jaké to je řídit
+              firmu a jak může externí kapitál pomoci v jejím růstu.
+            </p>
+            <p>
+              Mým heslem je profesionální a otevřený přístup na prvním místě, s
+              každým svým klientem si buduji vztah, jelikož si vážím jejich
+              důvěry, kterou ve mě vkládají a dělám vždy vše, co je v mých
+              silách, abych je nezklamal.
             </p>
             <div className="flex gap-4">
               <Badge size="lg" hasDot={true}>
-                Hypotéky
+                Investice
               </Badge>
               <Badge size="lg" hasDot={true}>
-                Půjčky
+                Klientská péče
               </Badge>
             </div>
           </div>

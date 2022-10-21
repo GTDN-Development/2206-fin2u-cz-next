@@ -1,5 +1,6 @@
 import Badge from "@components/Badge";
 import Button from "@components/Button";
+import Heading from "@components/Heading";
 import LargeCTA from "@components/LargeCTA";
 import ScrollReveal from "@components/ScrollReveal";
 import SectionHeader from "@components/SectionHeader";
@@ -16,25 +17,25 @@ const testimonials = [
   {
     id: 1,
     photoSrc: "/images/testimonial.jpg",
-    name: "Jméno Příjmení",
+    name: "Jiří Dvořák",
     position: "Specializace",
-    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla est. Aliquam id dolor. Etiam commodo dui eget wisi. Maecenas lorem. Integer vulputate sem a nibh rutrum consequat.",
+    text: "p.Zajíček naprosto přesně ví, co dělá. Umí člověka uklidnit a vysvětlit vše, co potřebujete vědět. Když se ho desetkrát zeptáte, vysvětlí to jedenáctkrát. Toho si cením. Doporučuji!",
     class: "flex",
   },
   {
     id: 2,
     photoSrc: "/images/testimonial.jpg",
-    name: "Jméno Příjmení",
+    name: "Jaroslav Lindner",
     position: "Specializace",
-    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla est. Aliquam id dolor. Etiam commodo dui eget wisi. Maecenas lorem. Integer vulputate sem a nibh rutrum consequat.",
+    text: "Zdeněk je poradcem nové generace. Líbí se mi na něm ta profesionalita. Umí vás vzdělat a musím říct, že si pak vůbec nemůžete stěžovat, že něčemu nerozumíte. Po 3-4 schůzkách s ním, jsem si i já, finančně nevzdělaný člověk připadal skoro jako specialista.",
     class: "flex sm:translate-y-10",
   },
   {
     id: 3,
     photoSrc: "/images/testimonial.jpg",
-    name: "Jméno Příjmení",
+    name: "Marie Bartáková",
     position: "Specializace",
-    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla est. Aliquam id dolor. Etiam commodo dui eget wisi. Maecenas lorem. Integer vulputate sem a nibh rutrum consequat.",
+    text: "Byla jsem vůči poradenství skeptická. Ke Zdeňkovi jsem přišla náhodou přes doporučení. Nelituji toho, že jsem to zkusila. Jednání s ním je příjemné a kdykoliv jsem něco potřebovala, tak tu pro mě byl. Jeho práce má vždy nějakou hlavu a patu a také se mi líbí jeho vystupování. Chová se jako kamarád a člověk se na něj těší.",
     class: "flex ",
   },
 ];
@@ -52,7 +53,7 @@ const ZdenekZajicek: NextPage = () => {
           kicker="Manažer, úvěrový specialisa"
           heading="Zdeněk Zajíček"
           caption={
-            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam vitae at vero explicabo perferendis rerum tempore, qui ipsa ratione incidunt."
+            "Zdravím vás, jsem Zdeněk a už to bude hezkých pár let od chvíle, kdy jsem začal samostatně podnikat. Věnuji se správě a plánování finančního směru svých klientů."
           }
         />
 
@@ -73,19 +74,26 @@ const ZdenekZajicek: NextPage = () => {
           />
           <div className="col-span-1 flex flex-col gap-7">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-              vero voluptatem obcaecati, suscipit nulla dolores iste itaque
-              tempora. Placeat libero, nulla reiciendis necessitatibus eveniet
-              alias eaque rerum quas dolores facilis, in perspiciatis. Adipisci
-              ad pariatur, deleniti fugiat ipsa officiis culpa a sunt magnam
-              excepturi magni quo eos, praesentium numquam distinctio?
+              Kromě toho, že mě tento obor živí, je také mým velkým koníčkem.
+              Umím vám pomoci s veškerými finančními a pojistnými produkty, jenž
+              jsou na trhu. Umím naslouchat a zároveň do naší vzájemné
+              spolupráce vkládat své znalosti a zkušenosti. Zaměřuji se jak na
+              podnikatele, firmy tak i na zaměstnance a ostatní – mých služeb
+              vlastně může využít úplně každý.
+            </p>
+            <p>
+              Rád se probouzím do dalšího dne s vědomím, že to, co dělám dává mě
+              i lidem, kteří mi důvěřují smysl a že pro ně mohu udělat maximum.
+              Proto si zakládám na co nejprofesionálnějším přístupu a zároveň na
+              co nejpevnějších mezilidských vztazích. Vzájemná důvěra je pro mě
+              absolutní základ.
             </p>
             <div className="flex gap-4">
               <Badge size="lg" hasDot={true}>
-                Hypotéky
+                Specialista pojistných rizik
               </Badge>
               <Badge size="lg" hasDot={true}>
-                Půjčky
+                Úvěry
               </Badge>
             </div>
           </div>
@@ -93,6 +101,14 @@ const ZdenekZajicek: NextPage = () => {
 
         {/* Q&A */}
         <div className="grid grid-cols-1 gap-x-10 gap-y-20 pt-20 md:grid-cols-2 md:gap-y-32 md:pt-32 lg:gap-x-16">
+          <Heading
+            level={2}
+            size="lg"
+            className="col-span-2 mx-auto max-w-xl"
+            align="center"
+          >
+            5 nejčastějších oblastÍ vašeho zájmu a odpověď, jak je řešit
+          </Heading>
           <Question
             number="1"
             question="lorem ipsum dolor sit amet de la cox?"

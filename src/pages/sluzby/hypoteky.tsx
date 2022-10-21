@@ -65,8 +65,7 @@ const Hypoteky: NextPage = () => {
             ducimus.
           </p>
           <div className="mt-8 flex gap-5 pb-28">
-            <Button>Call to action</Button>
-            <Button color="light">Call to action</Button>
+            <Button>Spočítat hypotéku</Button>
           </div>
         </ScrollReveal>
 
@@ -131,7 +130,10 @@ const Hypoteky: NextPage = () => {
       {/* CTA 1 */}
       <Wrapper size="lg" paddedContent="base">
         <ScrollReveal>
-          <LargeImageCTA imageSrc="/images/meeting.jpg">
+          <LargeImageCTA
+            title="Spojte se s naším hypotečním specialistou"
+            imageSrc="/images/meeting.jpg"
+          >
             <Button
               as="a"
               href={contacts.hypoteky.emailLink}
@@ -200,6 +202,7 @@ const Hypoteky: NextPage = () => {
       </Wrapper>
 
       {/* CTA 2 */}
+      {/* Odkaz na kariéru */}
       <Wrapper size="lg" paddedContent="base">
         <ScrollReveal>
           <LargeCTA>

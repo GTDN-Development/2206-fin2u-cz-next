@@ -16,25 +16,25 @@ const testimonials = [
   {
     id: 1,
     photoSrc: "/images/testimonial.jpg",
-    name: "Jméno Příjmení",
+    name: "Kynčlová Veronika",
     position: "Specializace",
-    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla est. Aliquam id dolor. Etiam commodo dui eget wisi. Maecenas lorem. Integer vulputate sem a nibh rutrum consequat.",
+    text: "S Honzou jsem začala spolupracovat rok dozadu. Chtěla jsem hypotéku na byt, kterou mi perfektně vysvětlil a zařídil bez komplikací. Nechala jsem si udělat i kompletní plán a od té doby se mi otočil život k lepšímu. Začala jsem investovat na své cíle a mám klidné spaní díky zajištění, které mi nastavil.",
     class: "flex",
   },
   {
     id: 2,
     photoSrc: "/images/testimonial.jpg",
-    name: "Jméno Příjmení",
+    name: "Kryštof Kraus",
     position: "Specializace",
-    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla est. Aliquam id dolor. Etiam commodo dui eget wisi. Maecenas lorem. Integer vulputate sem a nibh rutrum consequat.",
+    text: "Chtěl jsem si začít odkládat na svoji budoucnost, ale nevěděl jsem jak. Díky Honzovi jsem si uvědomil svoje životní cíle a díky finančnímu plánu, který mi udělal jsem motivovaný si je plnit.",
     class: "flex sm:translate-y-10",
   },
   {
     id: 3,
     photoSrc: "/images/testimonial.jpg",
-    name: "Jméno Příjmení",
+    name: "Richterová Věra",
     position: "Specializace",
-    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla est. Aliquam id dolor. Etiam commodo dui eget wisi. Maecenas lorem. Integer vulputate sem a nibh rutrum consequat.",
+    text: "S Honzou jsem začala spolupracovat před půl rokem. Neměla jsem moc peněz na odkládání na svoji budoucnost a chtěla jsem mít naspořeno na důchod a na moji vysněnou cestu kolem světa. Honza mi udělal finanční plán, díky kterému jsem ušetřila peníze a pravidelně investuji. Moje sny se tak stali reálné.",
     class: "flex ",
   },
 ];
@@ -51,9 +51,6 @@ const JanVoves: NextPage = () => {
           gradient="right"
           kicker="Obchodní konzultant"
           heading="Jan Voves"
-          caption={
-            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam vitae at vero explicabo perferendis rerum tempore, qui ipsa ratione incidunt."
-          }
         />
 
         {/* Popis + fotka */}
@@ -73,19 +70,21 @@ const JanVoves: NextPage = () => {
           />
           <div className="col-span-1 flex flex-col gap-7">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-              vero voluptatem obcaecati, suscipit nulla dolores iste itaque
-              tempora. Placeat libero, nulla reiciendis necessitatibus eveniet
-              alias eaque rerum quas dolores facilis, in perspiciatis. Adipisci
-              ad pariatur, deleniti fugiat ipsa officiis culpa a sunt magnam
-              excepturi magni quo eos, praesentium numquam distinctio?
+              Ve financích se pohybuji už pár let a mám za sebou desítky
+              spokojených klientů. Práce tohoto typu mě velice baví a rád
+              pomáhám lidem si plnit jejich sny. S klienty nejčastěji řeším
+              investice, hypotéky a pojištění. Vždy mi udělá radost spokojený
+              klient, který si plní jeho sny díky naší spolupráci.
             </p>
             <div className="flex gap-4">
               <Badge size="lg" hasDot={true}>
-                Hypotéky
+                Osobní finance
               </Badge>
               <Badge size="lg" hasDot={true}>
-                Půjčky
+                Investice
+              </Badge>
+              <Badge size="lg" hasDot={true}>
+                Hypotéky
               </Badge>
             </div>
           </div>
@@ -95,26 +94,26 @@ const JanVoves: NextPage = () => {
         <div className="grid grid-cols-1 gap-x-10 gap-y-20 pt-20 md:grid-cols-2 md:gap-y-32 md:pt-32 lg:gap-x-16">
           <Question
             number="1"
-            question="lorem ipsum dolor sit amet de la cox?"
-            answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis deserunt commodi dicta error, tempore ullam in soluta, a deleniti accusamus dolor, earum eum praesentium totam sunt natus laboriosam quis. Eos."
+            question="Proč by jsem měl mít finanční plán?"
+            answer="Finanční plán vám velice ulehčí a nastíní cestu za vašimi sny a zajistí vám pocit bezpečí. Budete díky němu motivovaný si plnit své sny a žít na maximum."
             className="col-span-1"
           />
           <Question
             number="1"
-            question="lorem ipsum dolor sit amet de la cox?"
-            answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis deserunt commodi dicta error, tempore ullam in soluta, a deleniti accusamus dolor, earum eum praesentium totam sunt natus laboriosam quis. Eos."
+            question="Proč spolupracovat se mnou?"
+            answer="Mám bohaté zkušenosti z trhu. Jsem mladý a motivovaný se v tomto oboru zlepšovat a vzdělávat každým dnem. Ještě se mi nikdy nestalo, že by klient byl s mou prací nespokojený a navíc jsem vám k dispozici každý den v týdnu, ve dne i v noci."
             className="col-span-1"
           />
           <Question
             number="1"
-            question="lorem ipsum dolor sit amet de la cox?"
-            answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis deserunt commodi dicta error, tempore ullam in soluta, a deleniti accusamus dolor, earum eum praesentium totam sunt natus laboriosam quis. Eos."
+            question="Jsou zde nějaká rizika?"
+            answer="S klienty se v rámci naší spolupráce bavíme i o zajištění všech možných rizik. Můj hlavní cíl je bezpečí a pohodlí klienta."
             className="col-span-1"
           />
           <Question
             number="1"
-            question="lorem ipsum dolor sit amet de la cox?"
-            answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis deserunt commodi dicta error, tempore ullam in soluta, a deleniti accusamus dolor, earum eum praesentium totam sunt natus laboriosam quis. Eos."
+            question="Jak dlouho trvá poradenský proces?"
+            answer="Já rozděluji proces do 3 schůzek, které dohromady trvají okolo 3 hodin. Následně, když se mnou klient je spokojený, dojde k podpisu. Poté následuje můj každoroční servis a naše dlouhodobá spolupráce."
             className="col-span-1"
           />
         </div>

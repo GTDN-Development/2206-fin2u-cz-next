@@ -85,7 +85,10 @@ const DavidSimana: NextPage = () => {
                 Hypotéky
               </Badge>
               <Badge size="lg" hasDot={true}>
-                Půjčky
+                Firemní klientela
+              </Badge>
+              <Badge size="lg" hasDot={true}>
+                Investice
               </Badge>
             </div>
           </div>

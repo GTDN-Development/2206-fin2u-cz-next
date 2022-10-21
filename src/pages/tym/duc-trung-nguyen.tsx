@@ -15,26 +15,26 @@ import { HiMail, HiPhone } from "react-icons/hi";
 const testimonials = [
   {
     id: 1,
-    photoSrc: "/images/testimonial.jpg",
-    name: "Jméno Příjmení",
+    photoSrc: "/images/reference/jan-javurek.jpg",
+    name: "Jan Javůrek",
     position: "Specializace",
-    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla est. Aliquam id dolor. Etiam commodo dui eget wisi. Maecenas lorem. Integer vulputate sem a nibh rutrum consequat.",
+    text: "Doporučuji! profesionální přístup a trpělivost. Velmi mi pomohl s mými investicemi a finančním plánem.",
     class: "flex",
   },
   {
     id: 2,
-    photoSrc: "/images/testimonial.jpg",
-    name: "Jméno Příjmení",
+    photoSrc: "/images/reference/antu-nguyen.jpg",
+    name: "Antu Nguyen",
     position: "Specializace",
-    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla est. Aliquam id dolor. Etiam commodo dui eget wisi. Maecenas lorem. Integer vulputate sem a nibh rutrum consequat.",
+    text: "Trung je člověk který, udržuje moje emoce na uzdě a díky tomu se snažím v rámci investic přemýšlet dlouhodobě. Občas zavolá a řekne, ted je dobrý čas nakoupit, zvaž to! Mohu jen doporučit!",
     class: "flex sm:translate-y-10",
   },
   {
     id: 3,
-    photoSrc: "/images/testimonial.jpg",
-    name: "Jméno Příjmení",
+    photoSrc: "/images/reference/anh-tuan-nguyen.jpg",
+    name: "Anh Tuan Nguyen",
     position: "Specializace",
-    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla est. Aliquam id dolor. Etiam commodo dui eget wisi. Maecenas lorem. Integer vulputate sem a nibh rutrum consequat.",
+    text: "Doporučuji ! profesionální přístup. A perfektně mi zajistil ochranu majetku před inflací.",
     class: "flex ",
   },
 ];
@@ -50,7 +50,7 @@ const DucTrungNguyen: NextPage = () => {
         <SectionHeader
           gradient="left"
           kicker="Ředitel pro vzdělání"
-          heading="Duc Trung Nguyen"
+          heading="Duc Trung Nguyen, EFA"
           caption={
             "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam vitae at vero explicabo perferendis rerum tempore, qui ipsa ratione incidunt."
           }
@@ -82,10 +82,10 @@ const DucTrungNguyen: NextPage = () => {
             </p>
             <div className="flex gap-4">
               <Badge size="lg" hasDot={true}>
-                Hypotéky
+                Vzdělávání
               </Badge>
               <Badge size="lg" hasDot={true}>
-                Půjčky
+                Investice
               </Badge>
             </div>
           </div>

@@ -21,17 +21,40 @@ import { HiArrowDown } from "react-icons/hi";
 // To Do
 // Integrace typeform -> Hotovo
 // Socky FB, IG, LinkedIN - X -> Doplnit finální odkazy
-// Kontakt - zprovoznit kontaktní formulář
-// Textace Daniel Říha - X - Chybí otázky
-// Textace David Šimana
-// Textace Čung
-// Textace Václav Kraut
-// Textace Jan Voves
-// Textace Zdeněk Zajíček
-// Textace Služby Hypotéky a refinancování - kalkulačka
-// Textace Služby Firemní a podnikatelské financování - kalkulačka
-// Textace Služby Finanční nezávislost - kalkulačka
-// Textace Služby Zajištění rizik - bez kalkulačky
+// Kontakt - zprovoznit kontaktní formulář - Hotovo
+// Zprovoznit kalkulačky
+// Spojit Davidovi všechny emaily do jednoho, aby měl přehled
+// Přidat do menu "kariéra"
+// Loga spolupracujících firem: Mainpage všechny, carousel
+// Loga hypotéky: banky
+// Firemní úvěry loga stejná jako na hypotéky
+// Loga Investic: Investiční společnosti
+// Loga zajištění rizik - pojišťovny
+
+// Textace Daniel Říha - X - Chybí otázky, tagy, u referencí co klientům dělal, fotky referencí
+// Textace David Šimana - úplně chybí textace
+// Textace Čung - Textace je psaná v množném čísle, chybí otázky, tagy, u referencí co se řešilo
+// Textace Václav Kraut - tagy, zestručnit první dvě reference, fotky reference, co se řešilo (jedním slovem), text do otázek
+// Textace Jan Voves - tagy, co pro klienty dělal, fotky referencí
+// Textace Zdeněk Zajíček - tagy, texty nesedí do otázek v designu, fotky reference, zaměření referencí..
+
+// Textace Služby Hypotéky a refinancování - kalkulačka, chybí textace
+// Textace Služby Firemní a podnikatelské financování - kalkulačka, chybí textace
+// Textace Služby Finanční nezávislost - kalkulačka, chybí textace
+// Textace Služby Zajištění rizik - bez kalkulačky, chybí textace
+
+// -------------------------------------------------------
+
+// Todo s davidem
+// Dát dohromady kalkulačky - x
+// Loga spolupracujících značek - x
+// Dát dohromady tagy k jednotlivým lidem - x
+// Doplnit všechny CTA na webu? - x
+// Doplnit čísla a textace u počítadla - x
+// Doplnit adresy v kontaktu - x
+// Doplnit odkazy na sociální sítě - x
+// E-maily a kontakty (checknout) - x
+// Vzor pro textace - vytvořit???
 
 const Home: NextPage = () => {
   return (
@@ -51,7 +74,7 @@ const Home: NextPage = () => {
             Řešíte rozvoj rozvoj firmy, financování bydlení, či ochranu majetku?
             na cestě k finanční svobodě, jsme tu pro Vás!
           </p>
-          <div className="mt-8 flex gap-5">
+          <div className="mt-8 flex flex-col gap-5 sm:flex-row">
             <Button as="a" href="#sluzby" rightIcon={<HiArrowDown />}>
               Co umíme
             </Button>
@@ -71,7 +94,7 @@ const Home: NextPage = () => {
             height={1080}
             loading="eager"
             objectFit="cover"
-            className="aspect-video w-full bg-slate-500"
+            className="isolate aspect-video w-full overflow-hidden rounded-xl bg-slate-500"
           />
         </ScrollReveal>
 
@@ -131,11 +154,11 @@ const Home: NextPage = () => {
       {/* Counter */}
       <Wrapper
         paddedContent="sm"
-        className="grid grid-cols-2 gap-x-6 gap-y-12 md:grid-cols-4"
+        className="grid grid-cols-2 items-start gap-x-6 gap-y-12 md:grid-cols-3"
       >
         <CountUp
           start={0}
-          end={167}
+          end={537}
           delay={0}
           duration={4}
           useEasing
@@ -150,14 +173,14 @@ const Home: NextPage = () => {
                 className="block text-4xl font-bold text-primary sm:text-6xl lg:text-8xl"
               />
               <span className="block font-medium uppercase tracking-wider">
-                Lorem ipsum
+                Klientů
               </span>
             </ScrollReveal>
           )}
         </CountUp>
         <CountUp
           start={0}
-          end={24}
+          end={500}
           delay={0}
           duration={4}
           useEasing
@@ -172,14 +195,14 @@ const Home: NextPage = () => {
                 className="block text-4xl font-bold text-primary sm:text-6xl lg:text-8xl"
               />
               <span className="block font-medium uppercase tracking-wider">
-                Lorem ipsum
+                milionů v úvěrech
               </span>
             </ScrollReveal>
           )}
         </CountUp>
         <CountUp
           start={0}
-          end={76}
+          end={230}
           delay={0}
           duration={4}
           useEasing
@@ -193,30 +216,8 @@ const Home: NextPage = () => {
                 ref={countUpRef}
                 className="block text-4xl font-bold text-primary sm:text-6xl lg:text-8xl"
               />
-              <span className="block font-medium uppercase tracking-wider">
-                Lorem ipsum
-              </span>
-            </ScrollReveal>
-          )}
-        </CountUp>
-        <CountUp
-          start={0}
-          end={194}
-          delay={0}
-          duration={4}
-          useEasing
-          enableScrollSpy
-          scrollSpyOnce
-          scrollSpyDelay={200}
-        >
-          {({ countUpRef }) => (
-            <ScrollReveal className="col-span-1 flex flex-col items-center justify-center gap-1">
-              <span
-                ref={countUpRef}
-                className="block text-4xl font-bold text-primary sm:text-6xl lg:text-8xl"
-              />
-              <span className="block font-medium uppercase tracking-wider">
-                Lorem ipsum
+              <span className="block text-center font-medium uppercase tracking-wider">
+                milionů v poradenském mandátu
               </span>
             </ScrollReveal>
           )}
@@ -263,7 +264,7 @@ const Home: NextPage = () => {
       <Wrapper size="lg" paddedContent="base">
         <ScrollReveal>
           <LargeCTA>
-            <Button color="light">Call to action</Button>
+            <Button color="light">Kontaktujte nás</Button>
           </LargeCTA>
         </ScrollReveal>
       </Wrapper>

@@ -124,30 +124,24 @@ const Contact: NextPage = () => {
             reprehenderit nulla facilis recusandae cumque, voluptas reiciendis?
           </p>
         </div>
-        <div className="mt-20 grid grid-cols-2 gap-10 lg:grid-cols-4">
+        <div className="mt-20 grid grid-cols-2 gap-10 lg:grid-cols-3">
           <div className="col-span-1 flex flex-col gap-6">
             <Heading level={3} size="sm">
-              Město
+              Plzeň
             </Heading>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <p>Prešovská 15, 301 00 Plzeň 3</p>
           </div>
           <div className="col-span-1 flex flex-col gap-6">
             <Heading level={3} size="sm">
-              Město
+              Praha
             </Heading>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <p>Na Poříčí 24, 110 00 Nové Město</p>
           </div>
           <div className="col-span-1 flex flex-col gap-6">
             <Heading level={3} size="sm">
-              Město
+              Brno
             </Heading>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-          </div>
-          <div className="col-span-1 flex flex-col gap-6">
-            <Heading level={3} size="sm">
-              Město
-            </Heading>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <p>Olomoucká 1129/61, 627 00 Brno-Černovice</p>
           </div>
         </div>
       </Wrapper>
