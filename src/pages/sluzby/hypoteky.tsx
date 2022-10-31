@@ -119,7 +119,7 @@ const Hypoteky: NextPage = () => {
         </div>
 
         {/* Spolupráce loga */}
-        <CollabLogos />
+        <CollabLogos variant="uvery" />
       </Hero>
 
       {/* Content */}

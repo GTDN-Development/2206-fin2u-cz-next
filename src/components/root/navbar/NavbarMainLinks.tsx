@@ -40,13 +40,11 @@ export default function NavbarMainLinks({
   className = "",
 }: NavbarMainLinksOptions) {
   return (
-    <ul
-      className={`flex list-none gap-x-5 xl:gap-x-8 2xl:gap-x-12 ${className}`}
-    >
+    <ul className={`flex list-none gap-x-5 2xl:gap-x-8 ${className}`}>
       <li>
         <Link href={"/"}>
           <a className="c-link-3-a text-sm font-medium tracking-wider text-rich outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
-            Hlavní strana
+            Domů
           </a>
         </Link>
       </li>
@@ -72,7 +70,7 @@ export default function NavbarMainLinks({
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute left-1/2 z-10 mt-3 w-screen max-w-sm -translate-x-1/2 transform px-4 sm:px-0 2xl:max-w-md">
+              <Popover.Panel className="absolute left-1/2 z-10 mt-3 w-screen max-w-xs -translate-x-1/2 transform px-4 sm:px-0 2xl:max-w-sm">
                 <div className="overflow-hidden rounded-lg shadow-xl ring-1 ring-black ring-opacity-5">
                   <div className="relative grid gap-8 bg-white p-7">
                     {services.map((item) => (
@@ -85,10 +83,10 @@ export default function NavbarMainLinks({
                             />
                           </div>
                           <div className="ml-4">
-                            <p className="text-base font-medium leading-tight text-gray-900">
+                            <p className="text-sm font-medium leading-tight text-gray-900">
                               {item.name}
                             </p>
-                            <p className="text-sm text-gray-500">
+                            <p className="text-xs text-gray-500">
                               {item.description}
                             </p>
                           </div>
@@ -120,6 +118,13 @@ export default function NavbarMainLinks({
         <Link href={"/kontakt"}>
           <a className="c-link-3-a text-sm font-medium tracking-wider text-rich outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
             Kontakt
+          </a>
+        </Link>
+      </li>
+      <li>
+        <Link href={"/kariera"}>
+          <a className="c-link-3-a text-sm font-medium tracking-wider text-rich outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
+            Kariéra
           </a>
         </Link>
       </li>

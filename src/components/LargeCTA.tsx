@@ -38,7 +38,9 @@ export default function LargeCTA({
         {title}
       </Heading>
       <p className="max-w-prose text-center text-white">{text}</p>
-      <div className="flex flex-col gap-5 sm:flex-row">{children}</div>
+      <div className="mx-auto flex w-full max-w-lg flex-col gap-5 sm:flex-row">
+        {children}
+      </div>
     </Tag>
   );
 }

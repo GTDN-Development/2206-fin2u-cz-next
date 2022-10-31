@@ -15,27 +15,27 @@ import { HiMail, HiPhone } from "react-icons/hi";
 const testimonials = [
   {
     id: 1,
-    photoSrc: "/images/testimonial.jpg",
-    name: "Jméno Příjmení",
-    position: "Specializace",
-    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla est. Aliquam id dolor. Etiam commodo dui eget wisi. Maecenas lorem. Integer vulputate sem a nibh rutrum consequat.",
+    photoSrc: "/images/reference/filip-zimanzl.jpg",
+    name: "Filip Zimanzl",
+    position: "Investiční plán",
+    text: "David je nejen skvělý investiční poradce, ale také skvělý člověk, co vždy rád pomůže a vyhoví vašim potřebám! Pokud potřebujete ve světě financí poradit, David je člověk číslo jedna na koho se obrátit!",
     class: "flex",
   },
   {
     id: 2,
-    photoSrc: "/images/testimonial.jpg",
-    name: "Jméno Příjmení",
-    position: "Specializace",
-    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla est. Aliquam id dolor. Etiam commodo dui eget wisi. Maecenas lorem. Integer vulputate sem a nibh rutrum consequat.",
+    photoSrc: "/images/reference/david-hrach.jpg",
+    name: "David Hrách",
+    position: "Vlastní bydlení a komplexní finanční plán",
+    text: "z Davidem jsme řešili hypotéku bez prokazování příjmu. Měli jsme pár schůzek, ve kterých mi mimo jiné řekl co krok za krokem udělat, aby mi ji banka dala. Asi cca po 4 měsících mi schválili přesně tolik, kolik bylo třeba. Za to jsem mu vděčný. Řešili jsme nějaké spoření na které stát přispívá a i ukládání peněz, aby neztratili svou hodnotu. Schůzky jsou vždy velmi příjemné a domluvené tak, aby čas vyhovoval vždy mně. Celkově jsem velmi spokojený klient.",
     class: "flex sm:translate-y-10",
   },
   {
     id: 3,
-    photoSrc: "/images/testimonial.jpg",
-    name: "Jméno Příjmení",
-    position: "Specializace",
-    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla est. Aliquam id dolor. Etiam commodo dui eget wisi. Maecenas lorem. Integer vulputate sem a nibh rutrum consequat.",
-    class: "flex ",
+    photoSrc: "/images/reference/long-dinh.jpg",
+    name: "Long Dinh",
+    position: "Komplexní finanční mapa",
+    text: "Za mě super člověk se kterým se velice dobře mluví a velice rád Vám pomůže s vysvětlením ohledně financí nebo investování a pojištění.",
+    class: "flex",
   },
 ];
 
@@ -52,7 +52,7 @@ const DavidSimana: NextPage = () => {
           kicker="CEO, Hypoteční specialista"
           heading="David Šimana"
           caption={
-            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam vitae at vero explicabo perferendis rerum tempore, qui ipsa ratione incidunt."
+            "Krásný dobrý den přátelé, jmenuji se David Šimana a jsem zakladatelem projektu Fin2u. Aktivně vedu obchodní team a podílím se na řízení celého projektu. S klienty se setkáváme při řešení komplexních plánů."
           }
         />
 
@@ -73,12 +73,39 @@ const DavidSimana: NextPage = () => {
           />
           <div className="col-span-1 flex flex-col gap-7">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-              vero voluptatem obcaecati, suscipit nulla dolores iste itaque
-              tempora. Placeat libero, nulla reiciendis necessitatibus eveniet
-              alias eaque rerum quas dolores facilis, in perspiciatis. Adipisci
-              ad pariatur, deleniti fugiat ipsa officiis culpa a sunt magnam
-              excepturi magni quo eos, praesentium numquam distinctio?
+              V oblasti finančního plánování se neustále vzděláváme a rosteme.
+              Naší motivací je totiž Váš zisk, nikoliv provize z prodaných
+              produktů. Prioritou pro mé klienty je čas, který chtějí věnovat
+              sobě a své rodině.
+            </p>
+            <p>
+              Aktivně spolupracuji s podnikateli a klienty ve středním
+              managementu. Staráme se o jejich majetek komplexně v duchu
+              strategie wealth-protection, často businessově propojuji své
+              klienty a hledám nové příležitosti.
+            </p>
+            <p>
+              Pomáhám s vymyšlením logiky často složitých případů pro mé
+              klienty, navýšení příjmu na mateřské, příjmy z obratu firmy,
+              alternativní příjmy (podíl na zisku, budoucí příjmy, a pod…)
+              Ohýbám metodiky bank pro prospěch našich klientů.
+            </p>
+            <p>
+              Začínáte přemýšlet nad rentou, prodáváte firmu nebo jste zdědili
+              majetek v řádech milionů korun a chcete jej chránit? Používáme
+              osvědčenou strategii, při které pomalu a postupně nakupujeme
+              podíly ve stovkách reálných firem, které prosperují desítky let.
+            </p>
+            <p>
+              Mé portfolio klientů je široké, zahrnuje aktuálně 172 rodin,
+              kterým spravuji komplexně majetek. Své klienty vzděláváme v
+              oblasti pondikání a finanční gramtonosti. Díky pravidelným
+              workshopům mají vždy aktuální informace, sami tak vědí, co je pro
+              ně správné řešení.
+            </p>
+            <p>
+              Klienti často přicházejí s potřebou řešit své strategické finanční
+              cíle, avšak nemají rozumného konzultanta pro jejich řešení.
             </p>
             <div className="flex gap-4">
               <Badge size="lg" hasDot={true}>
@@ -98,26 +125,26 @@ const DavidSimana: NextPage = () => {
         <div className="grid grid-cols-1 gap-x-10 gap-y-20 pt-20 md:grid-cols-2 md:gap-y-32 md:pt-32 lg:gap-x-16">
           <Question
             number="1"
-            question="lorem ipsum dolor sit amet de la cox?"
-            answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis deserunt commodi dicta error, tempore ullam in soluta, a deleniti accusamus dolor, earum eum praesentium totam sunt natus laboriosam quis. Eos."
+            question="Rodinné & osobní finance."
+            answer="Získejte finanční plán pro splnění strategických cílů, jako je bydlení, rozjezd podnikání, či prostředky na studia dětí, dědictví a prodej firmy. Sestavím srozumitelný plán na míru, který vychází z metodiky EFPA a pomáhá lidem na cestě k finanční svobodě. Co kdyby vás živili Vaše peníze, až to nebudete chtít dělat sami?"
             className="col-span-1"
           />
           <Question
-            number="1"
-            question="lorem ipsum dolor sit amet de la cox?"
-            answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis deserunt commodi dicta error, tempore ullam in soluta, a deleniti accusamus dolor, earum eum praesentium totam sunt natus laboriosam quis. Eos."
+            number="2"
+            question="Firemní & business plánování"
+            answer="Stojím na straně firem a podnikatelů. Pomáhám s financováním strategických cílů. Nechte vymyšlení logiky celého procesu na mně. Ve spolupráci s daňovým architektem zajistíme konkurenční výhodu pro Vaši firmu, včetně start-up projektů, zaměstnanecké a daňové výhody."
             className="col-span-1"
           />
           <Question
-            number="1"
-            question="lorem ipsum dolor sit amet de la cox?"
-            answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis deserunt commodi dicta error, tempore ullam in soluta, a deleniti accusamus dolor, earum eum praesentium totam sunt natus laboriosam quis. Eos."
+            number="3"
+            question="Investiční poradenství"
+            answer="Mým cílem je vybudovat portfolio, které vám doživotně bude generovat nekonečnou rentu. Držíme se toho do funguje desítky let. Využijte strategii kde pomalu a postupně nakupujete podíly ve stovkách reálných firem, které prosperují desítky let. Ptal se Váš bankéř na to chcete být finančně nezávislý?"
             className="col-span-1"
           />
           <Question
-            number="1"
-            question="lorem ipsum dolor sit amet de la cox?"
-            answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis deserunt commodi dicta error, tempore ullam in soluta, a deleniti accusamus dolor, earum eum praesentium totam sunt natus laboriosam quis. Eos."
+            number="4"
+            question="Vytvářím růstové prostředí"
+            answer="Nejsem jen podnikatel, investor a manažer. Vytvářím růstové prostředí. Chci své okolí vést, motivovat a budovat. Rozvíjím a hledám nové talenty. Ať už začínáte, nebo jste člověk z branže, vyplňte dotazník ZDE a my se Vám ozveme s nabídkou odpovídající Vašim aktuálním zkušenostem."
             className="col-span-1"
           />
         </div>

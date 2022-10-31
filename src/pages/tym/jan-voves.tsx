@@ -16,25 +16,25 @@ const testimonials = [
   {
     id: 1,
     photoSrc: "/images/testimonial.jpg",
-    name: "Kynčlová Veronika",
-    position: "Specializace",
-    text: "S Honzou jsem začala spolupracovat rok dozadu. Chtěla jsem hypotéku na byt, kterou mi perfektně vysvětlil a zařídil bez komplikací. Nechala jsem si udělat i kompletní plán a od té doby se mi otočil život k lepšímu. Začala jsem investovat na své cíle a mám klidné spaní díky zajištění, které mi nastavil.",
+    name: "Veronika Kynčlová",
+    position: "Investice a životní pojištění",
+    text: "S Honzou řeším zajištění své budoucnosti a možnosti investování. Pro klidný spánek tyto možnosti doporučuji všem.",
     class: "flex",
   },
   {
     id: 2,
     photoSrc: "/images/testimonial.jpg",
     name: "Kryštof Kraus",
-    position: "Specializace",
-    text: "Chtěl jsem si začít odkládat na svoji budoucnost, ale nevěděl jsem jak. Díky Honzovi jsem si uvědomil svoje životní cíle a díky finančnímu plánu, který mi udělal jsem motivovaný si je plnit.",
+    position: "Investice",
+    text: "Určitě moc doporučuji, Honza ví o čem mluví, každá schůzka je velmi příjemná a vše moc hezky vysvětlí",
     class: "flex sm:translate-y-10",
   },
   {
     id: 3,
     photoSrc: "/images/testimonial.jpg",
-    name: "Richterová Věra",
-    position: "Specializace",
-    text: "S Honzou jsem začala spolupracovat před půl rokem. Neměla jsem moc peněz na odkládání na svoji budoucnost a chtěla jsem mít naspořeno na důchod a na moji vysněnou cestu kolem světa. Honza mi udělal finanční plán, díky kterému jsem ušetřila peníze a pravidelně investuji. Moje sny se tak stali reálné.",
+    name: "Josef Minařík",
+    position: "Kompletní finanční plán",
+    text: "Výborná spolupráce, všechno pečlivě vysvětlí, zajímá se o klienty a ví o čem mluví. Nemůžu být spokojenější ",
     class: "flex ",
   },
 ];
@@ -51,6 +51,9 @@ const JanVoves: NextPage = () => {
           gradient="right"
           kicker="Obchodní konzultant"
           heading="Jan Voves"
+          caption={
+            "Co kdyby vás vaše peníze živily, až to nebudete chtít dělat vy sami. Přemýšleli jste někdy o finanční nezávislosti?"
+          }
         />
 
         {/* Popis + fotka */}

@@ -19,6 +19,10 @@ export const mainRoutes = [
     label: "Kontakt",
     path: "/kontakt",
   },
+  {
+    label: "Kariéra",
+    path: "/kariera",
+  },
 ];
 
 export const ctaMenu = [

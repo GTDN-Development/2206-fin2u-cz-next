@@ -15,26 +15,26 @@ import { HiMail, HiPhone } from "react-icons/hi";
 const testimonials = [
   {
     id: 1,
-    photoSrc: "/images/testimonial.jpg",
+    photoSrc: "/images/reference/dasa.jpg",
     name: "Dáša",
-    position: "Specializace",
+    position: "osobní finance",
     text: "S Danielem jsem se sešla na základě doporučení od mé kamarádky. Narozdíl od předešlé zkušenosti s finančním poradcem mě mile překvapilo, že Daniel mi nenabízel žádné produkty, ale na základě finanční analýzy se vžil do mé situace a nabídl mi řešení na míru. S Danielem jsem si jasně uvědomila své životní cíle a dala jim jasné parametry. Jsem vděčná za tuto spolupráci.",
     class: "flex",
   },
   {
     id: 2,
-    photoSrc: "/images/testimonial.jpg",
-    name: "Filip",
-    position: "Specializace",
-    text: "Daniela jsem oslvovil díky doslechu od svého bratra. Potřeboval jsem se svými úsporami překonat inflaci. Daniel mi však vysvětlil, že je třeba kompletní analýza, aby mi mohl dát řešení přímo na míru. Při auditu aktuálních produktů mi doporučil jejich optimalizaci a navíc porážíme inflaci. Jsem naprosto spokojený a spolupráce si vážím.",
+    photoSrc: "/images/reference/dominika.jpg",
+    name: "Dominika",
+    position: "osobní finance",
+    text: "Na Daniela jsem dostala doporučení od své mamky. Daniel se na první schůzce představil – měl k tomu super prezentaci. Na druhé schhůzce proběhla důkladná analýza, kde jsem si vytyčila jasné cíle a priority. Na další schůzce mi Daniel navrhl takové doporučení, které naprosto odpovídalo mé představě. Zajistil odkládání na budoucí hypotéku a optimalizoval veškeré mé produkty. Na servisní schůzce přinesl manželovy koňak, o kterém se s ním bavil 10 měsíců zpět. Daniela jsem doporučila svým přátelům i rodině.",
     class: "flex sm:translate-y-10",
   },
   {
     id: 3,
-    photoSrc: "/images/testimonial.jpg",
-    name: "Dominika",
-    position: "Specializace",
-    text: "Na Daniela jsem dostala doporučení od své mamky. Daniel se na první schůzce představil – měl k tomu super prezentaci. Na druhé schhůzce proběhla důkladná analýza, kde jsem si vytyčila jasné cíle a priority. Na další schůzce mi Daniel navrhl takové doporučení, které naprosto odpovídalo mé představě. Zajistil odkládání na budoucí hypotéku a optimalizoval veškeré mé produkty. Na servisní schůzce přinesl manželovy koňak, o kterém se s ním bavil 10 měsíců zpět. Daniela sjem doporučila svým přátelům i rodině.",
+    photoSrc: "/images/reference/filip.jpg",
+    name: "Filip",
+    position: "osobní finance",
+    text: "Daniela jsem oslvovil díky doslechu od svého bratra. Potřeboval jsem se svými úsporami překonat inflaci. Daniel mi však vysvětlil, že je třeba kompletní analýza, aby mi mohl dát řešení přímo na míru. Při auditu aktuálních produktů mi doporučil jejich optimalizaci a navíc porážíme inflaci. Jsem naprosto spokojený a spolupráce si vážím.",
     class: "flex",
   },
 ];
@@ -51,6 +51,7 @@ const DanielRiha: NextPage = () => {
           gradient="left"
           kicker="Investiční poradce, Analytik"
           heading="Daniel Říha"
+          caption="Ve financích se pohybuji již 3 rokem. Je to moje práce, ale zároveň koníček. Investování s přidanou hodnotou a zdravým selským rozumem. S klienty řeším dlouhodobé i krátkodobé cíle. Největší zadostiučinění je vidět spokojeného klienta, který dosáhl svých cílů díky plánu, který jsme spolu vytvořili."
         />
 
         {/* Popis + fotka */}
@@ -70,20 +71,14 @@ const DanielRiha: NextPage = () => {
           />
           <div className="col-span-1 flex flex-col gap-7">
             <p>
-              Ve financích se pohybuji již 3 rokem. Je to moje práce, ale
-              zároveň koníček. Investování s přidanou hodnotou a zdravým selským
-              rozumem. S klienty řeším dlouhodobé i krátkodobé cíle. Největší
-              zadostiučinění je vidět spokojeného klienta, který dosáhl svých
-              cílů díky plánu, který jsme spolu vytvořili.
-            </p>
-            <p>
-              Specializuji se především na dlouhodobé investice bonitních
-              klientů. Dále řeším hypoteční úvěry pro začínající rodiny, které
-              potřebují nejvíce pomoci.
-            </p>
-            <p>
-              Další má specializace je zajištění majetku právnických osob.
-              Výrobní haly, sklady, činžovní domy.
+              S klienty se zaměřuji především na investice. Nebo-li dlouhodobé
+              budování a ochrana majetku. Samozřejmě jsou s tím spjaté další
+              činnosti jako je zajištění nemovitosti, vyřízení úvěrů. Ke
+              klientům vždy přistupuji s maximální precizností. Základem
+              spokojeného klienta je každorocně obnovovaný plán, který je pro
+              klienta vždy na míru. Často spolupracuji s firmami, kde má moje
+              práce obrovský dosah. Práce s lidmi si nesmírně vážím a naplňuje
+              mě.
             </p>
             <div className="flex gap-4">
               <Badge size="lg" hasDot={true}>
@@ -103,26 +98,26 @@ const DanielRiha: NextPage = () => {
         <div className="grid grid-cols-1 gap-x-10 gap-y-20 pt-20 md:grid-cols-2 md:gap-y-32 md:pt-32 lg:gap-x-16">
           <Question
             number="1"
-            question="lorem ipsum dolor sit amet de la cox?"
-            answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis deserunt commodi dicta error, tempore ullam in soluta, a deleniti accusamus dolor, earum eum praesentium totam sunt natus laboriosam quis. Eos."
+            question="Jakým způsobem zhodnocuju volné finanční prostředky?"
+            answer="Klienti se na mně nejčastěji obrací s žádostí na správné zhdnocování volných finančních prostředků. Mým cílem je vybrat strategii na míru klienta, snížit riziko, ale zároveň zvýšit výnos. To je možné při správné diverzifikaci ať měnové, tak produktové."
             className="col-span-1"
           />
           <Question
             number="1"
-            question="lorem ipsum dolor sit amet de la cox?"
-            answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis deserunt commodi dicta error, tempore ullam in soluta, a deleniti accusamus dolor, earum eum praesentium totam sunt natus laboriosam quis. Eos."
+            question="Proč plánovat?"
+            answer="Klientům zajišťuji každý rok nový plán, aby mohli dosáhnout svých krátkodobých, tak především těch doluhodobých cílů, které vyžadují více prostředků. V plánování vidí klienti největší přidanou hodnotu. Vše vidí podrobně rozepsané a ví, co pro své cíle udělat, aby jich dosáhli."
             className="col-span-1"
           />
           <Question
             number="1"
-            question="lorem ipsum dolor sit amet de la cox?"
-            answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis deserunt commodi dicta error, tempore ullam in soluta, a deleniti accusamus dolor, earum eum praesentium totam sunt natus laboriosam quis. Eos."
+            question="Je zajištění důležité?"
+            answer="Zajišťuji klienty před nenadálými událostmi. Může se jednat o zajištění nemovitostí, odpovědnosti, ale také úrazů. Zde dokáži klientům ušetřit nemalé prostředky, které mohou využít jinde."
             className="col-span-1"
           />
           <Question
             number="1"
-            question="lorem ipsum dolor sit amet de la cox?"
-            answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis deserunt commodi dicta error, tempore ullam in soluta, a deleniti accusamus dolor, earum eum praesentium totam sunt natus laboriosam quis. Eos."
+            question="Spolupracujete i s právnickými osobami?"
+            answer="Ano mezi mé klienty patří i právnické osoby. Vlastníci výrobních hal, činžovních domů, ale i firem, kde zajišťuji benefity pro zaměstnance."
             className="col-span-1"
           />
         </div>

@@ -120,7 +120,7 @@ const FinancniNezavislost: NextPage = () => {
         </div>
 
         {/* Spolupráce loga */}
-        <CollabLogos />
+        <CollabLogos variant="investice" />
       </Hero>
 
       {/* Content */}

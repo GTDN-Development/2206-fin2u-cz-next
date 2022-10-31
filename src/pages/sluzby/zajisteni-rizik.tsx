@@ -144,7 +144,7 @@ const ZajisteniRizik: NextPage = () => {
 
       {/* Spolupráce loga */}
       <Wrapper>
-        <CollabLogos headingColor="primary" />
+        <CollabLogos variant="pojisteni" headingColor="primary" />
       </Wrapper>
 
       {/* Reference */}

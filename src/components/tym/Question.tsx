@@ -16,8 +16,8 @@ export default function Question({
   // Logic goes here
   return (
     <ScrollReveal className={`flex flex-col gap-2 ${className}`}>
-      <div className="flex w-full items-center justify-start gap-3">
-        <span className="block shrink-0 grow-0 text-xl font-semibold text-primary md:text-2xl">
+      <div className="flex w-full items-center justify-start gap-3 pb-2">
+        <span className="sr-only block shrink-0 grow-0 text-xl font-semibold text-primary md:text-2xl">
           Q{number}
         </span>
         <span className="block text-lg font-semibold leading-tight text-rich md:text-xl">

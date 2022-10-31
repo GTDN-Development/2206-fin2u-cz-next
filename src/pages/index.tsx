@@ -24,37 +24,17 @@ import { HiArrowDown } from "react-icons/hi";
 // Kontakt - zprovoznit kontaktní formulář - Hotovo
 // Zprovoznit kalkulačky
 // Spojit Davidovi všechny emaily do jednoho, aby měl přehled
-// Přidat do menu "kariéra"
+// Přidat do menu "kariéra" - hotovo
 // Loga spolupracujících firem: Mainpage všechny, carousel
 // Loga hypotéky: banky
 // Firemní úvěry loga stejná jako na hypotéky
 // Loga Investic: Investiční společnosti
 // Loga zajištění rizik - pojišťovny
 
-// Textace Daniel Říha - X - Chybí otázky, tagy, u referencí co klientům dělal, fotky referencí
-// Textace David Šimana - úplně chybí textace
-// Textace Čung - Textace je psaná v množném čísle, chybí otázky, tagy, u referencí co se řešilo
-// Textace Václav Kraut - tagy, zestručnit první dvě reference, fotky reference, co se řešilo (jedním slovem), text do otázek
-// Textace Jan Voves - tagy, co pro klienty dělal, fotky referencí
-// Textace Zdeněk Zajíček - tagy, texty nesedí do otázek v designu, fotky reference, zaměření referencí..
-
 // Textace Služby Hypotéky a refinancování - kalkulačka, chybí textace
 // Textace Služby Firemní a podnikatelské financování - kalkulačka, chybí textace
 // Textace Služby Finanční nezávislost - kalkulačka, chybí textace
 // Textace Služby Zajištění rizik - bez kalkulačky, chybí textace
-
-// -------------------------------------------------------
-
-// Todo s davidem
-// Dát dohromady kalkulačky - x
-// Loga spolupracujících značek - x
-// Dát dohromady tagy k jednotlivým lidem - x
-// Doplnit všechny CTA na webu? - x
-// Doplnit čísla a textace u počítadla - x
-// Doplnit adresy v kontaktu - x
-// Doplnit odkazy na sociální sítě - x
-// E-maily a kontakty (checknout) - x
-// Vzor pro textace - vytvořit???
 
 const Home: NextPage = () => {
   return (
@@ -263,8 +243,20 @@ const Home: NextPage = () => {
       {/* CTA */}
       <Wrapper size="lg" paddedContent="base">
         <ScrollReveal>
-          <LargeCTA>
-            <Button color="light">Kontaktujte nás</Button>
+          <LargeCTA
+            title="Zaujala tě naše prezentace?"
+            text="Kliknutím na následující odkazy se můžete přesunout dál"
+          >
+            <Link href="/kontakt" passHref>
+              <Button color="light" className="w-full">
+                Kontaktujte nás
+              </Button>
+            </Link>
+            <Link href="/kariera" passHref>
+              <Button color="light" variant="tinted" className="w-full">
+                Kariéra
+              </Button>
+            </Link>
           </LargeCTA>
         </ScrollReveal>
       </Wrapper>

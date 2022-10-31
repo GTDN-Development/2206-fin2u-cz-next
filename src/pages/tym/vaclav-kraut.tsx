@@ -17,25 +17,25 @@ const testimonials = [
     id: 1,
     photoSrc: "/images/testimonial.jpg",
     name: "Josef Lahodný",
-    position: "Specializace",
-    text: "Výborný a spolehlivý finanční poradce. Dělá svoji práci znamenitě, skvělá komunikace, profesionalita a ochota. Určitě není typ poradce, kterého zajímáte jen do podepsání smlouvy. Pomohl mi s revizí současného životního pojištění a uzavřením nového, mnohem výhodnějšího. Díky své preciznosti, vytrvalosti a profesionálnímu přístupu mi pomohl v získání hypotéky, abych mohl zrekonstruovat zděděný rodinný domek. Velice příjemné a přátelské jednání. Vřele doporučuji všem, co potřebují vyřešit jak jednodušší věc, třeba kde jsou nejvýhodnější podmínky pro bankovní účet, tak i složitější pojistné smlouvy, pojistné události, hypotéky. Budu-li potřebovat cokoli zajistit v rámci financí, obrátím se opět sem! Člověk si občas musí nechat poradit.",
+    position: "Životní pojištění a rekonstrukce zděděné nemovitosti",
+    text: "Výborný a spolehlivý finanční poradce. Dělá svoji práci znamenitě, skvělá komunikace, profesionalita a ochota. Určitě není typ poradce, kterého zajímá jen podepsání smlouvy. Díky preciznosti, vytrvalosti a profesionálnímu přístupu mi pomohl v získání hypotéky, abych mohl zrekonstruovat zděděný rodinný domek. Vřele doporučuji všem. Budu-li potřebovat cokoli zajistit v rámci financí, obrátím se opět sem! Člověk si občas musí nechat poradit.",
     class: "flex",
   },
   {
     id: 2,
     photoSrc: "/images/testimonial.jpg",
-    name: "Ing. Marie Lahodná",
-    position: "Specializace",
-    text: "Investiční poradenství, které je transparentní, diskrétní a důvěryhodné, navíc s rozumnou výší odměn a jehož cílem je ochrana vašeho majetku. Ve srovnání s privátní bankou, kde jsem si nebyla jista, zda mi radí v můj prospěch, tady vím, že se mé prostředky zhodnocují a já mohu v klidu spát. Na spolupráci si nejvíce cením vysoké profesionality, transparentnosti, flexibility a jasných argumentů při návrzích na změnu portfolia, které reagují na měnící se podmínka finančního trhu. Komunikují se mnou pravidelně nejen formou kvartálních reportů, ale mohu sledovat online zhodnocování svých vkladů. Pokud hledáte poradce, který nabízí služby západního světa, tak tohle je jasná volba. Z vlastní zkušenosti doporučuji!",
+    name: "Marie Lahodná",
+    position: "Investice",
+    text: "Investiční poradenství, které je transparentní, diskrétní a důvěryhodné a jehož cílem je ochrana vašeho majetku. Na spolupráci si nejvíce cením vysoké profesionality, transparentnosti, flexibility a jasných argumentů při návrzích na změnu portfolia, které reagují na měnící se podmínky finančního trhu. Pokud hledáte poradce, který nabízí služby západního světa, tak tohle je jasná volba. Z vlastní zkušenosti doporučuji!",
     class: "flex sm:translate-y-10",
   },
   {
     id: 3,
     photoSrc: "/images/testimonial.jpg",
     name: "Hana Hlavoňová",
-    position: "Specializace",
+    position: "Investice",
     text: "Vašek mi pomohl s investicí se zajímavým výnosem. Pravidelně osobně kontroluje, jestli je vše v pořádku a nikdy není problém zavolat s jakýmkoliv dotazem. Doporučuji a těším se na další spolupráci.",
-    class: "flex ",
+    class: "flex",
   },
 ];
 
@@ -52,7 +52,7 @@ const VaclavKraut: NextPage = () => {
           kicker="Investiční poradce"
           heading="Václav Kraut"
           caption={
-            "Jmenuji se Václav a v podnikání se pohybuji již 9 let. Oblast investování mne zajímá již od střední školy a naplno se jí věnuji poslední 3 roky. Své portfolio jsem se nyní rozhodl rozšířit i o další finanční produkty jako jsou úvěry a pojištění."
+            "Mým heslem je profesionální a otevřený přístup na prvním místě. S každým svým klientem si buduji vztah, jelikož si vážím jejich důvěry, kterou ve mě vkládají a dělám vždy vše, co je v mých silách, abych je nezklamal."
           }
         />
 
@@ -73,15 +73,16 @@ const VaclavKraut: NextPage = () => {
           />
           <div className="col-span-1 flex flex-col gap-7">
             <p>
-              Zaměřuji se také na správu firemního majetku a firemní
+              Jmenuji se Václav a v podnikání se pohybuji již 9 let. Investování
+              jako takové mne zajímá již od střední školy, věnuji se mu naplno
+              poslední 3 roky a rozhodl jsem se své portfolio rozšířit i o další
+              finanční produkty jako jsou úvěry a pojištění. Mým heslem je
+              profesionální a otevřený přístup na prvním místě, s každým svým
+              klientem si buduji vztah, jelikož si vážím jejich důvěry, kterou
+              ve mě vkládají a dělám vždy vše, co je v mých silách, abych je
+              nezklamal. Zaměřuji se také na správu firemního majetku a firemní
               financování, jelikož jsem v minulosti sám poznal jaké to je řídit
-              firmu a jak může externí kapitál pomoci v jejím růstu.
-            </p>
-            <p>
-              Mým heslem je profesionální a otevřený přístup na prvním místě, s
-              každým svým klientem si buduji vztah, jelikož si vážím jejich
-              důvěry, kterou ve mě vkládají a dělám vždy vše, co je v mých
-              silách, abych je nezklamal.
+              firmu a jak může externí kapitál pomoci růstu firmy.
             </p>
             <div className="flex gap-4">
               <Badge size="lg" hasDot={true}>
@@ -98,26 +99,26 @@ const VaclavKraut: NextPage = () => {
         <div className="grid grid-cols-1 gap-x-10 gap-y-20 pt-20 md:grid-cols-2 md:gap-y-32 md:pt-32 lg:gap-x-16">
           <Question
             number="1"
-            question="lorem ipsum dolor sit amet de la cox?"
-            answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis deserunt commodi dicta error, tempore ullam in soluta, a deleniti accusamus dolor, earum eum praesentium totam sunt natus laboriosam quis. Eos."
+            question="Investování"
+            answer="Investování je nejčastější téma které s klienty řeším. Každému klientovi řeším jeho portfolio individuálně, dle jeho přání a cílů. I v dnešní komplikované situaci se lidem vždy snažím vysvětlit proč je důležité začít investovat co nejdříve a nečekat na perfektní příležitost."
             className="col-span-1"
           />
           <Question
             number="1"
-            question="lorem ipsum dolor sit amet de la cox?"
-            answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis deserunt commodi dicta error, tempore ullam in soluta, a deleniti accusamus dolor, earum eum praesentium totam sunt natus laboriosam quis. Eos."
+            question="Firemní financování"
+            answer="Každý podnikatel ví, že využití bankovního kapitálu mu může pomoci rapidně zrychlit růst jeho podniku, ať už jde o nákup materiálu, strojů či provoz další pobočky. Všechny tyto a další věci dokáži s klientem prodiskutovat a najít nejlepší způsob, jak daných kroků dosáhnout."
             className="col-span-1"
           />
           <Question
             number="1"
-            question="lorem ipsum dolor sit amet de la cox?"
-            answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis deserunt commodi dicta error, tempore ullam in soluta, a deleniti accusamus dolor, earum eum praesentium totam sunt natus laboriosam quis. Eos."
+            question="Komplexní plán na míru"
+            answer="S každým klientem, ať už se jedná o studenta, rodinu, podnikatele či majitele malé nebo velké firmy, řeším jeho potřeby a cíle individuálně."
             className="col-span-1"
           />
           <Question
             number="1"
-            question="lorem ipsum dolor sit amet de la cox?"
-            answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis deserunt commodi dicta error, tempore ullam in soluta, a deleniti accusamus dolor, earum eum praesentium totam sunt natus laboriosam quis. Eos."
+            question="Ušetření času"
+            answer="Schůzky řeším osobně, online či telefonicky. Uvědomuji si totiž, že klientův čas je to nejcennější co má a je potřeba, aby ho využíval efektivně. Veškerou komunikaci s bankou, pojišťovnou či investiční společností vyřeším za Vás."
             className="col-span-1"
           />
         </div>
