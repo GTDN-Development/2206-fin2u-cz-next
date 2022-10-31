@@ -184,7 +184,7 @@ const FiremniFinancovani: NextPage = () => {
               className={`flex-col rounded-xl bg-white p-5 shadow-xl sm:p-12 ${testimonial.class}`}
             >
               <div className="flex items-center justify-start">
-                <div className="mr-5 aspect-square h-12 w-12 overflow-hidden rounded-full">
+                <div className="mr-5 aspect-square h-12 w-12 shrink-0 overflow-hidden rounded-full">
                   <ExportedImage
                     src={testimonial.photoSrc}
                     alt={testimonial.name}
