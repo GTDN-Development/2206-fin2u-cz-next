@@ -37,7 +37,7 @@ export default function Textarea({
       border border-body bg-body-100 px-4 py-3
       text-base font-normal text-gray-900 transition duration-150
       placeholder:text-rich placeholder:opacity-60
-      focus:border-primary/70 focus:bg-white focus:!outline-none focus:ring-4 focus:ring-primary ${
+      focus:border-primary/70 focus:bg-white focus:!outline-none focus:ring-2 focus:ring-primary ${
         isDisabled
           ? "pointer-events-none cursor-not-allowed opacity-60"
           : "cursor-text opacity-100"

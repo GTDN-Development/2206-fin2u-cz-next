@@ -7,12 +7,13 @@ import LargeImageCTA from "@components/LargeImageCTA";
 import ScrollReveal from "@components/ScrollReveal";
 import SectionHeader from "@components/SectionHeader";
 import Seo from "@components/Seo";
-import MortgageCalc from "@components/sluzby/MortgageCalc";
+import LoansCalc from "@components/sluzby/LoansCalc";
 import Wrapper from "@components/Wrapper";
 import { contacts } from "@configs/contacts";
 import AppLayout from "@layouts/AppLayout";
 import type { NextPage } from "next";
 import ExportedImage from "next-image-export-optimizer";
+import Link from "next/link";
 import { HiMail, HiPhone } from "react-icons/hi";
 
 // Účel úvěru do kalkulačky:
@@ -57,7 +58,7 @@ const FiremniFinancovani: NextPage = () => {
     <AppLayout navbarInitialStyle="dark">
       <Seo
         title="Firemní a podnikatelské financování"
-        description="Popisek služby"
+        description="Pomůžeme s financováním strategických cílů. Vypracujeme atraktivní business plán a pomůžeme s průběhem celého řešení od výběru banky po následný servis včetně zaměstnaneckých a daňového poradenství."
       />
 
       {/* Hero */}
@@ -73,13 +74,19 @@ const FiremniFinancovani: NextPage = () => {
             Firemní a podnikatelské financování
           </Heading>
           <p className="max-w-prose text-center text-lg text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt atque
-            ipsam, nulla similique voluptatibus laboriosam voluptatem accusamus
-            ducimus.
+            Pomůžeme s financováním strategických cílů. Vypracujeme atraktivní
+            business plán a pomůžeme s průběhem celého řešení od výběru banky po
+            následný servis včetně zaměstnaneckých a daňového poradenství.
           </p>
           <div className="mt-8 flex gap-5 pb-28">
-            <Button>Call to action</Button>
-            <Button color="light">Call to action</Button>
+            <Button as="a" href="kalkulacka">
+              Výpočet financování
+            </Button>
+            <Link href="/kontakt" passHref>
+              <Button as="a" color="light">
+                Sjednat schůzku
+              </Button>
+            </Link>
           </div>
         </ScrollReveal>
 
@@ -89,45 +96,65 @@ const FiremniFinancovani: NextPage = () => {
             animation="slide-up"
             className="mb-16 flex flex-col items-center justify-center sm:mb-28"
           >
-            <Heading level={2} size="base" color="white">
-              <span className="mr-2 text-[1.25em] text-primary">1.</span> Lorem
-              ipsum dolor sit amet?
+            <Heading
+              level={2}
+              size="base"
+              color="white"
+              className="mx-auto text-center"
+            >
+              <span className="mr-2 text-[1.25em] text-primary">1.</span>
+              Case study
             </Heading>
             <p className="mt-8 text-center text-gray-200">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sed
-              veritatis ullam magnam quas molestias saepe aut facilis! Et
-              dolorum id nostrum labore corporis assumenda animi quaerat, quam
-              hic tempora!
+              Sestavíme business plán včetně podnikatelského záměru. Analýza
+              firmy je důležitá. Klient bez zpracovaného projektu může být
+              zamítnut a získá negativní záznam v bankovních registrech na
+              právnickou i fyzickou osobu. Nechte celý proces na nás, zpracujeme
+              kompletní analýzu proveditelnosti projektu.
             </p>
           </ScrollReveal>
           <ScrollReveal
             animation="slide-up"
             className="my-16 flex flex-col items-center justify-center sm:my-28"
           >
-            <Heading level={2} size="base" color="white">
-              <span className="mr-2 text-[1.25em] text-primary">2.</span> Lorem
-              ipsum dolor sit amet?
+            <Heading
+              level={2}
+              size="base"
+              color="white"
+              className="mx-auto text-center"
+            >
+              <span className="mr-2 text-[1.25em] text-primary">2.</span>
+              Individuální sjednání
             </Heading>
             <p className="mt-8 text-center text-gray-200">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sed
-              veritatis ullam magnam quas molestias saepe aut facilis! Et
-              dolorum id nostrum labore corporis assumenda animi quaerat, quam
-              hic tempora!
+              Pokud má váš projekt smysl a nenašli jste řešení ve vaší bance,
+              jsme schopni najít cestu k financování. Řešíme i velké projekty.
+              Zajistíme komunikaci s účetním klienta s cílem připravení
+              dlouhodobého plánu dle investičního záměru. Dokážeme posoudit, zda
+              je projekt života schopný před podpisem žádosti v bance.
             </p>
           </ScrollReveal>
           <ScrollReveal
             animation="slide-up"
             className="mt-16 flex flex-col items-center justify-center sm:mt-28"
           >
-            <Heading level={2} size="base" color="white">
-              <span className="mr-2 text-[1.25em] text-primary">3.</span> Lorem
-              ipsum dolor sit amet?
+            <Heading
+              level={2}
+              size="base"
+              color="white"
+              className="mx-auto text-center"
+            >
+              <span className="mr-2 text-[1.25em] text-primary">3.</span>
+              Střední a velké firmy
             </Heading>
             <p className="mt-8 text-center text-gray-200">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sed
-              veritatis ullam magnam quas molestias saepe aut facilis! Et
-              dolorum id nostrum labore corporis assumenda animi quaerat, quam
-              hic tempora!
+              Specializujeme se na malé a středně velké firmy včetně
+              podnikatelů, kteří chtějí, aby jejich společnost rostla. Pomůžeme
+              s tvorbou nemovitostního portfolio včetně privátní business
+              hypotéky na rodné číslo. Máme zkušenost s developerskými projekty
+              na prodej i pronájem. Řešíme jakékoliv typy financování.
+              Investiční úvěry, provozní financování, leasingy, kontokorenty,
+              dotace, bankovní záruky, faktoring.
             </p>
           </ScrollReveal>
         </div>
@@ -137,14 +164,20 @@ const FiremniFinancovani: NextPage = () => {
       </Hero>
 
       {/* Content */}
-      <Wrapper size="sm" paddedContent="base">
-        <MortgageCalc />
+      <Wrapper id="kalkulacka" size="sm" paddedContent="base">
+        <Heading level={2} size="lg" className="mx-auto mb-16 text-center">
+          Kalkulačka pro orientační výpočet financování
+        </Heading>
+        <LoansCalc />
       </Wrapper>
 
       {/* CTA 1 */}
       <Wrapper size="lg" paddedContent="base">
         <ScrollReveal>
-          <LargeImageCTA imageSrc="/images/meeting.jpg">
+          <LargeImageCTA
+            imageSrc="/images/meeting.jpg"
+            text="Využijte naše služby, kontaktujte firemního specialistu. Pojďme si společně zavolat a získejte konkurenční výhodu pro vaši firmu."
+          >
             <Button
               as="a"
               href={contacts.uvery.emailLink}
@@ -215,20 +248,22 @@ const FiremniFinancovani: NextPage = () => {
       {/* CTA 2 */}
       <Wrapper size="lg" paddedContent="base">
         <ScrollReveal>
-          <LargeCTA>
-            <Button
-              as="a"
-              href={contacts.uvery.emailLink}
-              color="light"
-              leftIcon={<HiMail />}
-            >
-              {contacts.uvery.emailLabel}
-            </Button>
+          <LargeCTA
+            title="Máte otázky ohledně firemního poradenství? Domluvte si nezávaznou konzultaci."
+            text="Domluvte si setkání s naším specialistou, kde společně probereme vaše dotazy. Působíme po celé České republice. Můžeme to řešit osobně, po telefonu či online, nebo napište přes kontaktní formulář."
+          >
+            <Link href="/kontakt" passHref>
+              <Button as="a" color="light" className="w-full">
+                Sjednat schůzku
+              </Button>
+            </Link>
             <Button
               as="a"
               href={contacts.uvery.phoneLink}
+              variant="tinted"
               color="light"
               leftIcon={<HiPhone />}
+              className="w-full"
             >
               {contacts.uvery.phoneLabel}
             </Button>

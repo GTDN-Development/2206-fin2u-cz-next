@@ -7,12 +7,13 @@ import LargeImageCTA from "@components/LargeImageCTA";
 import ScrollReveal from "@components/ScrollReveal";
 import SectionHeader from "@components/SectionHeader";
 import Seo from "@components/Seo";
-import MortgageCalc from "@components/sluzby/MortgageCalc";
+import InvestmentCalc from "@components/sluzby/InvestmentCalc";
 import Wrapper from "@components/Wrapper";
 import { contacts } from "@configs/contacts";
 import AppLayout from "@layouts/AppLayout";
 import type { NextPage } from "next";
 import ExportedImage from "next-image-export-optimizer";
+import Link from "next/link";
 import { HiMail, HiPhone } from "react-icons/hi";
 
 const testimonials = [
@@ -45,7 +46,10 @@ const testimonials = [
 const FinancniNezavislost: NextPage = () => {
   return (
     <AppLayout navbarInitialStyle="dark">
-      <Seo title="Finanční nezávislost" description="Popisek služby" />
+      <Seo
+        title="Finanční nezávislost"
+        description="Vaše peníze můžou pracovat stejně jako vy. Co kdyby vás živily, až to nebudete chtít dělat sami?"
+      />
 
       {/* Hero */}
       <Hero hasWatermark>
@@ -60,13 +64,18 @@ const FinancniNezavislost: NextPage = () => {
             Finanční nezávislost
           </Heading>
           <p className="max-w-prose text-center text-lg text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt atque
-            ipsam, nulla similique voluptatibus laboriosam voluptatem accusamus
-            ducimus.
+            Vaše peníze můžou pracovat stejně jako vy. Co kdyby vás živily, až
+            to nebudete chtít dělat sami?
           </p>
           <div className="mt-8 flex gap-5 pb-28">
-            <Button>Call to action</Button>
-            <Button color="light">Call to action</Button>
+            <Button as="a" href="#kalkulacka">
+              Výpočet renty
+            </Button>
+            <Link href="/kontakt" passHref>
+              <Button as="a" color="light">
+                Sjednat schůzku
+              </Button>
+            </Link>
           </div>
         </ScrollReveal>
 
@@ -76,45 +85,61 @@ const FinancniNezavislost: NextPage = () => {
             animation="slide-up"
             className="mb-16 flex flex-col items-center justify-center sm:mb-28"
           >
-            <Heading level={2} size="base" color="white">
-              <span className="mr-2 text-[1.25em] text-primary">1.</span> Lorem
-              ipsum dolor sit amet?
+            <Heading
+              level={2}
+              size="base"
+              color="white"
+              className="mx-auto text-center"
+            >
+              <span className="mr-2 text-[1.25em] text-primary">1.</span>
+              Investiční plán
             </Heading>
             <p className="mt-8 text-center text-gray-200">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sed
-              veritatis ullam magnam quas molestias saepe aut facilis! Et
-              dolorum id nostrum labore corporis assumenda animi quaerat, quam
-              hic tempora!
+              Sestavíme vám investiční plán, který váš majetek ochrání před
+              zbytečnými riziky, dlouhodobě bude porážet inflaci a provede vás
+              bezpečně každou složitou situací. Naplánujte své strategické
+              finanční cíle a my budeme silným partnerem při jejich realizaci.
             </p>
           </ScrollReveal>
           <ScrollReveal
             animation="slide-up"
             className="my-16 flex flex-col items-center justify-center sm:my-28"
           >
-            <Heading level={2} size="base" color="white">
-              <span className="mr-2 text-[1.25em] text-primary">2.</span> Lorem
-              ipsum dolor sit amet?
+            <Heading
+              level={2}
+              size="base"
+              color="white"
+              className="mx-auto text-center"
+            >
+              <span className="mr-2 text-[1.25em] text-primary">2.</span>
+              Investiční strategie
             </Heading>
             <p className="mt-8 text-center text-gray-200">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sed
-              veritatis ullam magnam quas molestias saepe aut facilis! Et
-              dolorum id nostrum labore corporis assumenda animi quaerat, quam
-              hic tempora!
+              Vytvořte majetek, ze kterého můžete čerpat pasivní příjem a být
+              finančně nezávislí. Používáte osvědčenou strategii, kde pomalu a
+              postupně nakupujete podíly ve stovkách reálných firem, které
+              prosperují desítky let. Zpracujeme investiční strategii, která vám
+              přinese finanční nezávislost a nekonečnou rentu.
             </p>
           </ScrollReveal>
           <ScrollReveal
             animation="slide-up"
             className="mt-16 flex flex-col items-center justify-center sm:mt-28"
           >
-            <Heading level={2} size="base" color="white">
-              <span className="mr-2 text-[1.25em] text-primary">3.</span> Lorem
-              ipsum dolor sit amet?
+            <Heading
+              level={2}
+              size="base"
+              color="white"
+              className="mx-auto text-center"
+            >
+              <span className="mr-2 text-[1.25em] text-primary">3.</span>
+              Wealth management
             </Heading>
             <p className="mt-8 text-center text-gray-200">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sed
-              veritatis ullam magnam quas molestias saepe aut facilis! Et
-              dolorum id nostrum labore corporis assumenda animi quaerat, quam
-              hic tempora!
+              Investiční poradenství a wealth management je naše klíčová oblast,
+              naše doména, která v sobě “schovává” kompletní správu majetku jako
+              celku. Víte přesně, co se s vašimi penězi děje a proč. Dbáme na
+              důslednou diverzifikaci majetku jako celku.
             </p>
           </ScrollReveal>
         </div>
@@ -124,14 +149,20 @@ const FinancniNezavislost: NextPage = () => {
       </Hero>
 
       {/* Content */}
-      <Wrapper size="sm" paddedContent="base">
-        <MortgageCalc />
+      <Wrapper as="section" id="kalkulacka" size="sm" paddedContent="base">
+        <Heading level={2} size="lg" className="mx-auto mb-16 text-center">
+          Kalkulačka finanční nezávislosti, kolik peněz musím investovat?
+        </Heading>
+        <InvestmentCalc />
       </Wrapper>
 
       {/* CTA 1 */}
       <Wrapper size="lg" paddedContent="base">
         <ScrollReveal>
-          <LargeImageCTA imageSrc="/images/meeting.jpg">
+          <LargeImageCTA
+            imageSrc="/images/meeting.jpg"
+            text="Dokáže i vaše portfolio s přehledem porážet inflaci a přitom vám vyplácet pravidelnou rentu? Pojďme si společně zavolat. To nám dá příležitost se vzájemně poznat a zjistit, jestli spolu můžeme spolupracovat."
+          >
             <Button
               as="a"
               href={contacts.investice.emailLink}
@@ -202,20 +233,22 @@ const FinancniNezavislost: NextPage = () => {
       {/* CTA 2 */}
       <Wrapper size="lg" paddedContent="base">
         <ScrollReveal>
-          <LargeCTA>
-            <Button
-              as="a"
-              href={contacts.investice.emailLink}
-              color="light"
-              leftIcon={<HiMail />}
-            >
-              {contacts.investice.emailLabel}
-            </Button>
+          <LargeCTA
+            title="Máte otázky ohledně investování? Domluvte si nezávaznou konzultaci."
+            text="Domluvte si setkání s naším specialistou, kde společně probereme vaše dotazy. Působíme po celé České republice. Můžeme to řešit osobně, po telefonu či online, nebo napište přes kontaktní formulář."
+          >
+            <Link href="/kontakt" passHref>
+              <Button as="a" color="light" className="w-full">
+                Sjednat schůzku
+              </Button>
+            </Link>
             <Button
               as="a"
               href={contacts.investice.phoneLink}
+              variant="tinted"
               color="light"
               leftIcon={<HiPhone />}
+              className="w-full"
             >
               {contacts.investice.phoneLabel}
             </Button>

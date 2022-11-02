@@ -58,8 +58,8 @@ const Home: NextPage = () => {
             <Button as="a" href="#sluzby" rightIcon={<HiArrowDown />}>
               Co umíme
             </Button>
-            <Link href="/kariera">
-              <Button as="a" color="light">
+            <Link href="/kariera" passHref>
+              <Button as="a" color="light" variant="tinted">
                 Pracovní příležitost
               </Button>
             </Link>
@@ -144,7 +144,6 @@ const Home: NextPage = () => {
           useEasing
           enableScrollSpy
           scrollSpyOnce
-          scrollSpyDelay={200}
         >
           {({ countUpRef }) => (
             <ScrollReveal className="col-span-1 flex flex-col items-center justify-center gap-1">
@@ -166,7 +165,6 @@ const Home: NextPage = () => {
           useEasing
           enableScrollSpy
           scrollSpyOnce
-          scrollSpyDelay={200}
         >
           {({ countUpRef }) => (
             <ScrollReveal className="col-span-1 flex flex-col items-center justify-center gap-1">
@@ -188,7 +186,6 @@ const Home: NextPage = () => {
           useEasing
           enableScrollSpy
           scrollSpyOnce
-          scrollSpyDelay={200}
         >
           {({ countUpRef }) => (
             <ScrollReveal className="col-span-1 flex flex-col items-center justify-center gap-1">

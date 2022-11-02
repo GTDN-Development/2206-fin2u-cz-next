@@ -37,7 +37,7 @@ export default function Input({
           py-3 text-base font-normal text-gray-900 
           transition placeholder:text-rich 
           placeholder:opacity-60 focus:relative focus:border-primary/70 focus:bg-white
-          focus:!outline-none focus:ring-4 focus:ring-primary ${
+          focus:!outline-none focus:ring-2 focus:ring-primary ${
             isDisabled
               ? "pointer-events-none cursor-not-allowed opacity-60"
               : "cursor-text opacity-100"

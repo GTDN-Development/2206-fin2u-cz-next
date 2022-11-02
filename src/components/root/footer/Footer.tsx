@@ -2,7 +2,7 @@ import SocialLinks from "@components/SocialLinks";
 import Wrapper from "@components/Wrapper";
 import Link from "next/link";
 import { mainRoutes } from "../../../configs/routes";
-import FooterAuthor from "./FooterAuthor";
+// import FooterAuthor from "./FooterAuthor";
 
 export default function Footer() {
   return (
@@ -51,12 +51,12 @@ export default function Footer() {
       </Wrapper>
 
       {/* Autor webu - podpis */}
-      <Wrapper
+      {/* <Wrapper
         size="lg"
         className="flex items-center justify-center border-t border-solid border-body-100 py-10"
       >
         <FooterAuthor />
-      </Wrapper>
+      </Wrapper> */}
     </footer>
   );
 }

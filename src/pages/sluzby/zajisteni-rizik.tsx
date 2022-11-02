@@ -12,6 +12,7 @@ import { contacts } from "@configs/contacts";
 import AppLayout from "@layouts/AppLayout";
 import type { NextPage } from "next";
 import ExportedImage from "next-image-export-optimizer";
+import Link from "next/link";
 import { HiMail, HiPhone } from "react-icons/hi";
 
 const testimonials = [
@@ -44,7 +45,11 @@ const testimonials = [
 const ZajisteniRizik: NextPage = () => {
   return (
     <AppLayout navbarInitialStyle="dark">
-      <Seo title="Zajištění rizik" description="Popisek služby" />
+      <Seo
+        title="Komplesní služby"
+        description="Vaše peníze můžou pracovat stejně jako vy. Co kdyby vás živily, až to nebudete chtít dělat sami?
+"
+      />
 
       {/* Hero */}
       <Hero>
@@ -55,16 +60,23 @@ const ZajisteniRizik: NextPage = () => {
           className="flex flex-col items-center gap-8"
         >
           <Heading level={1} size="xl" align="center" color="white">
-            Zajištění rizik
+            Komplexní služby
           </Heading>
           <p className="max-w-prose text-center text-lg text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt atque
-            ipsam, nulla similique voluptatibus laboriosam voluptatem accusamus
-            ducimus.
+            Vaše peníze můžou pracovat stejně jako vy. Co kdyby vás živily, až
+            to nebudete chtít dělat sami?
           </p>
           <div className="mt-8 flex gap-5 pb-28">
-            <Button>Call to action</Button>
-            <Button color="light">Call to action</Button>
+            <Link href="/financni-nezavislost/#kalkulacka">
+              <Button as="a" href="#kalkulacka">
+                Výpočet renty
+              </Button>
+            </Link>
+            <Link href="/kontakt" passHref>
+              <Button as="a" color="light">
+                Sjednat schůzku
+              </Button>
+            </Link>
           </div>
         </ScrollReveal>
       </Hero>
@@ -75,45 +87,50 @@ const ZajisteniRizik: NextPage = () => {
           animation="slide-up"
           className="mb-16 flex flex-col items-center justify-center sm:mb-28"
         >
-          <Heading level={2} size="base">
-            <span className="mr-2 text-[1.25em] text-primary">1.</span> Lorem
-            ipsum dolor sit amet?
+          <Heading level={2} size="base" className="mx-auto text-center">
+            <span className="mr-2 text-[1.25em] text-primary">1.</span>
+            Řízení a zajištění rizik
           </Heading>
           <p className="mt-8 text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sed
-            veritatis ullam magnam quas molestias saepe aut facilis! Et dolorum
-            id nostrum labore corporis assumenda animi quaerat, quam hic
-            tempora!
+            Bavíme se o rizicích komplexně. Řešíme krizový plán. Ten dává jasné
+            instrukce, co má být s celou řadou věcí po Vaší smrti. Zabýváme se
+            dědictvím. Diskutujeme o chodu firmy, zastupitelnosti a jejím dalším
+            pokračování. Řešíme pojištění jako koncept a to, zda jej vůbec
+            potřebujeme. Jdeme tedy riziko po riziku a rozebíráme, počítáme a
+            hodnotíme, jak k němu přistoupit, a co zajistit pomocí pojišťoven. A
+            co zvládneme řešit sami.
           </p>
         </ScrollReveal>
         <ScrollReveal
           animation="slide-up"
           className="my-16 flex flex-col items-center justify-center sm:my-28"
         >
-          <Heading level={2} size="base">
-            <span className="mr-2 text-[1.25em] text-primary">2.</span> Lorem
-            ipsum dolor sit amet?
+          <Heading level={2} size="base" className="mx-auto text-center">
+            <span className="mr-2 text-[1.25em] text-primary">2.</span>
+            Daňové poradenství
           </Heading>
           <p className="mt-8 text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sed
-            veritatis ullam magnam quas molestias saepe aut facilis! Et dolorum
-            id nostrum labore corporis assumenda animi quaerat, quam hic
-            tempora!
+            S řadou našich klientů řešíme i daňové poradenství nejen v rámci
+            firmy. Spolupracujeme s daňovým poradcem, se kterým pro klienty
+            připravujeme daňová přiznání či vedeme účetnictví nebo daňovou
+            evidenci. Pomůžeme Vám také se založením firmy včetně notářských a
+            advokátních služeb.
           </p>
         </ScrollReveal>
         <ScrollReveal
           animation="slide-up"
           className="mt-16 flex flex-col items-center justify-center sm:mt-28"
         >
-          <Heading level={2} size="base">
-            <span className="mr-2 text-[1.25em] text-primary">3.</span> Lorem
-            ipsum dolor sit amet?
+          <Heading level={2} size="base" className="mx-auto text-center">
+            <span className="mr-2 text-[1.25em] text-primary">3.</span>
+            Vzdělání a workshopy
           </Heading>
           <p className="mt-8 text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sed
-            veritatis ullam magnam quas molestias saepe aut facilis! Et dolorum
-            id nostrum labore corporis assumenda animi quaerat, quam hic
-            tempora!
+            Vzděláváme naše klienty. Mnoho lidí chce mít v penězích jasno, ale
+            neví, kde začít. Pořádáme semináře na téma finanční svobody, kde si
+            můžete osvěžit praktické znalosti v této oblasti. Na našem semináři
+            vám vysvětlíme, jak svět financí funguje. Představíme vám ověřenou
+            studii, jak být 3x bohatší díky finančnímu plánu.
           </p>
         </ScrollReveal>
       </Wrapper>
@@ -121,7 +138,10 @@ const ZajisteniRizik: NextPage = () => {
       {/* CTA 1 */}
       <Wrapper size="lg" paddedContent="base">
         <ScrollReveal>
-          <LargeImageCTA imageSrc="/images/meeting.jpg">
+          <LargeImageCTA
+            imageSrc="/images/meeting.jpg"
+            text="Spojte se s naším finančním specialistou. Získejte možnost individuální konzultace."
+          >
             <Button
               as="a"
               href={contacts.rizika.emailLink}
@@ -197,20 +217,22 @@ const ZajisteniRizik: NextPage = () => {
       {/* CTA 2 */}
       <Wrapper size="lg" paddedContent="base">
         <ScrollReveal>
-          <LargeCTA>
-            <Button
-              as="a"
-              href={contacts.rizika.emailLink}
-              color="light"
-              leftIcon={<HiMail />}
-            >
-              {contacts.rizika.emailLabel}
-            </Button>
+          <LargeCTA
+            title="Máte otázky ohledně komplexních služeb? Domluvte si nezávaznou konzultaci."
+            text="Domluvte si setkání s naším specialistou, kde společně probereme vaše dotazy. Působíme po celé České republice. Můžeme to řešit osobně, po telefonu či online, nebo napište přes kontaktní formulář."
+          >
+            <Link href="/kontakt" passHref>
+              <Button as="a" color="light" className="w-full">
+                Sjednat schůzku
+              </Button>
+            </Link>
             <Button
               as="a"
               href={contacts.rizika.phoneLink}
+              variant="tinted"
               color="light"
               leftIcon={<HiPhone />}
+              className="w-full"
             >
               {contacts.rizika.phoneLabel}
             </Button>
