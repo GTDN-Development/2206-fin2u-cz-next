@@ -51,9 +51,7 @@ const DucTrungNguyen: NextPage = () => {
           gradient="left"
           kicker="Ředitel pro vzdělání"
           heading="Duc Trung Nguyen, EFA"
-          caption={
-            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam vitae at vero explicabo perferendis rerum tempore, qui ipsa ratione incidunt."
-          }
+          caption={"Krásný dobrý den přátelé, jmenuji se Nguyen Duc Trung, EFA (Čung) společně s Davidem Šimanou jsme založili projektu Fin2u."}
         />
 
         {/* Popis + fotka */}
@@ -73,12 +71,13 @@ const DucTrungNguyen: NextPage = () => {
           />
           <div className="col-span-1 flex flex-col gap-7">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-              vero voluptatem obcaecati, suscipit nulla dolores iste itaque
-              tempora. Placeat libero, nulla reiciendis necessitatibus eveniet
-              alias eaque rerum quas dolores facilis, in perspiciatis. Adipisci
-              ad pariatur, deleniti fugiat ipsa officiis culpa a sunt magnam
-              excepturi magni quo eos, praesentium numquam distinctio?
+              V oblasti finančního a investičního poradenství pro bonitní klientelu se pohybujeme
+              od roku 2016. Máme bohaté zkušenosti s tvorbou finančních plánu a komplexního
+              poradenství pro zajištění pasivního příjmu klientůu
+            </p>
+            <p>
+              Od roku 2018 vlastníme certifikát EFA jeden z nejprestižnějších certifikátů ve
+              finančním plánováním a investičním poradenství v Evropě s akreditací u Čnb.
             </p>
             <div className="flex gap-4">
               <Badge size="lg" hasDot={true}>
@@ -95,26 +94,36 @@ const DucTrungNguyen: NextPage = () => {
         <div className="grid grid-cols-1 gap-x-10 gap-y-20 pt-20 md:grid-cols-2 md:gap-y-32 md:pt-32 lg:gap-x-16">
           <Question
             number="1"
-            question="lorem ipsum dolor sit amet de la cox?"
-            answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis deserunt commodi dicta error, tempore ullam in soluta, a deleniti accusamus dolor, earum eum praesentium totam sunt natus laboriosam quis. Eos."
+            question="Co je naším cílem?"
+            answer="Cílem a posláním je pomoci co nejvíce lidem k finanční nezávislosti. A hledáme a
+            rozvíjíme nové talenty ve finančním poradenství. Máme přes deset let zkušeností v
+            oboru."
             className="col-span-1"
           />
           <Question
             number="1"
-            question="lorem ipsum dolor sit amet de la cox?"
-            answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis deserunt commodi dicta error, tempore ullam in soluta, a deleniti accusamus dolor, earum eum praesentium totam sunt natus laboriosam quis. Eos."
+            question="Komu můžu pomoci?"
+            answer="Jako lektor ve financí jsem vzdělal a pomohl přes 600 finančních poradcům a
+            pomohl jsem kolegům se přípravou a úspěšným složením jednoho z
+            nejprestižnější titulů PFP ( poradce finančního plánování ). Takže zaručuji, že Vám
+            dokážu předat know how ze světa financí, abyste se stali tím nejlepším
+            obchodníkem a manažerem v tomto oboru."
             className="col-span-1"
           />
           <Question
             number="1"
-            question="lorem ipsum dolor sit amet de la cox?"
-            answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis deserunt commodi dicta error, tempore ullam in soluta, a deleniti accusamus dolor, earum eum praesentium totam sunt natus laboriosam quis. Eos."
+            question="Jaká je tvá vize?"
+            answer="Jsem finančním poradcem, který poskytuje každému svému klientovi nejvyšší standard
+            služeb. Jsem upřímný a ke svým klientům otevřený, protože věřím v celoživotní vztah s těmito klienty
+            a myslím si, že mí klienti musí slyšet pravdu, i když to někdy může být proti mým krátkodobým
+            ekonomickým zájmům."
             className="col-span-1"
           />
           <Question
             number="1"
-            question="lorem ipsum dolor sit amet de la cox?"
-            answer="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis deserunt commodi dicta error, tempore ullam in soluta, a deleniti accusamus dolor, earum eum praesentium totam sunt natus laboriosam quis. Eos."
+            question="Konkurenční výhoda?"
+            answer="Jsem se svými klienty nejen v dobách snadných, ale především jsem jim oporou v dobách obtížných
+            - věřím tomu, že právě v těchto dobách je tato moje pomoc naprosto rozhodující a klíčová."
             className="col-span-1"
           />
         </div>
@@ -170,7 +179,18 @@ const DucTrungNguyen: NextPage = () => {
       {/* CTA */}
       <Wrapper size="lg" paddedContent="base">
         <ScrollReveal>
-          <LargeCTA>
+          <LargeCTA
+            title="ZAUJALA TĚ NAŠE PREZENTACE?"
+            text="Fin2u je finanční portál a online konzultant, který Vám pomůže na cestě k Vašim strategickým
+            cílům. Pokračuj dále přes výběr."
+          >
+            <Button
+              as="a"
+              href="/kontakt"
+              color="light"
+            >
+             Sjednat schůzku
+            </Button>
             <Button
               as="a"
               href={contacts.ducTrungNguyen.emailLink}

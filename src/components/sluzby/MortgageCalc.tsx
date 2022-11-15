@@ -1,3 +1,4 @@
+import Alert from "@components/Alert";
 import Button from "@components/Button";
 import RangeSlider from "@components/calculator/RangeSlider";
 import Input from "@components/forms/Input";
@@ -15,9 +16,9 @@ export default function MortgageCalc({ className = "" }: MortgageCalcProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [inputData, setInputData] = useState({
     kalkulacka: "Hypotéky",
-    pujcka: 0,
-    nemovitost: 0,
-    splatnost: 0,
+    pujcka: 500000,
+    nemovitost: 500000,
+    splatnost: 1,
     sazba: 6,
     ucelUveru: "",
     druhNemovitosti: "",
@@ -38,13 +39,14 @@ export default function MortgageCalc({ className = "" }: MortgageCalcProps) {
   function changeData(id: string, value: number) {
     setInputData((prevState) => ({ ...prevState, [id]: value }));
   }
+  
   return (
     <div className={`personalCalc flex flex-col p-5 ${className}`}>
       <div className="mt-24">
         <RangeSlider
           changeData={changeData}
           id={"nemovitost"}
-          min={inputData.pujcka}
+          min={500000}
           max={50000000}
           skip={100000}
           defaultValue={inputData.nemovitost}
@@ -110,10 +112,22 @@ export default function MortgageCalc({ className = "" }: MortgageCalcProps) {
         />
       </div>
       <div className="mt-10 flex w-full items-center justify-center">
-        <Button size="lg" type="button" onClick={() => letsCalcIt()}>
+        <Button 
+          size="lg" 
+          type="button" 
+          isDisabled={inputData.pujcka > inputData.nemovitost ? true : false} 
+          onClick={() => letsCalcIt()}
+        >
           Spočítat
         </Button>
       </div>
+      <Alert 
+        title="Chyba!"
+        text="Hodnota půjčky nesmí být vyšší než hodnota nemovitosti."
+        status="error"
+        variant="tinted"
+        className={`mt-5 ${inputData.pujcka > inputData.nemovitost ? "block" : "hidden"}`}
+      />
       <Modal
         isModalOpen={isModalOpen}
         setIsModalOpen={setIsModalOpen}

@@ -52,7 +52,7 @@ const JanVoves: NextPage = () => {
           kicker="Obchodní konzultant"
           heading="Jan Voves"
           caption={
-            "Co kdyby vás vaše peníze živily, až to nebudete chtít dělat vy sami. Přemýšleli jste někdy o finanční nezávislosti?"
+            "Co kdyby Vás vaše peníze živily, až to nebudete chtít dělat Vy sami. Přemýšleli jste někdy o finanční nezávislosti?"
           }
         />
 
@@ -97,14 +97,14 @@ const JanVoves: NextPage = () => {
         <div className="grid grid-cols-1 gap-x-10 gap-y-20 pt-20 md:grid-cols-2 md:gap-y-32 md:pt-32 lg:gap-x-16">
           <Question
             number="1"
-            question="Proč by jsem měl mít finanční plán?"
+            question="Proč bych měl mít finanční plán?"
             answer="Finanční plán vám velice ulehčí a nastíní cestu za vašimi sny a zajistí vám pocit bezpečí. Budete díky němu motivovaný si plnit své sny a žít na maximum."
             className="col-span-1"
           />
           <Question
             number="1"
             question="Proč spolupracovat se mnou?"
-            answer="Mám bohaté zkušenosti z trhu. Jsem mladý a motivovaný se v tomto oboru zlepšovat a vzdělávat každým dnem. Ještě se mi nikdy nestalo, že by klient byl s mou prací nespokojený a navíc jsem vám k dispozici každý den v týdnu, ve dne i v noci."
+            answer="Mám bohaté zkušenosti z trhu. Jsem mladý a motivovaný se v tomto oboru zlepšovat a vzdělávat každým dnem. Ještě se mi nikdy nestalo, že by klient byl s mou prací nespokojený a navíc jsem Vám k dispozici každý den v týdnu, ve dne i v noci."
             className="col-span-1"
           />
           <Question
@@ -116,7 +116,7 @@ const JanVoves: NextPage = () => {
           <Question
             number="1"
             question="Jak dlouho trvá poradenský proces?"
-            answer="Já rozděluji proces do 3 schůzek, které dohromady trvají okolo 3 hodin. Následně, když se mnou klient je spokojený, dojde k podpisu. Poté následuje můj každoroční servis a naše dlouhodobá spolupráce."
+            answer="Já rozděluji proces do 3 schůzek, které dohromady trvají okolo 3 hodin. Následně, když je se mnou klient spokojený, dojde k podpisu. Poté následuje můj každoroční servis a naše dlouhodobá spolupráce."
             className="col-span-1"
           />
         </div>
@@ -172,7 +172,19 @@ const JanVoves: NextPage = () => {
       {/* CTA */}
       <Wrapper size="lg" paddedContent="base">
         <ScrollReveal>
-          <LargeCTA>
+          <LargeCTA
+            title="ZAUJALA TĚ NAŠE PREZENTACE?"
+            text="Fin2u je finanční portál a online konzultant, který Vám pomůže na cestě k Vašim strategickým
+            cílům. Pokračuj dále přes výběr."
+          >
+            <Button
+              as="a"
+              href="/kontakt"
+              color="light"
+              leftIcon={<HiMail />}
+            >
+              Sjednat schůzku
+            </Button>
             <Button
               as="a"
               href={contacts.janVoves.emailLink}

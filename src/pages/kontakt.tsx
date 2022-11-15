@@ -40,20 +40,14 @@ const Contact: NextPage = () => {
                 Kontakt
               </Heading>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe
-                sunt dolore, a quisquam facilis numquam? Sit vero dignissimos
-                quam culpa.
+              Domluvte si setkání s naším specialistou, kde společně probereme Vaše přání a cíle.
               </p>
               <div className="mt-8 flex flex-col gap-8 rounded-xl bg-body-100 p-6 sm:p-12">
                 <Heading level={2} size="base">
                   Kontaktní informace
                 </Heading>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Corporis praesentium ad eligendi fugiat deserunt repellat
-                  architecto dolores veniam illum, reprehenderit labore at, est
-                  voluptatibus pariatur laboriosam consequuntur perspiciatis
-                  deleniti modi.
+                Působíme po celé České republice. Můžeme to řešit osobně, po telefonu či online, nebo napište přes kontaktní formulář.
                 </p>
               </div>
               <a
@@ -120,8 +114,7 @@ const Contact: NextPage = () => {
             Kde nás najdete
           </Heading>
           <p className="max-w-prose text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-            reprehenderit nulla facilis recusandae cumque, voluptas reiciendis?
+            V případě osobní schůzky se můžeme společně potkat na adrese naší kanceláře.
           </p>
         </div>
         <div className="mt-20 grid grid-cols-2 gap-10 lg:grid-cols-3">
@@ -149,10 +142,15 @@ const Contact: NextPage = () => {
       {/* CTA */}
       <Wrapper size="lg" paddedContent="sm" className="mb-28">
         <ScrollReveal>
-          <LargeImageCTA title="Chceš pracovat s námi?">
+          <LargeImageCTA 
+            title="Chceš pracovat s námi?"
+            text="Posuň svou kariéru nad vyšší úroveň. 
+            Propojujeme know-how zkušených odborníků s technologiemi.
+            Rozvíjíme nové talenty, vytváříme růstové prostředí."
+            >
             <Link href="/kariera">
               <Button as="a" color="light" leftIcon={<HiMail />}>
-                Přidej se k nám do týmu
+                Toto je tvá příležitost
               </Button>
             </Link>
           </LargeImageCTA>

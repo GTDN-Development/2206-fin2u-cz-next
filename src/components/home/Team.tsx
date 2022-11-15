@@ -34,7 +34,7 @@ const team = [
   },
   {
     name: "Zdeněk Zajíček",
-    position: "Manažer, úvěrový specialisa",
+    position: "Manažer, úvěrový specialista",
     linkHref: "/tym/zdenek-zajicek",
     photoSrc: "/images/poradci/zdenek-zajicek.jpg",
   },

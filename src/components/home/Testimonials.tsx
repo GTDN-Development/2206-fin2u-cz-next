@@ -19,7 +19,7 @@ const testimonialsArray = [
       photoSrc: "/images/reference/david-hrach.jpg",
       name: "David Hrách",
       position: "Vlastní bydlení a komplexní finanční plán",
-      text: "z Davidem jsme řešili hypotéku bez prokazování příjmu. Měli jsme pár schůzek, ve kterých mi mimo jiné řekl co krok za krokem udělat, aby mi ji banka dala. Asi cca po 4 měsících mi schválili přesně tolik, kolik bylo třeba. Za to jsem mu vděčný. Řešili jsme nějaké spoření na které stát přispívá a i ukládání peněz, aby neztratili svou hodnotu. Schůzky jsou vždy velmi příjemné a domluvené tak, aby čas vyhovoval vždy mně. Celkově jsem velmi spokojený klient.",
+      text: "s Davidem jsme řešili hypotéku bez prokazování příjmu. Měli jsme pár schůzek, ve kterých mi mimo jiné řekl co krok za krokem udělat, aby mi ji banka dala. Asi cca po 4 měsících mi schválili přesně tolik, kolik bylo třeba. Za to jsem mu vděčný. Řešili jsme nějaké spoření na které stát přispívá a i ukládání peněz, aby neztratili svou hodnotu. Schůzky jsou vždy velmi příjemné a domluvené tak, aby čas vyhovoval vždy mně. Celkově jsem velmi spokojený klient.",
     },
     {
       photoSrc: "/images/reference/long-dinh.jpg",
@@ -31,7 +31,7 @@ const testimonialsArray = [
       photoSrc: "/images/reference/jan-javurek.jpg",
       name: "Jan Javůrek",
       position: "Specializace",
-      text: "Doporučuji! profesionální přístup a trpělivost. Velmi mi pomohl s mými investicemi a finančním plánem.",
+      text: "Doporučuji! Profesionální přístup a trpělivost. Velmi mi pomohl s mými investicemi a finančním plánem.",
     },
   ],
 

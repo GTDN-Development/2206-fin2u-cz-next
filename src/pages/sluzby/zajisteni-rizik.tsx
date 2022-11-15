@@ -47,8 +47,8 @@ const ZajisteniRizik: NextPage = () => {
     <AppLayout navbarInitialStyle="dark">
       <Seo
         title="Komplesní služby"
-        description="Vaše peníze můžou pracovat stejně jako vy. Co kdyby vás živily, až to nebudete chtít dělat sami?
-"
+        description="Vzděláváme naše klienty, přednášíme a školíme. Naše služby jsou komplexní, avšak nejčastěji s našimi klienty řešíme oblasti rizik
+        příjmů a majetku, daňové poradenství včetně firemních a zaměstnaneckých výhod."
       />
 
       {/* Hero */}
@@ -63,13 +63,13 @@ const ZajisteniRizik: NextPage = () => {
             Komplexní služby
           </Heading>
           <p className="max-w-prose text-center text-lg text-white">
-            Vaše peníze můžou pracovat stejně jako vy. Co kdyby vás živily, až
-            to nebudete chtít dělat sami?
+            Vzděláváme naše klienty, přednášíme a školíme. Naše služby jsou komplexní, avšak nejčastěji s našimi klienty řešíme oblasti rizik
+            příjmů a majetku, daňové poradenství včetně firemních a zaměstnaneckých výhod.
           </p>
           <div className="mt-8 flex gap-5 pb-28">
             <Link href="/financni-nezavislost/#kalkulacka">
               <Button as="a" href="#kalkulacka">
-                Výpočet renty
+                Více informací
               </Button>
             </Link>
             <Link href="/kontakt" passHref>
@@ -129,8 +129,8 @@ const ZajisteniRizik: NextPage = () => {
             Vzděláváme naše klienty. Mnoho lidí chce mít v penězích jasno, ale
             neví, kde začít. Pořádáme semináře na téma finanční svobody, kde si
             můžete osvěžit praktické znalosti v této oblasti. Na našem semináři
-            vám vysvětlíme, jak svět financí funguje. Představíme vám ověřenou
-            studii, jak být 3x bohatší díky finančnímu plánu.
+            Vám vysvětlíme, jak svět financí funguje. Představíme Vám ověřenou
+            studii, jak být 3krát více bohatší díky finančnímu plánu.
           </p>
         </ScrollReveal>
       </Wrapper>

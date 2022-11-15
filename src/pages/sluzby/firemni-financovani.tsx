@@ -58,7 +58,7 @@ const FiremniFinancovani: NextPage = () => {
     <AppLayout navbarInitialStyle="dark">
       <Seo
         title="Firemní a podnikatelské financování"
-        description="Pomůžeme s financováním strategických cílů. Vypracujeme atraktivní business plán a pomůžeme s průběhem celého řešení od výběru banky po následný servis včetně zaměstnaneckých a daňového poradenství."
+        description="Pomůžeme s financováním strategických cílů. Vypracujeme atraktivní business plán a pomůžeme s průběhem celého řešení od výběru banky po následný servis včetně zaměstnaneckého a daňového poradenství."
       />
 
       {/* Hero */}
@@ -127,7 +127,7 @@ const FiremniFinancovani: NextPage = () => {
               Individuální sjednání
             </Heading>
             <p className="mt-8 text-center text-gray-200">
-              Pokud má váš projekt smysl a nenašli jste řešení ve vaší bance,
+              Pokud má Váš projekt smysl a nenašli jste řešení ve Vaší bance,
               jsme schopni najít cestu k financování. Řešíme i velké projekty.
               Zajistíme komunikaci s účetním klienta s cílem připravení
               dlouhodobého plánu dle investičního záměru. Dokážeme posoudit, zda
@@ -150,7 +150,7 @@ const FiremniFinancovani: NextPage = () => {
             <p className="mt-8 text-center text-gray-200">
               Specializujeme se na malé a středně velké firmy včetně
               podnikatelů, kteří chtějí, aby jejich společnost rostla. Pomůžeme
-              s tvorbou nemovitostního portfolio včetně privátní business
+              s tvorbou nemovitostního portfolia včetně privátní business
               hypotéky na rodné číslo. Máme zkušenost s developerskými projekty
               na prodej i pronájem. Řešíme jakékoliv typy financování.
               Investiční úvěry, provozní financování, leasingy, kontokorenty,
@@ -176,7 +176,7 @@ const FiremniFinancovani: NextPage = () => {
         <ScrollReveal>
           <LargeImageCTA
             imageSrc="/images/meeting.jpg"
-            text="Využijte naše služby, kontaktujte firemního specialistu. Pojďme si společně zavolat a získejte konkurenční výhodu pro vaši firmu."
+            text="Využijte naše služby, kontaktujte firemního specialistu. Pojďme si společně zavolat a získejte konkurenční výhodu pro Vaši firmu."
           >
             <Button
               as="a"
@@ -250,7 +250,7 @@ const FiremniFinancovani: NextPage = () => {
         <ScrollReveal>
           <LargeCTA
             title="Máte otázky ohledně firemního poradenství? Domluvte si nezávaznou konzultaci."
-            text="Domluvte si setkání s naším specialistou, kde společně probereme vaše dotazy. Působíme po celé České republice. Můžeme to řešit osobně, po telefonu či online, nebo napište přes kontaktní formulář."
+            text="Domluvte si setkání s naším specialistou, kde společně probereme Vaše dotazy. Působíme po celé České republice. Můžeme to řešit osobně, po telefonu či online, nebo napište přes kontaktní formulář."
           >
             <Link href="/kontakt" passHref>
               <Button as="a" color="light" className="w-full">

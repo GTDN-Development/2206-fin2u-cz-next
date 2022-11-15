@@ -1,6 +1,7 @@
 import Button from "@components/Button";
 import Heading from "@components/Heading";
 import Hero from "@components/Hero";
+import Benefit from "@components/kariera/benefit";
 import LargeImageCTA from "@components/LargeImageCTA";
 import ScrollReveal from "@components/ScrollReveal";
 import Seo from "@components/Seo";
@@ -24,15 +25,14 @@ const Carrier: NextPage = () => {
           className="flex flex-col items-center gap-8"
         >
           <Heading level={1} size="xl" align="center" color="white">
-            Přidej se k nám do týmu
+            OJEDINĚLÁ PRACOVNÍ PŘÍLEŽITOST
           </Heading>
           <p className="max-w-prose text-center text-lg text-white">
             Máš zkušenosti s komunikací a zájem pracovat na sobě!? Toto je
-            příležitost, jak posunout svou kariéru na vyšší level. Nejsme druh
-            korporátu, kde má každý krok jasně stanovená pravidla. Rádi měníme
-            zajeté postupy. Staň se součástí mého obchodního teamu Plzeň | Praha
-            |Brno.Pokud máte zájem o práci v našem týmu, zašlete svůj životopis
-            a motivační dopis na e-mail: infofin2U.cz
+            příležitost, jak posunout svou kariéru na vyšší úroveň. Nejsme druh
+            korporátní společnosti, kde má každý krok jasně stanovená pravidla. Rádi měníme
+            zajeté postupy. Máte zájem o bližší informace? Vyplňte
+pracovní dotazník a následně zašlete svůj životopis a motivační dopis na e-mail: info@fin2u.cz
           </p>
           <div className="mt-8 flex gap-5 pb-28">
             <Link href="/kariera-test" passHref>
@@ -46,6 +46,26 @@ const Carrier: NextPage = () => {
       </Hero>
 
       {/* Content */}
+      
+      <Wrapper as="section" size="sm" paddedContent="sm">
+        <ScrollReveal>
+          <Heading
+            level={2}
+            size="lg"
+            className="mx-auto mb-16 text-center sm:mb-24"
+          >
+            PRO KOHO JE TATO NABÍDKA URČENA?
+          </Heading>
+        </ScrollReveal>
+        <ScrollReveal>
+          <p>
+          Uvítáme začínající i pokročilé obchodníky, přesuň svou kariéru do jednoho z nejlépe hodnocených
+          sektorů. V mé obchodní skupině jsou dveře otevřené pro studenty vysokých škol a budoucí
+          absolventy střední školy. Vyměňte brigádu za start podnikání. Hlavním kritériem je maturitní
+          vzdělání a čistý rejstřík trestů.
+          </p>
+        </ScrollReveal>
+      </Wrapper>
       <Wrapper as="section" id="vice-informaci" size="sm" paddedContent="sm">
         <ScrollReveal>
           <Heading
@@ -56,37 +76,59 @@ const Carrier: NextPage = () => {
             Co od nás můžeš získat?
           </Heading>
         </ScrollReveal>
-        <ScrollReveal
-          as="ul"
-          animation="slide-up"
-          className="mb-16 flex list-decimal flex-col items-center justify-center space-y-8 text-center text-xl font-medium leading-normal marker:font-bold marker:text-primary sm:mb-28"
-        >
-          <li>Callcentrum</li>
-          <li>
-            Být u vzniku nové entity, nový team, rostoucí prostředí,
-            naslouchání, diskutujeme, individuálně umíme vše
-          </li>
-          <li>
-            Silné zázemí od bývalého partnera, (finance, právní stabillita,
-            callcentrum…)
-          </li>
-          <li>Přátelská centrála</li>
-          <li>
-            Nadstandardní podmínky pro Fin.poradce - možné všechny typy
-            spolupráce ( MLM, poolová sekce, hypo.specialsiti, premium)
-          </li>
-          <li>
-            Individuální nastavení připechodu z konkurence- umíme zajistí
-            budgety
-          </li>
-          <li>
-            Snažím se rekrutovat především sám na sebe - vztahy, pojď do mého
-            teamu, pomůžu ti, já to za tebe udělám
-          </li>
-        </ScrollReveal>
+        <ul className="flex flex-col gap-10">
+          
+        <Benefit 
+          number={1}
+          title="SCHŮZKY S KLIENTY"
+          text="Pokročilí systém pro akvizici klientů zastřešuje platforma Fin2u. Schůzky domluvené
+          telefonním centrem na předem domluvený čas ve tvém diáři. Získejte možnost plánovat
+          svůj čas díky flexibilní pracovní době s klienty."
+        />
+        <Benefit 
+          number={2}
+          title="SILNÉ ZÁZEMÍ"
+          text="Silné zázemí od bývalého partnera (finance, právní stabilita, telefonní centrum,
+          přátelská centrála). Zázemí a portfolio nejprestižnějších finanční institucí nejen v ČR, ale také ve
+          světě, jako je například BlackRock a Vanguard."
+        />
+        <Benefit 
+          number={3}
+          title="INDIVIDUÁLNÍ PODMÍNKY"
+          text="Nadstandardní podmínky pro Fin.poradce - možné všechny typy spolupráce ( MLM,
+          hypo.specialsiti, i pro zaměstnance pojišťoven a pod..) Individuální nastavení při přechodu
+          z konkurence - umíme zajistí individuální finančí bonusy"
+        />
+        <Benefit 
+          number={4}
+          title="NADSTANDARTNÍ VZDĚLÁNÍ"
+          text="Nadstandardní vzdělání pro komunikaci s bonitními klienty vyházející z metodiky EFPA pomáhá
+          uzavřít milionové obchody.Protože naši klienti jsou podnikatelé a majitelé firem v ČR a komunikovat
+          s nimi vyžaduje precizní obchodní znalosti."
+        />
+        <Benefit 
+          number={5}
+          title="POMOC SE ZAPRACOVÁNÍM"
+          text="Ze začátku Ti pomůže Đức Trung EFA - ředitel pro vzdělání, který za poslední 3 roky pomohl
+          zainvestovat klientům více než 200 000 000 Kč a má více jak 4leté zkušenosti s budováním vztahů s
+          majiteli firem."
+        />
+        <Benefit 
+          number={6}
+          title="AKREDITOVANÉ CERTIFIKACE"
+          text="Lokální licence pro práci na finančním trhu - akreditované zkoušky u ČNB. Získej Evropské prestižní
+          certifikace pro finanční plánování."
+        />
+        <Benefit 
+          number={7}
+          title="RŮSTOVÉHO PROSTŘEDÍ"
+          text="Příležitost být u vzniku nové entity, nový team, rostoucí prostředí, naslouchání, diskutujeme,
+          individuálně umíme vše. Individuální bonus do 50.000 Kč pro nové spolupracovníky."
+        />
+        </ul>
       </Wrapper>
 
-      <Wrapper as="section" id="vice-informaci" size="sm" paddedContent="sm">
+      <Wrapper as="section" size="sm" paddedContent="sm">
         <ScrollReveal>
           <Heading
             level={2}
@@ -176,12 +218,12 @@ const Carrier: NextPage = () => {
       <Wrapper size="lg" paddedContent="sm" className="mb-20">
         <ScrollReveal>
           <LargeImageCTA
-            title="Co teď? Klikni na odkaz níže a vyplň náš obchodní test!"
-            text="Věříš, že jsi správný kandidát? No to teprve uvidíme. Klikni na odkaz níže a pokračuj dále."
+            title="Co teď? Klikni na odkaz níže"
+            text="Věříš, že jsi správný kandidát? No, to teprve uvidíme. Klikni na odkaz níže a pokračuj dále."
           >
             <Link href="/kariera-test">
               <Button as="a" color="light" leftIcon={<HiMail />}>
-                Přidej se k nám do týmu
+                Pracovní dotazník
               </Button>
             </Link>
           </LargeImageCTA>

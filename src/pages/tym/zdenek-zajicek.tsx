@@ -52,9 +52,10 @@ const ZdenekZajicek: NextPage = () => {
           kicker="Manažer, úvěrový specialisa"
           heading="Zdeněk Zajíček"
           caption={
-            "Rád se probouzím do dalšího dne s vědomím, že to, co dělám dává mě i lidem, kteří mi důvěřují smysl a že pro ně mohu udělat maximum. Proto si zakládám na co nejprofesionálnějším přístupu a zároveň na co nejpevnějších mezilidských vztazích. Vzájemná důvěra je pro mě absolutní základ."
+            "Rád se probouzím do dalšího dne s vědomím, že to, co dělám dává mě i lidem, kteří mi důvěřují smysl a že pro ně mohu udělat maximum. Proto si zakládám na co nejprofesionálnějším přístupu a zároveň na co nejpevnějších mezilidských vztazích. Vzájemná důvěra je pro mě naprostý základ."
           }
         />
+        
 
         {/* Popis + fotka */}
         <ScrollReveal
@@ -73,20 +74,26 @@ const ZdenekZajicek: NextPage = () => {
           />
           <div className="col-span-1 flex flex-col gap-7">
             <p>
-              Zdravím vás, jsem Zdeněk Zajíček a už to bude hezkých pár let od
+              Zdravím Vás, jsem Zdeněk Zajíček a už to bude hezkých pár let od
               chvíle, kdy jsem začal samostatně podnikat. Vždy mě obrovsky
               naplňovala práce a jednání s lidmi.Věnuji se správě a plánování
               finančního směru svých klientů. Kromě toho, že mě tento obor živí,
-              je také mým velkým koníčkem. Umím vám pomoci s veškerými
+              je také mým velkým koníčkem.
+            </p>
+            <p> 
+              Umím Vám pomoci s veškerými
               finančními, investičními a pojistnými produkty, které jsou na
               trhu. Mám schopnost naslouchat a zároveň do naší vzájemné
               spolupráce vkládat své znalosti a zkušenosti a především klienty
-              navést na tu správnou cestu. Zaměřuji se jak na podnikatele, firmy
-              tak i na zaměstnance a ostatní – mých služeb proto může využít
+              navést na tu správnou cestu.
+            </p>
+            <p>
+              Zaměřuji se jak na podnikatele a firmy,
+              tak i na zaměstnance a ostatní - mých služeb proto může využít
               každý. Jsem rád, že mohu ke své práci přistupovat takto osobně,
               vkládat do ní sám sebe a nebýt jen dalším v řadě. Věřte tomu, nebo
               ne, ale i v našem oboru jsou obrovské rozdíly. Jsem tu s čímkoliv
-              pro vás a vaše spokojenost je pro mě úplně nejpodstatnější.
+              pro Vás a Vaše spokojenost je pro mě úplně nejpodstatnější.
             </p>
             <div className="flex gap-4">
               <Badge size="lg" hasDot={true}>
@@ -103,20 +110,20 @@ const ZdenekZajicek: NextPage = () => {
         <div className="grid grid-cols-1 gap-x-10 gap-y-20 pt-20 md:grid-cols-2 md:gap-y-32 md:pt-32 lg:gap-x-16">
           <Question
             number="1"
-            question="Proč bych měl pracovat zrovna s  Vámi na mém  zajištění? Existují všemožné, volně dostupné srovnávače."
-            answer="Takové zajištění je poměrně složitá věc. Pokud má být nastaveno tak, aby fungovalo, zabere to nějaký čas a musím zapojit mozek. Každý klient má úplně  jinou životní situaci a proto potřebuje být individuálně zajištěn. Cílem je klienta a jeho majetek zajistit tak, aby, když přijde průšvih inkasoval tolik, na  kolika jsme se domluvili. Vždy, co nejvíce, za co nejméně!"
+            question="Proč bych měl pracovat zrovna s Vámi na mém zajištění? Existují všemožné, volně dostupné srovnávače."
+            answer="Takové zajištění je poměrně složitá věc. Pokud má být nastaveno tak, aby fungovalo, zabere to nějaký čas a musím zapojit mozek. Každý klient má úplně  jinou životní situaci a proto potřebuje být individuálně zajištěn. Cílem je klienta a jeho majetek zajistit tak, aby, když přijde průšvih inkasoval tolik, na  kolika jsme se domluvili. Vždy co nejvíce, za co nejméně!"
             className="col-span-1"
           />
           <Question
             number="1"
             question="Jak řešíte financování, půjčky, hypotéky  a jiné?  Takový produkt si přece dovedu zařídit i sám."
-            answer="Tím, že mám přístup ke všem finančním subjektům na trhu dokážu porovnávat nabídky a pro klienta zajistit tu, která mu bude ušitá na míru. Není v mém zájmu jednat pouze s jednou institucí. Je mi jedno, jestli peníze poskytne Petr, nebo Pavel -směrodatné je, za jakých podmínek a jak výhodně. Přidaná hodnota finančního poradce – ušetřím čas, získám to nejlepší."
+            answer="Tím, že mám přístup ke všem finančním subjektům na trhu dokážu porovnávat nabídky a pro klienta zajistit tu, která mu bude ušitá na míru. Není v mém zájmu jednat pouze s jednou institucí. Je mi jedno, jestli peníze poskytne Petr, nebo Pavel -směrodatné je, za jakých podmínek a jak výhodně. Přidaná hodnota finančního poradce - ušetřím čas, získám to nejlepší."
             className="col-span-1"
           />
           <Question
             number="1"
             question="Co když budu chtít ochránit své peníze, efektivně je investovat a pasivně tak vydělávat? "
-            answer="Pojďme se postarat o Vaše peníze a nechme je vydělávat. Chránit je budeme pouze tehdy, budeme li s nimi pracovat. Peníze, které jen leží zpravidla svoji hodnotu ztrácí. Nic nevydělávají. V dnešní době máme obrovskou škálu možností, jak peníze ohchránit a jak je efektivním způsobem rozmnožit. Prioritním cílem je diverzifikace a nezávsilost na tom, že peníze investuji pouze do jedné komodity."
+            answer="Pojďme se postarat o Vaše peníze a nechme je vydělávat. Chránit je budeme pouze tehdy, budeme li s nimi pracovat. Peníze, které jen leží zpravidla svoji hodnotu ztrácí. Nic nevydělávají. V dnešní době máme obrovskou škálu možností, jak peníze ochránit a jak je efektivním způsobem rozmnožit. Prioritním cílem je diverzifikace a nezávislost na tom, že peníze investuji pouze do jedné komodity."
             className="col-span-1"
           />
           <Question
@@ -178,7 +185,18 @@ const ZdenekZajicek: NextPage = () => {
       {/* CTA */}
       <Wrapper size="lg" paddedContent="base">
         <ScrollReveal>
-          <LargeCTA>
+          <LargeCTA
+             title="ZAUJALA TĚ NAŠE PREZENTACE?"
+             text="Fin2u je finanční portál a online konzultant, který Vám pomůže na cestě k Vašim strategickým
+             cílům. Pokračuj dále přes výběr."
+          >
+            <Button
+              as="a"
+              href="/kontakt"
+              color="light"
+            >
+              Sjednat schůzku
+            </Button>
             <Button
               as="a"
               href={contacts.zdenekZajicek.emailLink}
