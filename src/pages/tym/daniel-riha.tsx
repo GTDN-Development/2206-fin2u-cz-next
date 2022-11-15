@@ -26,7 +26,7 @@ const testimonials = [
     photoSrc: "/images/reference/dominika.jpg",
     name: "Dominika",
     position: "osobní finance",
-    text: "Na Daniela jsem dostala doporučení od své mamky. Daniel se na první schůzce představil – měl k tomu super prezentaci. Na druhé schhůzce proběhla důkladná analýza, kde jsem si vytyčila jasné cíle a priority. Na další schůzce mi Daniel navrhl takové doporučení, které naprosto odpovídalo mé představě. Zajistil odkládání na budoucí hypotéku a optimalizoval veškeré mé produkty. Na servisní schůzce přinesl manželovy koňak, o kterém se s ním bavil 10 měsíců zpět. Daniela jsem doporučila svým přátelům i rodině.",
+    text: "Na Daniela jsem dostala doporučení od své mamky. Daniel se na první schůzce představil - měl k tomu super prezentaci. Na druhé schůzce proběhla důkladná analýza, kde jsem si vytyčila jasné cíle a priority. Na další schůzce mi Daniel navrhl takové doporučení, které naprosto odpovídalo mé představě. Zajistil odkládání na budoucí hypotéku a optimalizoval veškeré mé produkty. Na servisní schůzce přinesl manželovy koňak, o kterém se s ním bavil 10 měsíců zpět. Daniela jsem doporučila svým přátelům i rodině.",
     class: "flex sm:translate-y-10",
   },
   {
@@ -34,7 +34,7 @@ const testimonials = [
     photoSrc: "/images/reference/filip.jpg",
     name: "Filip",
     position: "osobní finance",
-    text: "Daniela jsem oslvovil díky doslechu od svého bratra. Potřeboval jsem se svými úsporami překonat inflaci. Daniel mi však vysvětlil, že je třeba kompletní analýza, aby mi mohl dát řešení přímo na míru. Při auditu aktuálních produktů mi doporučil jejich optimalizaci a navíc porážíme inflaci. Jsem naprosto spokojený a spolupráce si vážím.",
+    text: "Daniela jsem oslovil díky doslechu od svého bratra. Potřeboval jsem se svými úsporami překonat inflaci. Daniel mi však vysvětlil, že je třeba kompletní analýza, aby mi mohl dát řešení přímo na míru. Při auditu aktuálních produktů mi doporučil jejich optimalizaci a navíc porážíme inflaci. Jsem naprosto spokojený a spolupráce si vážím.",
     class: "flex",
   },
 ];
@@ -75,7 +75,7 @@ const DanielRiha: NextPage = () => {
               budování a ochrana majetku. Samozřejmě jsou s tím spjaté další
               činnosti jako je zajištění nemovitosti, vyřízení úvěrů. Ke
               klientům vždy přistupuji s maximální precizností. Základem
-              spokojeného klienta je každorocně obnovovaný plán, který je pro
+              spokojeného klienta je každoročně obnovovaný plán, který je pro
               klienta vždy na míru. Často spolupracuji s firmami, kde má moje
               práce obrovský dosah. Práce s lidmi si nesmírně vážím a naplňuje
               mě.
@@ -99,13 +99,13 @@ const DanielRiha: NextPage = () => {
           <Question
             number="1"
             question="Jakým způsobem zhodnocuju volné finanční prostředky?"
-            answer="Klienti se na mně nejčastěji obrací s žádostí na správné zhdnocování volných finančních prostředků. Mým cílem je vybrat strategii na míru klienta, snížit riziko, ale zároveň zvýšit výnos. To je možné při správné diverzifikaci ať měnové, tak produktové."
+            answer="Klienti se na mně nejčastěji obrací s žádostí na správné zhodnocování volných finančních prostředků. Mým cílem je vybrat strategii na míru klienta, snížit riziko, ale zároveň zvýšit výnos. To je možné při správné diverzifikaci ať měnové, tak produktové."
             className="col-span-1"
           />
           <Question
             number="1"
             question="Proč plánovat?"
-            answer="Klientům zajišťuji každý rok nový plán, aby mohli dosáhnout svých krátkodobých, tak především těch doluhodobých cílů, které vyžadují více prostředků. V plánování vidí klienti největší přidanou hodnotu. Vše vidí podrobně rozepsané a ví, co pro své cíle udělat, aby jich dosáhli."
+            answer="Klientům zajišťuji každý rok nový plán, aby mohli dosáhnout jak svých krátkodobých, tak především svých dlouhodobých cílů, které vyžadují více prostředků. V plánování vidí klienti největší přidanou hodnotu. Vše vidí podrobně rozepsané a ví, co pro své cíle udělat, aby jich dosáhli."
             className="col-span-1"
           />
           <Question
@@ -174,6 +174,13 @@ const DanielRiha: NextPage = () => {
       <Wrapper size="lg" paddedContent="base">
         <ScrollReveal>
           <LargeCTA>
+          <Button
+              as="a"
+              href="/kontakt"
+              color="light"
+            >
+              Sjednat schůzku
+            </Button>
             <Button
               as="a"
               href={contacts.danielRiha.emailLink}

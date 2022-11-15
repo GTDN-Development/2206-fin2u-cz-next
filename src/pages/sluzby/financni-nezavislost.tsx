@@ -48,7 +48,7 @@ const FinancniNezavislost: NextPage = () => {
     <AppLayout navbarInitialStyle="dark">
       <Seo
         title="Finanční nezávislost"
-        description="Vaše peníze můžou pracovat stejně jako vy. Co kdyby vás živily, až to nebudete chtít dělat sami?"
+        description="Vaše peníze můžou pracovat stejně jako Vy. Co kdyby Vás živily, až to nebudete chtít dělat sami?"
       />
 
       {/* Hero */}
@@ -61,7 +61,7 @@ const FinancniNezavislost: NextPage = () => {
           className="flex flex-col items-center gap-8"
         >
           <Heading level={1} size="xl" align="center" color="white">
-            Finanční nezávislost
+            Wealth management
           </Heading>
           <p className="max-w-prose text-center text-lg text-white">
             Vaše peníze můžou pracovat stejně jako vy. Co kdyby vás živily, až
@@ -95,10 +95,12 @@ const FinancniNezavislost: NextPage = () => {
               Investiční plán
             </Heading>
             <p className="mt-8 text-center text-gray-200">
-              Sestavíme vám investiční plán, který váš majetek ochrání před
-              zbytečnými riziky, dlouhodobě bude porážet inflaci a provede vás
-              bezpečně každou složitou situací. Naplánujte své strategické
-              finanční cíle a my budeme silným partnerem při jejich realizaci.
+              Sestavíme pro Vás investiční plán, který Váš majetek ochrání před
+              zbytečnými riziky, dlouhodobě bude porážet inflaci a provede Vás
+              bezpečně každou složitou situací. Vykročte na cestě
+              k rentě díky dlouhodobému investiční plánu. Vytvořte si portfolio, ze kterého budeme moci
+              čerpat rentu. Naplánujte si svou cestu k finanční nezávislosti a my budeme silným partnerem při její
+              realizaci.
             </p>
           </ScrollReveal>
           <ScrollReveal
@@ -115,11 +117,10 @@ const FinancniNezavislost: NextPage = () => {
               Investiční strategie
             </Heading>
             <p className="mt-8 text-center text-gray-200">
-              Vytvořte majetek, ze kterého můžete čerpat pasivní příjem a být
-              finančně nezávislí. Používáte osvědčenou strategii, kde pomalu a
-              postupně nakupujete podíly ve stovkách reálných firem, které
-              prosperují desítky let. Zpracujeme investiční strategii, která vám
-              přinese finanční nezávislost a nekonečnou rentu.
+              Investujte jako dolarový milionáři. Vytvořte majetek, ze kterého můžete čerpat pasivní příjem a být
+              finančně nezávislí. Používáte osvědčenou strategii, kde pomalu a postupně nakupujete podíly ve
+              stovkách reálných firem, které prosperují desítky let. Vytváříme investiční strategie na míru od
+              pravidelné investice 25 000 Kč měsíčně a 1 mil CZK jednorázově.
             </p>
           </ScrollReveal>
           <ScrollReveal
@@ -136,10 +137,11 @@ const FinancniNezavislost: NextPage = () => {
               Wealth management
             </Heading>
             <p className="mt-8 text-center text-gray-200">
-              Investiční poradenství a wealth management je naše klíčová oblast,
-              naše doména, která v sobě “schovává” kompletní správu majetku jako
-              celku. Víte přesně, co se s vašimi penězi děje a proč. Dbáme na
-              důslednou diverzifikaci majetku jako celku.
+              Wealth Management je vhodný zejména pro klienty, kteří potřebují vyřešit správu či předání
+              rozsáhlejšího majetku v rámci rodiny, prodej nebo koupi firmy, optimalizovat daňové zatížení či
+              zabezpečit a ochránit svůj majetek pro budoucí generace. Tyto činnosti jsou zajišťovány ve
+              spolupráci se třetími stranami. Službu poskytujeme klientům, jejichž spravované prostředky
+              přesahují 25 milionů Kč.
             </p>
           </ScrollReveal>
         </div>
@@ -161,7 +163,7 @@ const FinancniNezavislost: NextPage = () => {
         <ScrollReveal>
           <LargeImageCTA
             imageSrc="/images/meeting.jpg"
-            text="Dokáže i vaše portfolio s přehledem porážet inflaci a přitom vám vyplácet pravidelnou rentu? Pojďme si společně zavolat. To nám dá příležitost se vzájemně poznat a zjistit, jestli spolu můžeme spolupracovat."
+            text="Dokáže i Vaše portfolio s přehledem porážet inflaci a přitom Vám vyplácet pravidelnou rentu? Pojďme si společně zavolat. To nám dá příležitost se vzájemně poznat a zjistit, jestli spolu můžeme spolupracovat."
           >
             <Button
               as="a"
@@ -235,7 +237,9 @@ const FinancniNezavislost: NextPage = () => {
         <ScrollReveal>
           <LargeCTA
             title="Máte otázky ohledně investování? Domluvte si nezávaznou konzultaci."
-            text="Domluvte si setkání s naším specialistou, kde společně probereme vaše dotazy. Působíme po celé České republice. Můžeme to řešit osobně, po telefonu či online, nebo napište přes kontaktní formulář."
+            text="Domluvte si setkání s naším specialistou, kde společně probereme Vaše dotazy.
+            Působíme po celé České republice. Můžeme to řešit osobně, po telefonu či online, nebo napište přes
+            kontaktní formulář."
           >
             <Link href="/kontakt" passHref>
               <Button as="a" color="light" className="w-full">

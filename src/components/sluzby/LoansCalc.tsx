@@ -1,3 +1,4 @@
+import Alert from "@components/Alert";
 import Button from "@components/Button";
 import RangeSlider from "@components/calculator/RangeSlider";
 import Input from "@components/forms/Input";
@@ -18,7 +19,7 @@ export default function LoansCalc({ className = "" }: LoansCalcProps) {
     pujcka: 0,
     zastava: true,
     zajisteni: 0,
-    splatnost: 0,
+    splatnost: 1,
     sazba: 7,
     ucetUveru: "",
   });
@@ -62,7 +63,7 @@ export default function LoansCalc({ className = "" }: LoansCalcProps) {
           <RangeSlider
             changeData={changeData}
             id={"zajisteni"}
-            min={inputData.pujcka}
+            min={0}
             max={inputData.zastava === true ? 200000000 : 50000000}
             skip={100000}
             defaultValue={inputData.zajisteni}
@@ -147,10 +148,22 @@ export default function LoansCalc({ className = "" }: LoansCalcProps) {
         />
       </div>
       <div className="mt-10 flex w-full items-center justify-center">
-        <Button size="lg" type="button" onClick={() => letsCalcIt()}>
+        <Button 
+          size="lg" 
+          type="button"         
+          isDisabled={inputData.pujcka > inputData.zajisteni ? true : false} 
+          onClick={() => letsCalcIt()}
+        >
           Spočítat
         </Button>
       </div>
+      <Alert 
+        title="Chyba!"
+        text="Hodnota půjčky nesmí být vyšší než hodnota nemovitosti."
+        status="error"
+        variant="tinted"
+        className={` mt-5  ${inputData.pujcka > inputData.zajisteni ? "block" : "hidden"}`}
+      />
       <Modal
         isModalOpen={isModalOpen}
         setIsModalOpen={setIsModalOpen}

@@ -48,11 +48,10 @@ const Home: NextPage = () => {
           className="flex flex-col items-center gap-8"
         >
           <Heading level={1} size="xl" align="center" color="white">
-            Ptal se vás Váš bankéř, na to kdy chcete být finančně nezávislý?
-          </Heading>
+            Propojujeme know-how zkušených odborníků s technologiemi.
+        </Heading>
           <p className="max-w-prose text-center text-lg text-white">
-            Řešíte rozvoj rozvoj firmy, financování bydlení, či ochranu majetku?
-            na cestě k finanční svobodě, jsme tu pro Vás!
+          Fin2u je finanční portál a online konzultant, který Vám pomůže k vlastnímu bydlení a finanční nezávislosti.
           </p>
           <div className="mt-8 flex flex-col gap-5 sm:flex-row">
             <Button as="a" href="#sluzby" rightIcon={<HiArrowDown />}>
@@ -86,8 +85,8 @@ const Home: NextPage = () => {
         <SectionHeader
           gradient="top"
           kicker="Nabízené služby"
-          heading="Správné plánování je klíčem k Vaším cílům?"
-          caption={"Vyberte oblast produtku, který Vás právě zajímá"}
+          heading="SPRÁVNÉ PLÁNOVÁNÍ JE KLÍČEM K VAŠIM CÍLŮM"
+          caption={"Vyberte si oblast, o které se chcete dozvědět více"}
         />
         <Services />
       </Wrapper>
@@ -111,7 +110,7 @@ const Home: NextPage = () => {
         id="reference"
         gradient="top"
         kicker="Reference"
-        heading="Naši klienti o nás napsali"
+        heading="NAŠI KLIENTI O NÁS NAPSALI"
         className="mt-24 xl:mt-32"
       />
       <div className="relative z-0 w-screen">
@@ -159,7 +158,7 @@ const Home: NextPage = () => {
         </CountUp>
         <CountUp
           start={0}
-          end={500}
+          end={539}
           delay={0}
           duration={4}
           useEasing
@@ -180,7 +179,7 @@ const Home: NextPage = () => {
         </CountUp>
         <CountUp
           start={0}
-          end={230}
+          end={239}
           delay={0}
           duration={4}
           useEasing
@@ -206,7 +205,7 @@ const Home: NextPage = () => {
         <div className="flex flex-col items-center justify-center">
           <Kicker className="text-center text-primary">O nás</Kicker>
           <Heading level={2} size="lg" className="mt-5" align="center">
-            poznejte tým fin2u
+            POZNEJTE TÝM FIN2U
           </Heading>
         </div>
         <ScrollReveal
@@ -229,10 +228,16 @@ const Home: NextPage = () => {
               EFPA a dlouholetých zkušeností jsme splustili exluzní projekt.
             </p>
             <p>
-              Fin2U představuje moderní pohled nad zkostňatělý finanční trh v
-              České republice. Využítí technologií nám umožnuje rychlejší
-              propojení s klietny, máte vždy jasné a přesné informace.
+              Fin2U představuje moderní pohled na zkostnatělý finanční trh v
+              České republice. Využití technologií nám umožňuje rychlejší
+              propojení s kliety, díky tomu máte vždy jasné a přesné informace.
             </p>
+            <p>
+              Propojujeme know-how zkušených odborníků s technologiemi.
+            </p>
+            <Heading level={3} size={"sm"}>
+              Jsme o krok napřed. Jsme nezávislí. Jsme online.
+            </Heading>
           </div>
         </ScrollReveal>
       </Wrapper>
@@ -241,12 +246,12 @@ const Home: NextPage = () => {
       <Wrapper size="lg" paddedContent="base">
         <ScrollReveal>
           <LargeCTA
-            title="Zaujala tě naše prezentace?"
+            title="Zaujala Vás naše prezentace?"
             text="Kliknutím na následující odkazy se můžete přesunout dál"
           >
             <Link href="/kontakt" passHref>
               <Button color="light" className="w-full">
-                Kontaktujte nás
+                Sjednat schůžku
               </Button>
             </Link>
             <Link href="/kariera" passHref>

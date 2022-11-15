@@ -1,5 +1,6 @@
 import Heading from "@components/Heading";
 import ScrollReveal from "@components/ScrollReveal";
+import Carousel from "./Carousel";
 
 type Props = {
   variant?: "hlavni-strana" | "uvery" | "investice" | "pojisteni";
@@ -145,24 +146,7 @@ export default function CollabLogos({
 
       {/* Hlavní strana */}
       {variant === "hlavni-strana" && (
-        <div className="grid w-full grid-cols-2 justify-between gap-10 md:grid-cols-3 xl:grid-cols-6">
-          {hlavniStrana.map((logo, i) => (
-            <ScrollReveal
-              key={i}
-              className="col-span-1 flex w-full items-center justify-center p-3"
-            >
-              <div className="h-[50px] w-[150px]">
-                <img
-                  src={logo.src}
-                  alt={logo.alt}
-                  width="150"
-                  height="50"
-                  className="h-full w-full invert"
-                />
-              </div>
-            </ScrollReveal>
-          ))}
-        </div>
+        <Carousel itemsArray={hlavniStrana} />
       )}
 
       {/* Služba Hypotéky a Firemní úvěry */}

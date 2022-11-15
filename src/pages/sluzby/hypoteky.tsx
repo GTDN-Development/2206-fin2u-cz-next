@@ -92,9 +92,9 @@ const Hypoteky: NextPage = () => {
               Individuální přístup
             </Heading>
             <p className="mt-8 text-center text-gray-200">
-              Sestavíme vám srozumitelný hypoteční plán. Pomáháme s vymyšlením
-              logiky často složitých případů pro naše klienty a podnikatele.
-              Různé typy příjmu a účelů financování si vyžadují individuální
+              Sestavíme Vám srozumitelný hypoteční plán. Pomáháme s vymyšlením
+              logistiky často u složitých případů pro naše klienty a podnikatele.
+              Různé typy příjmů a účelů financování si vyžadují individuální
               přístup. Ať už jste na mateřské, chcete využít příjmy z obratu
               firmy, nebo budoucí příjem z pronájmu nemovitosti, oceníte možnost
               před-konzultace.
@@ -114,10 +114,10 @@ const Hypoteky: NextPage = () => {
               Kompletní vyřízení hypotéky
             </Heading>
             <p className="mt-8 text-center text-gray-200">
-              Vyřízení hypotéky je často stresující záležitostí. Jsme vaším
+              Vyřízení hypotéky je často stresující záležitostí. Jsme Vaším
               průvodcem procesu celé hypotéky. S námi je celý proces jednoduší.
-              Náš specialista vás provede celým procesem s úsměvem na rtech od
-              počáteční konzultace až po čerpání včetně plnění následných
+              Náš specialista Vás provede celým procesem s úsměvem na rtech, od
+              počáteční konzultace, až po čerpání včetně plnění následných
               podmínek. Vyhněte se zbytečnému stresu a běhání.
             </p>
           </ScrollReveal>
@@ -135,10 +135,10 @@ const Hypoteky: NextPage = () => {
               Komplexní servis
             </Heading>
             <p className="mt-8 text-center text-gray-200">
-              Pomůžeme vám po skončení fixace s refinancováním hypotéky, nebo s
-              mimořádnými splátkami a jsme vám k dispozici pro jakékoliv dotazy.
+              Pomůžeme Vám po skončení fixace s refinancováním hypotéky, nebo s
+              mimořádnými splátkami a jsme Vám k dispozici pro jakékoliv dotazy.
               Cílem pro naše klienty je bezpečná hypotéka. V rámci hypotečního
-              plánu získáte písemné doporučení, díky kterému budete vědět co
+              plánu získáte písemné doporučení, díky kterému budete vědět, co
               dělat ať už se bude dít na finančním trhu cokoliv. Pomůžeme se
               zajištěním příjmu včetně kvalitního pojištění nemovitosti.
             </p>
@@ -238,7 +238,7 @@ const Hypoteky: NextPage = () => {
         <ScrollReveal>
           <LargeCTA
             title="Máte otázky ohledně hypotéky? Domluvte si nezávaznou konzultaci."
-            text="Domluvte si setkání s naším specialistou, kde společně probereme vaše dotazy. Působíme po celé České republice. Můžeme to řešit osobně, po telefonu či online, nebo napište přes kontaktní formulář."
+            text="Domluvte si setkání s naším specialistou, kde společně probereme Vaše dotazy. Působíme po celé České republice. Můžeme to řešit osobně, po telefonu či online, nebo napište přes kontaktní formulář."
           >
             <Link href="/kontakt" passHref>
               <Button as="a" color="light" className="w-full">

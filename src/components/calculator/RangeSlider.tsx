@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { HiMinus, HiPlus } from "react-icons/hi";
 
 interface RangeSliderProps {
@@ -25,13 +25,6 @@ export default function RangeSlider({
   const [value, setValue] = useState<any>(defaultValue);
   const [contentShown, setContentShown] = useState<"span" | "input">("span");
   const inputRef: any = useRef();
-
-  useEffect(() => {
-    console.log("ruuuun");
-    changeData(id, defaultValue);
-    min > value && setValue(min);
-    max < value && setValue(max);
-  }, [min, max]);
 
   function setValueAndInputData(e: number) {
     changeData(id, e);

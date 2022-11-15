@@ -174,7 +174,18 @@ const VaclavKraut: NextPage = () => {
       {/* CTA */}
       <Wrapper size="lg" paddedContent="base">
         <ScrollReveal>
-          <LargeCTA>
+          <LargeCTA
+            title="ZAUJALA TĚ NAŠE PREZENTACE?"
+            text="Fin2u je finanční portál a online konzultant, který Vám pomůže na cestě k Vašim strategickým
+            cílům. Pokračuj dále přes výběr."
+          >
+            <Button
+              as="a"
+              href="/kontakt"
+              color="light"
+            >
+              Sjednat schůzku
+            </Button>
             <Button
               as="a"
               href={contacts.vaclavKraut.emailLink}

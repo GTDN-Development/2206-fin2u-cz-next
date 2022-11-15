@@ -10,26 +10,26 @@ type Props = {
 
 const services = [
   {
-    name: "Hypotéky a refinancování",
-    description: "Lorem ipsum dolor sit amet",
+    name: "HYPOTÉKY A REFINANCOVÁNÍ",
+    description: "Spočítejte si hypotéku podle sebe",
     href: "/sluzby/hypoteky",
     icon: BsFillHouseFill,
   },
   {
-    name: "Firemní a podnikatelské financování",
-    description: "Lorem ipsum dolor sit amet",
+    name: "FIRMY A PODNIKATELÉ",
+    description: "Individuální pomoc pro rozvoj",
     href: "/sluzby/firemni-financovani",
     icon: IoWallet,
   },
   {
-    name: "Finanční nezávislost",
-    description: "Lorem ipsum dolor sit amet",
+    name: "WEALTH MANAGEMENT",
+    description: "Pro současné i budoucí rentiéry.",
     href: "/sluzby/financni-nezavislost",
     icon: HiPresentationChartLine,
   },
   {
-    name: "Zajištění rizik",
-    description: "Lorem ipsum dolor sit amet",
+    name: "DOPLŇKOVÉ SLUŽBY",
+    description: "Řízení rizik, vzdělávání a daňové poradenství.",
     href: "/sluzby/zajisteni-rizik",
     icon: BsFillShieldLockFill,
   },

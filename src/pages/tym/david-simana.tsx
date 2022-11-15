@@ -73,22 +73,23 @@ const DavidSimana: NextPage = () => {
           />
           <div className="col-span-1 flex flex-col gap-7">
             <p>
-              V oblasti finančního plánování se neustále vzděláváme a rosteme.
-              Naší motivací je totiž Váš zisk, nikoliv provize z prodaných
-              produktů. Prioritou pro mé klienty je čas, který chtějí věnovat
-              sobě a své rodině.
+              Proč právě Fin2u? Je to jednoduché, finance pro Vás.
             </p>
             <p>
-              Aktivně spolupracuji s podnikateli a klienty ve středním
-              managementu. Staráme se o jejich majetek komplexně v duchu
-              strategie wealth-protection, často businessově propojuji své
-              klienty a hledám nové příležitosti.
+              Projekt vznikl díky kvalitnímu zázemí na finančním trhu s připojením zkušeností z oblasti online světa
+              ve spolupráci s Duc Trung Nguyen, EFA.
             </p>
             <p>
-              Pomáhám s vymyšlením logiky často složitých případů pro mé
-              klienty, navýšení příjmu na mateřské, příjmy z obratu firmy,
-              alternativní příjmy (podíl na zisku, budoucí příjmy, a pod…)
-              Ohýbám metodiky bank pro prospěch našich klientů.
+              Aktivně spolupracujeme s podnikateli a zaměstnanci ve středním managementu. Staráme se o jejich
+              majetek komplexně v duchu strategie wealth-protection, často businessově propojuji své klienty a
+              hledám nové příležitosti. Pomáhám s vymyšlením logiky často složitých případů. Řešíme často
+              alternativní příjmy pro podnikatele. Efektivní využití obratu firmy (podíl na zisku, budoucí příjmy, a
+              pod…) Ohýbáme metodiky bank pro prospěch našich klientů.
+            </p>
+            <p>
+              Začínáte přemýšlet nad rentou, prodáváte firmu nebo jste zdědili majetek v řádech milionů korun a
+              chcete jej chránit? Používáme osvědčenou strategii, při které pomalu a postupně nakupujeme podíly
+              ve stovkách reálných firem.
             </p>
             <p>
               Začínáte přemýšlet nad rentou, prodáváte firmu nebo jste zdědili
@@ -97,15 +98,8 @@ const DavidSimana: NextPage = () => {
               podíly ve stovkách reálných firem, které prosperují desítky let.
             </p>
             <p>
-              Mé portfolio klientů je široké, zahrnuje aktuálně 172 rodin,
-              kterým spravuji komplexně majetek. Své klienty vzděláváme v
-              oblasti pondikání a finanční gramtonosti. Díky pravidelným
-              workshopům mají vždy aktuální informace, sami tak vědí, co je pro
-              ně správné řešení.
-            </p>
-            <p>
-              Klienti často přicházejí s potřebou řešit své strategické finanční
-              cíle, avšak nemají rozumného konzultanta pro jejich řešení.
+              Klienti často přicházejí s potřebou řešit své strategické finanční cíle, avšak nemají rozumného
+              konzultanta pro jejich řešení.
             </p>
             <div className="flex gap-4">
               <Badge size="lg" hasDot={true}>
@@ -125,20 +119,20 @@ const DavidSimana: NextPage = () => {
         <div className="grid grid-cols-1 gap-x-10 gap-y-20 pt-20 md:grid-cols-2 md:gap-y-32 md:pt-32 lg:gap-x-16">
           <Question
             number="1"
-            question="Rodinné & osobní finance."
+            question="Rodinné a osobní finance."
             answer="Získejte finanční plán pro splnění strategických cílů, jako je bydlení, rozjezd podnikání, či prostředky na studia dětí, dědictví a prodej firmy. Sestavím srozumitelný plán na míru, který vychází z metodiky EFPA a pomáhá lidem na cestě k finanční svobodě. Co kdyby vás živili Vaše peníze, až to nebudete chtít dělat sami?"
             className="col-span-1"
           />
           <Question
             number="2"
-            question="Firemní & business plánování"
-            answer="Stojím na straně firem a podnikatelů. Pomáhám s financováním strategických cílů. Nechte vymyšlení logiky celého procesu na mně. Ve spolupráci s daňovým architektem zajistíme konkurenční výhodu pro Vaši firmu, včetně start-up projektů, zaměstnanecké a daňové výhody."
+            question="Firemní a business plánování"
+            answer="Stojím na straně firem a podnikatelů. Pomáhám s financováním strategických cílů. Nechte vymýšlení logistiky celého procesu na mně. Ve spolupráci s daňovým architektem zajistíme konkurenční výhodu pro Vaši firmu, včetně start-up projektů, zaměstnanecké a daňové výhody."
             className="col-span-1"
           />
           <Question
             number="3"
             question="Investiční poradenství"
-            answer="Mým cílem je vybudovat portfolio, které vám doživotně bude generovat nekonečnou rentu. Držíme se toho do funguje desítky let. Využijte strategii kde pomalu a postupně nakupujete podíly ve stovkách reálných firem, které prosperují desítky let. Ptal se Váš bankéř na to chcete být finančně nezávislý?"
+            answer="Mým cílem je vybudovat portfolio, které vám doživotně bude generovat nekonečnou rentu. Držíme se toho, co funguje desítky let. Využijte strategii kde pomalu a postupně nakupujete podíly ve stovkách reálných firem, které prosperují desítky let. Ptal se Vás Váš bankéř na to, zda chcete být finančně nezávislý?"
             className="col-span-1"
           />
           <Question
@@ -200,7 +194,18 @@ const DavidSimana: NextPage = () => {
       {/* CTA */}
       <Wrapper size="lg" paddedContent="base">
         <ScrollReveal>
-          <LargeCTA>
+          <LargeCTA 
+            title="ZAUJALA TĚ NAŠE PREZENTACE?"
+            text="Fin2u je finanční portál a online konzultant, který Vám pomůže na cestě k Vašim strategickým
+            cílům. Pokračuj dále přes výběr."
+          >
+            <Button
+              as="a"
+              href="/kontakt"
+              color="light"
+            >
+              Sjednat schůzku
+            </Button>
             <Button
               as="a"
               href={contacts.davidSimana.emailLink}
