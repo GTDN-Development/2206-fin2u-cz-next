@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { HiMinus, HiPlus } from "react-icons/hi";
 
 interface RangeSliderProps {
@@ -30,6 +30,16 @@ export default function RangeSlider({
     changeData(id, e);
     setValue(e);
   }
+
+  useEffect(() => {
+    setValue(defaultValue);
+  }, [defaultValue]);
+
+  // useEffect(() => {
+  //   changeData(id, min);
+  //   min > value && setValue(min);
+  //   max < value && setValue(max);
+  // }, [min, max]);
 
   return (
     <div id={id} className="mx-auto mb-16 flex w-full flex-col">

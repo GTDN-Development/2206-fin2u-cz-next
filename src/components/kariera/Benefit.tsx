@@ -1,27 +1,24 @@
-import Heading from '@components/Heading';
-import ScrollReveal from '@components/ScrollReveal';
+import Heading from "@components/Heading";
+import ScrollReveal from "@components/ScrollReveal";
 
 type Props = {
   number: number;
   title: string;
   text: string;
-}
+};
 
-export default function Benefit({number, title, text}: Props) {
+export default function Benefit({ number, title, text }: Props) {
   return (
-    <ScrollReveal
-      as="li"
-      >
+    <ScrollReveal as="li">
       <Heading
         level={3}
         size="base"
-        className="mx-auto text-center mb-5"
+        align="center"
+        className="mx-auto mb-10 text-center"
       >
         <span className="text-primary">{number}.</span> {title}
       </Heading>
-      <p>
-        {text}
-      </p>
+      <p className="text-center">{text}</p>
     </ScrollReveal>
-  )
+  );
 }

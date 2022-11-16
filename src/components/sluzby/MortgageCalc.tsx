@@ -26,7 +26,7 @@ export default function MortgageCalc({ className = "" }: MortgageCalcProps) {
   const [result, setResult] = useState<number>(0);
 
   function letsCalcIt() {
-    console.log(inputData.sazba);
+    // console.log(inputData.sazba);
     let top =
       (inputData.sazba / 100 / 12) *
       Math.pow(1 + inputData.sazba / 100 / 12, 12 * inputData.splatnost);
@@ -39,7 +39,7 @@ export default function MortgageCalc({ className = "" }: MortgageCalcProps) {
   function changeData(id: string, value: number) {
     setInputData((prevState) => ({ ...prevState, [id]: value }));
   }
-  
+
   return (
     <div className={`personalCalc flex flex-col p-5 ${className}`}>
       <div className="mt-24">
@@ -112,21 +112,23 @@ export default function MortgageCalc({ className = "" }: MortgageCalcProps) {
         />
       </div>
       <div className="mt-10 flex w-full items-center justify-center">
-        <Button 
-          size="lg" 
-          type="button" 
-          isDisabled={inputData.pujcka > inputData.nemovitost ? true : false} 
+        <Button
+          size="lg"
+          type="button"
+          isDisabled={inputData.pujcka > inputData.nemovitost ? true : false}
           onClick={() => letsCalcIt()}
         >
           Spočítat
         </Button>
       </div>
-      <Alert 
+      <Alert
         title="Chyba!"
         text="Hodnota půjčky nesmí být vyšší než hodnota nemovitosti."
         status="error"
         variant="tinted"
-        className={`mt-5 ${inputData.pujcka > inputData.nemovitost ? "block" : "hidden"}`}
+        className={`mt-5 ${
+          inputData.pujcka > inputData.nemovitost ? "block" : "hidden"
+        }`}
       />
       <Modal
         isModalOpen={isModalOpen}

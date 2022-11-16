@@ -78,13 +78,13 @@ const testimonialsArray = [
       text: "Výborný a spolehlivý finanční poradce. Dělá svoji práci znamenitě, skvělá komunikace, profesionalita a ochota. Určitě není typ poradce, kterého zajímá jen podepsání smlouvy. Díky preciznosti, vytrvalosti a profesionálnímu přístupu mi pomohl v získání hypotéky, abych mohl zrekonstruovat zděděný rodinný domek. Vřele doporučuji všem. Budu-li potřebovat cokoli zajistit v rámci financí, obrátím se opět sem! Člověk si občas musí nechat poradit.",
     },
     {
-      photoSrc: "/images/testimonial.jpg",
+      photoSrc: "/images/reference/marie-lahodna.jpg",
       name: "Marie Lahodná",
       position: "Investice",
       text: "Investiční poradenství, které je transparentní, diskrétní a důvěryhodné a jehož cílem je ochrana vašeho majetku. Na spolupráci si nejvíce cením vysoké profesionality, transparentnosti, flexibility a jasných argumentů při návrzích na změnu portfolia, které reagují na měnící se podmínky finančního trhu. Pokud hledáte poradce, který nabízí služby západního světa, tak tohle je jasná volba. Z vlastní zkušenosti doporučuji!",
     },
     {
-      photoSrc: "/images/testimonial.jpg",
+      photoSrc: "/images/reference/hana-hlavonova.jpg",
       name: "Hana Hlavoňová",
       position: "Investice",
       text: "Vašek mi pomohl s investicí se zajímavým výnosem. Pravidelně osobně kontroluje, jestli je vše v pořádku a nikdy není problém zavolat s jakýmkoliv dotazem. Doporučuji a těším se na další spolupráci.",

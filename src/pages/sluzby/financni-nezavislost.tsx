@@ -18,27 +18,26 @@ import { HiMail, HiPhone } from "react-icons/hi";
 
 const testimonials = [
   {
-    id: 1,
-    photoSrc: "/images/testimonial.jpg",
-    name: "Jméno Příjmení",
-    position: "Specializace",
-    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla est. Aliquam id dolor. Etiam commodo dui eget wisi. Maecenas lorem. Integer vulputate sem a nibh rutrum consequat.",
+    photoSrc: "/images/reference/hana-hlavonova.jpg",
+    name: "Hana Hlavoňová",
+    position: "Investice",
+    text: "Vašek mi pomohl s investicí se zajímavým výnosem. Pravidelně osobně kontroluje, jestli je vše v pořádku a nikdy není problém zavolat s jakýmkoliv dotazem. Doporučuji a těším se na další spolupráci.",
     class: "flex",
   },
   {
     id: 2,
-    photoSrc: "/images/testimonial.jpg",
-    name: "Jméno Příjmení",
-    position: "Specializace",
-    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla est. Aliquam id dolor. Etiam commodo dui eget wisi. Maecenas lorem. Integer vulputate sem a nibh rutrum consequat.",
+    photoSrc: "/images/reference/marie-lahodna.jpg",
+    name: "Marie Lahodná",
+    position: "Investice",
+    text: "Investiční poradenství, které je transparentní, diskrétní a důvěryhodné a jehož cílem je ochrana vašeho majetku. Na spolupráci si nejvíce cením vysoké profesionality, transparentnosti, flexibility a jasných argumentů při návrzích na změnu portfolia, které reagují na měnící se podmínky finančního trhu. Pokud hledáte poradce, který nabízí služby západního světa, tak tohle je jasná volba. Z vlastní zkušenosti doporučuji!",
     class: "flex sm:translate-y-10",
   },
   {
     id: 3,
-    photoSrc: "/images/testimonial.jpg",
-    name: "Jméno Příjmení",
-    position: "Specializace",
-    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla est. Aliquam id dolor. Etiam commodo dui eget wisi. Maecenas lorem. Integer vulputate sem a nibh rutrum consequat.",
+    photoSrc: "/images/reference/filip-zimanzl.jpg",
+    name: "Filip Zimanzl",
+    position: "Investiční plán",
+    text: "David je nejen skvělý investiční poradce, ale také skvělý člověk, co vždy rád pomůže a vyhoví vašim potřebám! Pokud potřebujete ve světě financí poradit, David je člověk číslo jedna na koho se obrátit!",
     class: "flex ",
   },
 ];
@@ -97,10 +96,10 @@ const FinancniNezavislost: NextPage = () => {
             <p className="mt-8 text-center text-gray-200">
               Sestavíme pro Vás investiční plán, který Váš majetek ochrání před
               zbytečnými riziky, dlouhodobě bude porážet inflaci a provede Vás
-              bezpečně každou složitou situací. Vykročte na cestě
-              k rentě díky dlouhodobému investiční plánu. Vytvořte si portfolio, ze kterého budeme moci
-              čerpat rentu. Naplánujte si svou cestu k finanční nezávislosti a my budeme silným partnerem při její
-              realizaci.
+              bezpečně každou složitou situací. Vykročte na cestě k rentě díky
+              dlouhodobému investiční plánu. Vytvořte si portfolio, ze kterého
+              budeme moci čerpat rentu. Naplánujte si svou cestu k finanční
+              nezávislosti a my budeme silným partnerem při její realizaci.
             </p>
           </ScrollReveal>
           <ScrollReveal
@@ -117,10 +116,12 @@ const FinancniNezavislost: NextPage = () => {
               Investiční strategie
             </Heading>
             <p className="mt-8 text-center text-gray-200">
-              Investujte jako dolarový milionáři. Vytvořte majetek, ze kterého můžete čerpat pasivní příjem a být
-              finančně nezávislí. Používáte osvědčenou strategii, kde pomalu a postupně nakupujete podíly ve
-              stovkách reálných firem, které prosperují desítky let. Vytváříme investiční strategie na míru od
-              pravidelné investice 25 000 Kč měsíčně a 1 mil CZK jednorázově.
+              Investujte jako dolarový milionáři. Vytvořte majetek, ze kterého
+              můžete čerpat pasivní příjem a být finančně nezávislí. Používáte
+              osvědčenou strategii, kde pomalu a postupně nakupujete podíly ve
+              stovkách reálných firem, které prosperují desítky let. Vytváříme
+              investiční strategie na míru od pravidelné investice 25 000 Kč
+              měsíčně a 1 mil CZK jednorázově.
             </p>
           </ScrollReveal>
           <ScrollReveal
@@ -137,10 +138,12 @@ const FinancniNezavislost: NextPage = () => {
               Wealth management
             </Heading>
             <p className="mt-8 text-center text-gray-200">
-              Wealth Management je vhodný zejména pro klienty, kteří potřebují vyřešit správu či předání
-              rozsáhlejšího majetku v rámci rodiny, prodej nebo koupi firmy, optimalizovat daňové zatížení či
-              zabezpečit a ochránit svůj majetek pro budoucí generace. Tyto činnosti jsou zajišťovány ve
-              spolupráci se třetími stranami. Službu poskytujeme klientům, jejichž spravované prostředky
+              Wealth Management je vhodný zejména pro klienty, kteří potřebují
+              vyřešit správu či předání rozsáhlejšího majetku v rámci rodiny,
+              prodej nebo koupi firmy, optimalizovat daňové zatížení či
+              zabezpečit a ochránit svůj majetek pro budoucí generace. Tyto
+              činnosti jsou zajišťovány ve spolupráci se třetími stranami.
+              Službu poskytujeme klientům, jejichž spravované prostředky
               přesahují 25 milionů Kč.
             </p>
           </ScrollReveal>
@@ -200,7 +203,7 @@ const FinancniNezavislost: NextPage = () => {
             <ScrollReveal
               animation="fade"
               duration="1200"
-              key={testimonial.id}
+              key={testimonial.name}
               className={`flex-col rounded-xl bg-white p-5 shadow-xl sm:p-12 ${testimonial.class}`}
             >
               <div className="flex items-center justify-start">
@@ -241,21 +244,23 @@ const FinancniNezavislost: NextPage = () => {
             Působíme po celé České republice. Můžeme to řešit osobně, po telefonu či online, nebo napište přes
             kontaktní formulář."
           >
-            <Link href="/kontakt" passHref>
-              <Button as="a" color="light" className="w-full">
-                Sjednat schůzku
+            <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2">
+              <Link href="/kontakt" passHref>
+                <Button as="a" color="light" className="w-full">
+                  Sjednat schůzku
+                </Button>
+              </Link>
+              <Button
+                as="a"
+                href={contacts.investice.phoneLink}
+                variant="tinted"
+                color="light"
+                leftIcon={<HiPhone />}
+                className="w-full"
+              >
+                {contacts.investice.phoneLabel}
               </Button>
-            </Link>
-            <Button
-              as="a"
-              href={contacts.investice.phoneLink}
-              variant="tinted"
-              color="light"
-              leftIcon={<HiPhone />}
-              className="w-full"
-            >
-              {contacts.investice.phoneLabel}
-            </Button>
+            </div>
           </LargeCTA>
         </ScrollReveal>
       </Wrapper>

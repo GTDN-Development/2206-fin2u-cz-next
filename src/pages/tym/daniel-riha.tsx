@@ -10,6 +10,7 @@ import { contacts } from "@configs/contacts";
 import AppLayout from "@layouts/AppLayout";
 import type { NextPage } from "next";
 import ExportedImage from "next-image-export-optimizer";
+import Link from "next/link";
 import { HiMail, HiPhone } from "react-icons/hi";
 
 const testimonials = [
@@ -174,29 +175,33 @@ const DanielRiha: NextPage = () => {
       <Wrapper size="lg" paddedContent="base">
         <ScrollReveal>
           <LargeCTA>
-          <Button
-              as="a"
-              href="/kontakt"
-              color="light"
-            >
-              Sjednat schůzku
-            </Button>
-            <Button
-              as="a"
-              href={contacts.danielRiha.emailLink}
-              color="light"
-              leftIcon={<HiMail />}
-            >
-              {contacts.danielRiha.emailLabel}
-            </Button>
-            <Button
-              as="a"
-              href={contacts.danielRiha.phoneLink}
-              color="light"
-              leftIcon={<HiPhone />}
-            >
-              {contacts.danielRiha.phoneLabel}
-            </Button>
+            <div className="grid w-full grid-cols-1 gap-6 lg:grid-cols-3">
+              <Link href="/kontakt" passHref>
+                <Button as="a" color="light" size="sm">
+                  Sjednat schůzku
+                </Button>
+              </Link>
+              <Button
+                as="a"
+                href={contacts.danielRiha.emailLink}
+                variant="tinted"
+                color="light"
+                size="sm"
+                leftIcon={<HiMail />}
+              >
+                {contacts.danielRiha.emailLabel}
+              </Button>
+              <Button
+                as="a"
+                href={contacts.danielRiha.phoneLink}
+                variant="tinted"
+                color="light"
+                size="sm"
+                leftIcon={<HiPhone />}
+              >
+                {contacts.danielRiha.phoneLabel}
+              </Button>
+            </div>
           </LargeCTA>
         </ScrollReveal>
       </Wrapper>

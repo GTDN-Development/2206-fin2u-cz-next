@@ -10,6 +10,7 @@ import { contacts } from "@configs/contacts";
 import AppLayout from "@layouts/AppLayout";
 import type { NextPage } from "next";
 import ExportedImage from "next-image-export-optimizer";
+import Link from "next/link";
 import { HiMail, HiPhone } from "react-icons/hi";
 
 const testimonials = [
@@ -23,7 +24,7 @@ const testimonials = [
   },
   {
     id: 2,
-    photoSrc: "/images/testimonial.jpg",
+    photoSrc: "/images/reference/marie-lahodna.jpg",
     name: "Marie Lahodná",
     position: "Investice",
     text: "Investiční poradenství, které je transparentní, diskrétní a důvěryhodné a jehož cílem je ochrana vašeho majetku. Na spolupráci si nejvíce cením vysoké profesionality, transparentnosti, flexibility a jasných argumentů při návrzích na změnu portfolia, které reagují na měnící se podmínky finančního trhu. Pokud hledáte poradce, který nabízí služby západního světa, tak tohle je jasná volba. Z vlastní zkušenosti doporučuji!",
@@ -31,7 +32,7 @@ const testimonials = [
   },
   {
     id: 3,
-    photoSrc: "/images/testimonial.jpg",
+    photoSrc: "/images/reference/hana-hlavonova.jpg",
     name: "Hana Hlavoňová",
     position: "Investice",
     text: "Vašek mi pomohl s investicí se zajímavým výnosem. Pravidelně osobně kontroluje, jestli je vše v pořádku a nikdy není problém zavolat s jakýmkoliv dotazem. Doporučuji a těším se na další spolupráci.",
@@ -179,29 +180,33 @@ const VaclavKraut: NextPage = () => {
             text="Fin2u je finanční portál a online konzultant, který Vám pomůže na cestě k Vašim strategickým
             cílům. Pokračuj dále přes výběr."
           >
-            <Button
-              as="a"
-              href="/kontakt"
-              color="light"
-            >
-              Sjednat schůzku
-            </Button>
-            <Button
-              as="a"
-              href={contacts.vaclavKraut.emailLink}
-              color="light"
-              leftIcon={<HiMail />}
-            >
-              {contacts.vaclavKraut.emailLabel}
-            </Button>
-            <Button
-              as="a"
-              href={contacts.vaclavKraut.phoneLink}
-              color="light"
-              leftIcon={<HiPhone />}
-            >
-              {contacts.vaclavKraut.phoneLabel}
-            </Button>
+            <div className="grid w-full grid-cols-1 gap-6 lg:grid-cols-3">
+              <Link href="/kontakt" passHref>
+                <Button as="a" color="light" size="sm">
+                  Sjednat schůzku
+                </Button>
+              </Link>
+              <Button
+                as="a"
+                href={contacts.vaclavKraut.emailLink}
+                variant="tinted"
+                color="light"
+                size="sm"
+                leftIcon={<HiMail />}
+              >
+                {contacts.zdenekZajicek.emailLabel}
+              </Button>
+              <Button
+                as="a"
+                href={contacts.vaclavKraut.phoneLink}
+                variant="tinted"
+                color="light"
+                size="sm"
+                leftIcon={<HiPhone />}
+              >
+                {contacts.vaclavKraut.phoneLabel}
+              </Button>
+            </div>
           </LargeCTA>
         </ScrollReveal>
       </Wrapper>

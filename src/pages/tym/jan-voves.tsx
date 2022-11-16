@@ -10,12 +10,13 @@ import { contacts } from "@configs/contacts";
 import AppLayout from "@layouts/AppLayout";
 import type { NextPage } from "next";
 import ExportedImage from "next-image-export-optimizer";
+import Link from "next/link";
 import { HiMail, HiPhone } from "react-icons/hi";
 
 const testimonials = [
   {
     id: 1,
-    photoSrc: "/images/testimonial.jpg",
+    photoSrc: "/images/reference/veronika-kynclova.jpg",
     name: "Veronika Kynčlová",
     position: "Investice a životní pojištění",
     text: "S Honzou řeším zajištění své budoucnosti a možnosti investování. Pro klidný spánek tyto možnosti doporučuji všem.",
@@ -23,7 +24,7 @@ const testimonials = [
   },
   {
     id: 2,
-    photoSrc: "/images/testimonial.jpg",
+    photoSrc: "/images/reference/krystof-kraus.jpg",
     name: "Kryštof Kraus",
     position: "Investice",
     text: "Určitě moc doporučuji, Honza ví o čem mluví, každá schůzka je velmi příjemná a vše moc hezky vysvětlí",
@@ -31,7 +32,7 @@ const testimonials = [
   },
   {
     id: 3,
-    photoSrc: "/images/testimonial.jpg",
+    photoSrc: "/images/reference/josef-minarik.jpg",
     name: "Josef Minařík",
     position: "Kompletní finanční plán",
     text: "Výborná spolupráce, všechno pečlivě vysvětlí, zajímá se o klienty a ví o čem mluví. Nemůžu být spokojenější ",
@@ -177,30 +178,33 @@ const JanVoves: NextPage = () => {
             text="Fin2u je finanční portál a online konzultant, který Vám pomůže na cestě k Vašim strategickým
             cílům. Pokračuj dále přes výběr."
           >
-            <Button
-              as="a"
-              href="/kontakt"
-              color="light"
-              leftIcon={<HiMail />}
-            >
-              Sjednat schůzku
-            </Button>
-            <Button
-              as="a"
-              href={contacts.janVoves.emailLink}
-              color="light"
-              leftIcon={<HiMail />}
-            >
-              {contacts.janVoves.emailLabel}
-            </Button>
-            <Button
-              as="a"
-              href={contacts.janVoves.phoneLink}
-              color="light"
-              leftIcon={<HiPhone />}
-            >
-              {contacts.janVoves.phoneLabel}
-            </Button>
+            <div className="grid w-full grid-cols-1 gap-6 lg:grid-cols-3">
+              <Link href="/kontakt" passHref>
+                <Button as="a" color="light" size="sm">
+                  Sjednat schůzku
+                </Button>
+              </Link>
+              <Button
+                as="a"
+                href={contacts.janVoves.emailLink}
+                variant="tinted"
+                color="light"
+                size="sm"
+                leftIcon={<HiMail />}
+              >
+                {contacts.janVoves.emailLabel}
+              </Button>
+              <Button
+                as="a"
+                href={contacts.janVoves.phoneLink}
+                variant="tinted"
+                color="light"
+                size="sm"
+                leftIcon={<HiPhone />}
+              >
+                {contacts.janVoves.phoneLabel}
+              </Button>
+            </div>
           </LargeCTA>
         </ScrollReveal>
       </Wrapper>

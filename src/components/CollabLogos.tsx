@@ -1,38 +1,10 @@
 import Heading from "@components/Heading";
 import ScrollReveal from "@components/ScrollReveal";
-import Carousel from "./Carousel";
 
 type Props = {
   variant?: "hlavni-strana" | "uvery" | "investice" | "pojisteni";
   headingColor?: "primary" | "white";
 };
-
-const hlavniStrana = [
-  {
-    alt: "Česká spořitelna",
-    src: "/svg/loga-instituce/uvery/ceska-sporitelna.svg",
-  },
-  {
-    alt: "Česká spořitelna",
-    src: "/svg/loga-instituce/uvery/moneta.svg",
-  },
-  {
-    alt: "Česká spořitelna",
-    src: "/svg/loga-instituce/pojisteni/csob.svg",
-  },
-  {
-    alt: "Česká spořitelna",
-    src: "/svg/loga-instituce/pojisteni/generali.svg",
-  },
-  {
-    alt: "Česká spořitelna",
-    src: "/svg/loga-instituce/investice/vanguard.svg",
-  },
-  {
-    alt: "Česká spořitelna",
-    src: "/svg/loga-instituce/investice/blackrock.svg",
-  },
-];
 
 const uvery = [
   {
@@ -40,46 +12,46 @@ const uvery = [
     src: "/svg/loga-instituce/uvery/ceska-sporitelna.svg",
   },
   {
-    alt: "Česká spořitelna",
+    alt: "Hypoteční Banka",
     src: "/svg/loga-instituce/uvery/hypotecni-banka.svg",
   },
   {
-    alt: "Česká spořitelna",
+    alt: "Komerční Banka",
     src: "/svg/loga-instituce/uvery/kb.svg",
   },
   {
-    alt: "Česká spořitelna",
+    alt: "mBank",
     src: "/svg/loga-instituce/uvery/mbank.svg",
   },
   {
-    alt: "Česká spořitelna",
+    alt: "Moneta",
     src: "/svg/loga-instituce/uvery/moneta.svg",
   },
   {
-    alt: "Česká spořitelna",
+    alt: "Raiffeisen Bank",
     src: "/svg/loga-instituce/uvery/raiffeisen-bank.svg",
   },
   {
-    alt: "Česká spořitelna",
+    alt: "Uni Credit Bank",
     src: "/svg/loga-instituce/uvery/uni-credit.svg",
   },
 ];
 
 const investice = [
   {
-    alt: "Česká spořitelna",
+    alt: "Amindi",
     src: "/svg/loga-instituce/investice/amindi.svg",
   },
   {
-    alt: "Česká spořitelna",
+    alt: "Blackrock",
     src: "/svg/loga-instituce/investice/blackrock.svg",
   },
   {
-    alt: "Česká spořitelna",
+    alt: "Conseq",
     src: "/svg/loga-instituce/investice/conseq.svg",
   },
   {
-    alt: "Česká spořitelna",
+    alt: "Franklin",
     src: "/svg/loga-instituce/investice/franklin.svg",
   },
   {
@@ -87,26 +59,26 @@ const investice = [
     src: "/svg/loga-instituce/investice/ubs.svg",
   },
   {
-    alt: "Česká spořitelna",
+    alt: "Vanguard",
     src: "/svg/loga-instituce/investice/vanguard.svg",
   },
 ];
 
 const pojisteni = [
   {
-    alt: "Česká spořitelna",
+    alt: "Allianz",
     src: "/svg/loga-instituce/pojisteni/allianz.svg",
   },
   {
-    alt: "Česká spořitelna",
+    alt: "ČPP",
     src: "/svg/loga-instituce/pojisteni/cpp.svg",
   },
   {
-    alt: "Česká spořitelna",
+    alt: "ČSOB",
     src: "/svg/loga-instituce/pojisteni/csob.svg",
   },
   {
-    alt: "Česká spořitelna",
+    alt: "Generali",
     src: "/svg/loga-instituce/pojisteni/generali.svg",
   },
   {
@@ -118,11 +90,11 @@ const pojisteni = [
     src: "/svg/loga-instituce/pojisteni/kooperativa.svg",
   },
   {
-    alt: "Česká spořitelna",
+    alt: "kooperativa",
     src: "/svg/loga-instituce/pojisteni/maxima.svg",
   },
   {
-    alt: "Česká spořitelna",
+    alt: "Uniqa",
     src: "/svg/loga-instituce/pojisteni/uniqa.svg",
   },
 ];
@@ -143,11 +115,6 @@ export default function CollabLogos({
           Spolupracujeme
         </Heading>
       </ScrollReveal>
-
-      {/* Hlavní strana */}
-      {variant === "hlavni-strana" && (
-        <Carousel itemsArray={hlavniStrana} />
-      )}
 
       {/* Služba Hypotéky a Firemní úvěry */}
       {variant === "uvery" && (

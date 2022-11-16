@@ -1,7 +1,7 @@
 import Button from "@components/Button";
-import CollabLogos from "@components/CollabLogos";
 import Heading from "@components/Heading";
 import Hero from "@components/Hero";
+import BrandsCarousel from "@components/home/BrandsCarousel";
 import Services from "@components/home/Services";
 import Team from "@components/home/Team";
 import Testimonials from "@components/home/Testimonials";
@@ -49,16 +49,22 @@ const Home: NextPage = () => {
         >
           <Heading level={1} size="xl" align="center" color="white">
             Propojujeme know-how zkušených odborníků s technologiemi.
-        </Heading>
+          </Heading>
           <p className="max-w-prose text-center text-lg text-white">
-          Fin2u je finanční portál a online konzultant, který Vám pomůže k vlastnímu bydlení a finanční nezávislosti.
+            Fin2u je finanční portál a online konzultant, který Vám pomůže k
+            vlastnímu bydlení a finanční nezávislosti.
           </p>
-          <div className="mt-8 flex flex-col gap-5 sm:flex-row">
-            <Button as="a" href="#sluzby" rightIcon={<HiArrowDown />}>
+          <div className="mt-8 flex w-full max-w-lg flex-col gap-5 sm:flex-row">
+            <Button
+              as="a"
+              href="#sluzby"
+              rightIcon={<HiArrowDown />}
+              className="w-full"
+            >
               Co umíme
             </Button>
             <Link href="/kariera" passHref>
-              <Button as="a" color="light" variant="tinted">
+              <Button as="a" color="light" variant="tinted" className="w-full">
                 Pracovní příležitost
               </Button>
             </Link>
@@ -77,7 +83,20 @@ const Home: NextPage = () => {
           />
         </ScrollReveal>
 
-        <CollabLogos />
+        {/* Carousel s logama */}
+        <div className="flex w-full flex-col items-center justify-center gap-20 py-20">
+          <ScrollReveal>
+            <Heading
+              level={2}
+              size="base"
+              color="white"
+              className="text-center"
+            >
+              Spolupracujeme
+            </Heading>
+          </ScrollReveal>
+          <BrandsCarousel />
+        </div>
       </Hero>
 
       {/* Služby */}
@@ -232,9 +251,7 @@ const Home: NextPage = () => {
               České republice. Využití technologií nám umožňuje rychlejší
               propojení s kliety, díky tomu máte vždy jasné a přesné informace.
             </p>
-            <p>
-              Propojujeme know-how zkušených odborníků s technologiemi.
-            </p>
+            <p>Propojujeme know-how zkušených odborníků s technologiemi.</p>
             <Heading level={3} size={"sm"}>
               Jsme o krok napřed. Jsme nezávislí. Jsme online.
             </Heading>
@@ -249,16 +266,18 @@ const Home: NextPage = () => {
             title="Zaujala Vás naše prezentace?"
             text="Kliknutím na následující odkazy se můžete přesunout dál"
           >
-            <Link href="/kontakt" passHref>
-              <Button color="light" className="w-full">
-                Sjednat schůžku
-              </Button>
-            </Link>
-            <Link href="/kariera" passHref>
-              <Button color="light" variant="tinted" className="w-full">
-                Kariéra
-              </Button>
-            </Link>
+            <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2">
+              <Link href="/kontakt" passHref>
+                <Button color="light" className="w-full">
+                  Sjednat schůžku
+                </Button>
+              </Link>
+              <Link href="/kariera" passHref>
+                <Button color="light" variant="tinted" className="w-full">
+                  Kariéra
+                </Button>
+              </Link>
+            </div>
           </LargeCTA>
         </ScrollReveal>
       </Wrapper>

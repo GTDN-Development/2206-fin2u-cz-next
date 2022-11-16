@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 import { HiChevronDown } from "react-icons/hi";
 
 type SelectOptions = {
@@ -22,14 +22,22 @@ export default function SelectTemp({
 }: SelectOptions) {
   const [value, setValue] = useState<string>();
 
-  useEffect(() => {
-    setValueAndInputData(values[0]);
-  }, []);
+  const setValueAndInputData = useCallback(
+    (e: string) => {
+      changeData !== undefined && changeData(id, e);
+      setValue(e);
+    },
+    [id, changeData]
+  );
 
-  function setValueAndInputData(e: string) {
-    changeData !== undefined && changeData(id, e);
-    setValue(e);
-  }
+  // useEffect(() => {
+  //   setValueAndInputData(values[0]);
+  // }, [values, setValueAndInputData]);
+
+  // function setValueAndInputData(e: string) {
+  //   changeData !== undefined && changeData(id, e);
+  //   setValue(e);
+  // }
 
   return (
     <Tag className={`${className}`}>

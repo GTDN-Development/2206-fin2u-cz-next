@@ -17,28 +17,28 @@ import { HiMail, HiPhone } from "react-icons/hi";
 
 const testimonials = [
   {
+    id: 3,
+    photoSrc: "/images/reference/dominika.jpg",
+    name: "Dominika",
+    position: "osobní finance",
+    text: "Na Daniela jsem dostala doporučení od své mamky. Daniel se na první schůzce představil – měl k tomu super prezentaci. Na druhé schhůzce proběhla důkladná analýza, kde jsem si vytyčila jasné cíle a priority. Na další schůzce mi Daniel navrhl takové doporučení, které naprosto odpovídalo mé představě. Zajistil odkládání na budoucí hypotéku a optimalizoval veškeré mé produkty. Na servisní schůzce přinesl manželovy koňak, o kterém se s ním bavil 10 měsíců zpět. Daniela jsem doporučila svým přátelům i rodině.",
+    class: "flex ",
+  },
+  {
     id: 1,
-    photoSrc: "/images/testimonial.jpg",
-    name: "Jméno Příjmení",
-    position: "Specializace",
-    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla est. Aliquam id dolor. Etiam commodo dui eget wisi. Maecenas lorem. Integer vulputate sem a nibh rutrum consequat.",
+    photoSrc: "/images/reference/long-dinh.jpg",
+    name: "Long Dinh",
+    position: "Komplexní finanční mapa",
+    text: "Za mě super člověk se kterým se velice dobře mluví a velice rád Vám pomůže s vysvětlením ohledně financí nebo investování a pojištění.",
     class: "flex",
   },
   {
     id: 2,
-    photoSrc: "/images/testimonial.jpg",
-    name: "Jméno Příjmení",
-    position: "Specializace",
-    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla est. Aliquam id dolor. Etiam commodo dui eget wisi. Maecenas lorem. Integer vulputate sem a nibh rutrum consequat.",
+    photoSrc: "/images/reference/dasa.jpg",
+    name: "Dáša",
+    position: "osobní finance",
+    text: "S Danielem jsem se sešla na základě doporučení od mé kamarádky. Narozdíl od předešlé zkušenosti s finančním poradcem mě mile překvapilo, že Daniel mi nenabízel žádné produkty, ale na základě finanční analýzy se vžil do mé situace a nabídl mi řešení na míru. S Danielem jsem si jasně uvědomila své životní cíle a dala jim jasné parametry. Jsem vděčná za tuto spolupráci.",
     class: "flex sm:translate-y-10",
-  },
-  {
-    id: 3,
-    photoSrc: "/images/testimonial.jpg",
-    name: "Jméno Příjmení",
-    position: "Specializace",
-    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla est. Aliquam id dolor. Etiam commodo dui eget wisi. Maecenas lorem. Integer vulputate sem a nibh rutrum consequat.",
-    class: "flex ",
   },
 ];
 
@@ -63,15 +63,15 @@ const ZajisteniRizik: NextPage = () => {
             Komplexní služby
           </Heading>
           <p className="max-w-prose text-center text-lg text-white">
-            Vzděláváme naše klienty, přednášíme a školíme. Naše služby jsou komplexní, avšak nejčastěji s našimi klienty řešíme oblasti rizik
-            příjmů a majetku, daňové poradenství včetně firemních a zaměstnaneckých výhod.
+            Vzděláváme naše klienty, přednášíme a školíme. Naše služby jsou
+            komplexní, avšak nejčastěji s našimi klienty řešíme oblasti rizik
+            příjmů a majetku, daňové poradenství včetně firemních a
+            zaměstnaneckých výhod.
           </p>
           <div className="mt-8 flex gap-5 pb-28">
-            <Link href="/financni-nezavislost/#kalkulacka">
-              <Button as="a" href="#kalkulacka">
-                Více informací
-              </Button>
-            </Link>
+            <Button as="a" href="#vice">
+              Více informací
+            </Button>
             <Link href="/kontakt" passHref>
               <Button as="a" color="light">
                 Sjednat schůzku
@@ -82,7 +82,7 @@ const ZajisteniRizik: NextPage = () => {
       </Hero>
 
       {/* Content */}
-      <Wrapper size="sm" paddedContent="base">
+      <Wrapper id="vice" size="sm" paddedContent="base">
         <ScrollReveal
           animation="slide-up"
           className="mb-16 flex flex-col items-center justify-center sm:mb-28"
@@ -221,21 +221,23 @@ const ZajisteniRizik: NextPage = () => {
             title="Máte otázky ohledně komplexních služeb? Domluvte si nezávaznou konzultaci."
             text="Domluvte si setkání s naším specialistou, kde společně probereme vaše dotazy. Působíme po celé České republice. Můžeme to řešit osobně, po telefonu či online, nebo napište přes kontaktní formulář."
           >
-            <Link href="/kontakt" passHref>
-              <Button as="a" color="light" className="w-full">
-                Sjednat schůzku
+            <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2">
+              <Link href="/kontakt" passHref>
+                <Button as="a" color="light" className="w-full">
+                  Sjednat schůzku
+                </Button>
+              </Link>
+              <Button
+                as="a"
+                href={contacts.rizika.phoneLink}
+                variant="tinted"
+                color="light"
+                leftIcon={<HiPhone />}
+                className="w-full"
+              >
+                {contacts.rizika.phoneLabel}
               </Button>
-            </Link>
-            <Button
-              as="a"
-              href={contacts.rizika.phoneLink}
-              variant="tinted"
-              color="light"
-              leftIcon={<HiPhone />}
-              className="w-full"
-            >
-              {contacts.rizika.phoneLabel}
-            </Button>
+            </div>
           </LargeCTA>
         </ScrollReveal>
       </Wrapper>

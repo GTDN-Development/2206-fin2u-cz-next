@@ -10,6 +10,7 @@ import { contacts } from "@configs/contacts";
 import AppLayout from "@layouts/AppLayout";
 import type { NextPage } from "next";
 import ExportedImage from "next-image-export-optimizer";
+import Link from "next/link";
 import { HiMail, HiPhone } from "react-icons/hi";
 
 const testimonials = [
@@ -55,7 +56,6 @@ const ZdenekZajicek: NextPage = () => {
             "Rád se probouzím do dalšího dne s vědomím, že to, co dělám dává mě i lidem, kteří mi důvěřují smysl a že pro ně mohu udělat maximum. Proto si zakládám na co nejprofesionálnějším přístupu a zároveň na co nejpevnějších mezilidských vztazích. Vzájemná důvěra je pro mě naprostý základ."
           }
         />
-        
 
         {/* Popis + fotka */}
         <ScrollReveal
@@ -80,20 +80,19 @@ const ZdenekZajicek: NextPage = () => {
               finančního směru svých klientů. Kromě toho, že mě tento obor živí,
               je také mým velkým koníčkem.
             </p>
-            <p> 
-              Umím Vám pomoci s veškerými
-              finančními, investičními a pojistnými produkty, které jsou na
-              trhu. Mám schopnost naslouchat a zároveň do naší vzájemné
-              spolupráce vkládat své znalosti a zkušenosti a především klienty
-              navést na tu správnou cestu.
+            <p>
+              Umím Vám pomoci s veškerými finančními, investičními a pojistnými
+              produkty, které jsou na trhu. Mám schopnost naslouchat a zároveň
+              do naší vzájemné spolupráce vkládat své znalosti a zkušenosti a
+              především klienty navést na tu správnou cestu.
             </p>
             <p>
-              Zaměřuji se jak na podnikatele a firmy,
-              tak i na zaměstnance a ostatní - mých služeb proto může využít
-              každý. Jsem rád, že mohu ke své práci přistupovat takto osobně,
-              vkládat do ní sám sebe a nebýt jen dalším v řadě. Věřte tomu, nebo
-              ne, ale i v našem oboru jsou obrovské rozdíly. Jsem tu s čímkoliv
-              pro Vás a Vaše spokojenost je pro mě úplně nejpodstatnější.
+              Zaměřuji se jak na podnikatele a firmy, tak i na zaměstnance a
+              ostatní - mých služeb proto může využít každý. Jsem rád, že mohu
+              ke své práci přistupovat takto osobně, vkládat do ní sám sebe a
+              nebýt jen dalším v řadě. Věřte tomu, nebo ne, ale i v našem oboru
+              jsou obrovské rozdíly. Jsem tu s čímkoliv pro Vás a Vaše
+              spokojenost je pro mě úplně nejpodstatnější.
             </p>
             <div className="flex gap-4">
               <Badge size="lg" hasDot={true}>
@@ -186,33 +185,37 @@ const ZdenekZajicek: NextPage = () => {
       <Wrapper size="lg" paddedContent="base">
         <ScrollReveal>
           <LargeCTA
-             title="ZAUJALA TĚ NAŠE PREZENTACE?"
-             text="Fin2u je finanční portál a online konzultant, který Vám pomůže na cestě k Vašim strategickým
+            title="ZAUJALA TĚ NAŠE PREZENTACE?"
+            text="Fin2u je finanční portál a online konzultant, který Vám pomůže na cestě k Vašim strategickým
              cílům. Pokračuj dále přes výběr."
           >
-            <Button
-              as="a"
-              href="/kontakt"
-              color="light"
-            >
-              Sjednat schůzku
-            </Button>
-            <Button
-              as="a"
-              href={contacts.zdenekZajicek.emailLink}
-              color="light"
-              leftIcon={<HiMail />}
-            >
-              {contacts.zdenekZajicek.emailLabel}
-            </Button>
-            <Button
-              as="a"
-              href={contacts.zdenekZajicek.phoneLink}
-              color="light"
-              leftIcon={<HiPhone />}
-            >
-              {contacts.zdenekZajicek.phoneLabel}
-            </Button>
+            <div className="grid w-full grid-cols-1 gap-6 lg:grid-cols-3">
+              <Link href="/kontakt" passHref>
+                <Button as="a" color="light" size="sm">
+                  Sjednat schůzku
+                </Button>
+              </Link>
+              <Button
+                as="a"
+                href={contacts.zdenekZajicek.emailLink}
+                variant="tinted"
+                color="light"
+                size="sm"
+                leftIcon={<HiMail />}
+              >
+                {contacts.zdenekZajicek.emailLabel}
+              </Button>
+              <Button
+                as="a"
+                href={contacts.zdenekZajicek.phoneLink}
+                variant="tinted"
+                color="light"
+                size="sm"
+                leftIcon={<HiPhone />}
+              >
+                {contacts.zdenekZajicek.phoneLabel}
+              </Button>
+            </div>
           </LargeCTA>
         </ScrollReveal>
       </Wrapper>

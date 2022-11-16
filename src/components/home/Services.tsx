@@ -30,7 +30,7 @@ const services = [
   {
     name: "DOPLŇKOVÉ SLUŽBY",
     description: "Řízení rizik, vzdělávání a daňové poradenství.",
-    href: "/sluzby/zajisteni-rizik",
+    href: "/sluzby/dalsi-sluzby",
     icon: BsFillShieldLockFill,
   },
 ];

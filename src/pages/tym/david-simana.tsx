@@ -10,6 +10,7 @@ import { contacts } from "@configs/contacts";
 import AppLayout from "@layouts/AppLayout";
 import type { NextPage } from "next";
 import ExportedImage from "next-image-export-optimizer";
+import Link from "next/link";
 import { HiMail, HiPhone } from "react-icons/hi";
 
 const testimonials = [
@@ -72,24 +73,27 @@ const DavidSimana: NextPage = () => {
             className="col-span-1"
           />
           <div className="col-span-1 flex flex-col gap-7">
+            <p>Proč právě Fin2u? Je to jednoduché, finance pro Vás.</p>
             <p>
-              Proč právě Fin2u? Je to jednoduché, finance pro Vás.
+              Projekt vznikl díky kvalitnímu zázemí na finančním trhu s
+              připojením zkušeností z oblasti online světa ve spolupráci s Duc
+              Trung Nguyen, EFA.
             </p>
             <p>
-              Projekt vznikl díky kvalitnímu zázemí na finančním trhu s připojením zkušeností z oblasti online světa
-              ve spolupráci s Duc Trung Nguyen, EFA.
+              Aktivně spolupracujeme s podnikateli a zaměstnanci ve středním
+              managementu. Staráme se o jejich majetek komplexně v duchu
+              strategie wealth-protection, často businessově propojuji své
+              klienty a hledám nové příležitosti. Pomáhám s vymyšlením logiky
+              často složitých případů. Řešíme často alternativní příjmy pro
+              podnikatele. Efektivní využití obratu firmy (podíl na zisku,
+              budoucí příjmy, a pod…) Ohýbáme metodiky bank pro prospěch našich
+              klientů.
             </p>
             <p>
-              Aktivně spolupracujeme s podnikateli a zaměstnanci ve středním managementu. Staráme se o jejich
-              majetek komplexně v duchu strategie wealth-protection, často businessově propojuji své klienty a
-              hledám nové příležitosti. Pomáhám s vymyšlením logiky často složitých případů. Řešíme často
-              alternativní příjmy pro podnikatele. Efektivní využití obratu firmy (podíl na zisku, budoucí příjmy, a
-              pod…) Ohýbáme metodiky bank pro prospěch našich klientů.
-            </p>
-            <p>
-              Začínáte přemýšlet nad rentou, prodáváte firmu nebo jste zdědili majetek v řádech milionů korun a
-              chcete jej chránit? Používáme osvědčenou strategii, při které pomalu a postupně nakupujeme podíly
-              ve stovkách reálných firem.
+              Začínáte přemýšlet nad rentou, prodáváte firmu nebo jste zdědili
+              majetek v řádech milionů korun a chcete jej chránit? Používáme
+              osvědčenou strategii, při které pomalu a postupně nakupujeme
+              podíly ve stovkách reálných firem.
             </p>
             <p>
               Začínáte přemýšlet nad rentou, prodáváte firmu nebo jste zdědili
@@ -98,8 +102,8 @@ const DavidSimana: NextPage = () => {
               podíly ve stovkách reálných firem, které prosperují desítky let.
             </p>
             <p>
-              Klienti často přicházejí s potřebou řešit své strategické finanční cíle, avšak nemají rozumného
-              konzultanta pro jejich řešení.
+              Klienti často přicházejí s potřebou řešit své strategické finanční
+              cíle, avšak nemají rozumného konzultanta pro jejich řešení.
             </p>
             <div className="flex gap-4">
               <Badge size="lg" hasDot={true}>
@@ -194,34 +198,38 @@ const DavidSimana: NextPage = () => {
       {/* CTA */}
       <Wrapper size="lg" paddedContent="base">
         <ScrollReveal>
-          <LargeCTA 
+          <LargeCTA
             title="ZAUJALA TĚ NAŠE PREZENTACE?"
             text="Fin2u je finanční portál a online konzultant, který Vám pomůže na cestě k Vašim strategickým
             cílům. Pokračuj dále přes výběr."
           >
-            <Button
-              as="a"
-              href="/kontakt"
-              color="light"
-            >
-              Sjednat schůzku
-            </Button>
-            <Button
-              as="a"
-              href={contacts.davidSimana.emailLink}
-              color="light"
-              leftIcon={<HiMail />}
-            >
-              {contacts.davidSimana.emailLabel}
-            </Button>
-            <Button
-              as="a"
-              href={contacts.davidSimana.phoneLink}
-              color="light"
-              leftIcon={<HiPhone />}
-            >
-              {contacts.davidSimana.phoneLabel}
-            </Button>
+            <div className="grid w-full grid-cols-1 gap-6 lg:grid-cols-3">
+              <Link href="/kontakt" passHref>
+                <Button as="a" color="light" size="sm">
+                  Sjednat schůzku
+                </Button>
+              </Link>
+              <Button
+                as="a"
+                href={contacts.davidSimana.emailLink}
+                variant="tinted"
+                color="light"
+                size="sm"
+                leftIcon={<HiMail />}
+              >
+                {contacts.davidSimana.emailLabel}
+              </Button>
+              <Button
+                as="a"
+                href={contacts.davidSimana.phoneLink}
+                variant="tinted"
+                color="light"
+                size="sm"
+                leftIcon={<HiPhone />}
+              >
+                {contacts.davidSimana.phoneLabel}
+              </Button>
+            </div>
           </LargeCTA>
         </ScrollReveal>
       </Wrapper>

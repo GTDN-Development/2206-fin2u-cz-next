@@ -10,6 +10,7 @@ import { contacts } from "@configs/contacts";
 import AppLayout from "@layouts/AppLayout";
 import type { NextPage } from "next";
 import ExportedImage from "next-image-export-optimizer";
+import Link from "next/link";
 import { HiMail, HiPhone } from "react-icons/hi";
 
 const testimonials = [
@@ -51,7 +52,9 @@ const DucTrungNguyen: NextPage = () => {
           gradient="left"
           kicker="Ředitel pro vzdělání"
           heading="Duc Trung Nguyen, EFA"
-          caption={"Krásný dobrý den přátelé, jmenuji se Nguyen Duc Trung, EFA (Čung) společně s Davidem Šimanou jsme založili projektu Fin2u."}
+          caption={
+            "Krásný dobrý den přátelé, jmenuji se Nguyen Duc Trung, EFA (Čung) společně s Davidem Šimanou jsme založili projektu Fin2u."
+          }
         />
 
         {/* Popis + fotka */}
@@ -71,13 +74,15 @@ const DucTrungNguyen: NextPage = () => {
           />
           <div className="col-span-1 flex flex-col gap-7">
             <p>
-              V oblasti finančního a investičního poradenství pro bonitní klientelu se pohybujeme
-              od roku 2016. Máme bohaté zkušenosti s tvorbou finančních plánu a komplexního
-              poradenství pro zajištění pasivního příjmu klientůu
+              V oblasti finančního a investičního poradenství pro bonitní
+              klientelu se pohybujeme od roku 2016. Máme bohaté zkušenosti s
+              tvorbou finančních plánu a komplexního poradenství pro zajištění
+              pasivního příjmu klientůu
             </p>
             <p>
-              Od roku 2018 vlastníme certifikát EFA jeden z nejprestižnějších certifikátů ve
-              finančním plánováním a investičním poradenství v Evropě s akreditací u Čnb.
+              Od roku 2018 vlastníme certifikát EFA jeden z nejprestižnějších
+              certifikátů ve finančním plánováním a investičním poradenství v
+              Evropě s akreditací u Čnb.
             </p>
             <div className="flex gap-4">
               <Badge size="lg" hasDot={true}>
@@ -184,29 +189,33 @@ const DucTrungNguyen: NextPage = () => {
             text="Fin2u je finanční portál a online konzultant, který Vám pomůže na cestě k Vašim strategickým
             cílům. Pokračuj dále přes výběr."
           >
-            <Button
-              as="a"
-              href="/kontakt"
-              color="light"
-            >
-             Sjednat schůzku
-            </Button>
-            <Button
-              as="a"
-              href={contacts.ducTrungNguyen.emailLink}
-              color="light"
-              leftIcon={<HiMail />}
-            >
-              {contacts.ducTrungNguyen.emailLabel}
-            </Button>
-            <Button
-              as="a"
-              href={contacts.ducTrungNguyen.phoneLink}
-              color="light"
-              leftIcon={<HiPhone />}
-            >
-              {contacts.ducTrungNguyen.phoneLabel}
-            </Button>
+            <div className="grid w-full grid-cols-1 gap-6 lg:grid-cols-3">
+              <Link href="/kontakt" passHref>
+                <Button as="a" color="light" size="sm">
+                  Sjednat schůzku
+                </Button>
+              </Link>
+              <Button
+                as="a"
+                href={contacts.ducTrungNguyen.emailLink}
+                variant="tinted"
+                color="light"
+                size="sm"
+                leftIcon={<HiMail />}
+              >
+                {contacts.ducTrungNguyen.emailLabel}
+              </Button>
+              <Button
+                as="a"
+                href={contacts.ducTrungNguyen.phoneLink}
+                variant="tinted"
+                color="light"
+                size="sm"
+                leftIcon={<HiPhone />}
+              >
+                {contacts.ducTrungNguyen.phoneLabel}
+              </Button>
+            </div>
           </LargeCTA>
         </ScrollReveal>
       </Wrapper>

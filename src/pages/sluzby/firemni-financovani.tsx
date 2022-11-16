@@ -252,21 +252,23 @@ const FiremniFinancovani: NextPage = () => {
             title="Máte otázky ohledně firemního poradenství? Domluvte si nezávaznou konzultaci."
             text="Domluvte si setkání s naším specialistou, kde společně probereme Vaše dotazy. Působíme po celé České republice. Můžeme to řešit osobně, po telefonu či online, nebo napište přes kontaktní formulář."
           >
-            <Link href="/kontakt" passHref>
-              <Button as="a" color="light" className="w-full">
-                Sjednat schůzku
+            <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2">
+              <Link href="/kontakt" passHref>
+                <Button as="a" color="light" className="w-full">
+                  Sjednat schůzku
+                </Button>
+              </Link>
+              <Button
+                as="a"
+                href={contacts.uvery.phoneLink}
+                variant="tinted"
+                color="light"
+                leftIcon={<HiPhone />}
+                className="w-full"
+              >
+                {contacts.uvery.phoneLabel}
               </Button>
-            </Link>
-            <Button
-              as="a"
-              href={contacts.uvery.phoneLink}
-              variant="tinted"
-              color="light"
-              leftIcon={<HiPhone />}
-              className="w-full"
-            >
-              {contacts.uvery.phoneLabel}
-            </Button>
+            </div>
           </LargeCTA>
         </ScrollReveal>
       </Wrapper>

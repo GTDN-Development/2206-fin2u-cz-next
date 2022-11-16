@@ -37,6 +37,7 @@ export default function LoansCalc({ className = "" }: LoansCalcProps) {
 
   function changeData(id: string, value: any) {
     setInputData((prevState) => ({ ...prevState, [id]: value }));
+    // console.log(id, value);
   }
   return (
     <div className={`personalCalc flex flex-col p-5 ${className}`}>
@@ -54,7 +55,10 @@ export default function LoansCalc({ className = "" }: LoansCalcProps) {
             className={`cursor-pointer rounded-md border-2 border-none px-4 py-2 font-medium text-white ${
               inputData.zastava === false ? "bg-primary/100" : "bg-primary/60"
             }`}
-            onClick={() => changeData("zastava", false)}
+            onClick={() => {
+              changeData("zastava", false);
+              changeData("pujcka", 0);
+            }}
           >
             Bez zástavy
           </button>
@@ -148,21 +152,29 @@ export default function LoansCalc({ className = "" }: LoansCalcProps) {
         />
       </div>
       <div className="mt-10 flex w-full items-center justify-center">
-        <Button 
-          size="lg" 
-          type="button"         
-          isDisabled={inputData.pujcka > inputData.zajisteni ? true : false} 
+        <Button
+          size="lg"
+          type="button"
+          isDisabled={
+            inputData.pujcka > inputData.zajisteni && inputData.zastava === true
+              ? true
+              : false
+          }
           onClick={() => letsCalcIt()}
         >
           Spočítat
         </Button>
       </div>
-      <Alert 
+      <Alert
         title="Chyba!"
         text="Hodnota půjčky nesmí být vyšší než hodnota nemovitosti."
         status="error"
         variant="tinted"
-        className={` mt-5  ${inputData.pujcka > inputData.zajisteni ? "block" : "hidden"}`}
+        className={` mt-5  ${
+          inputData.pujcka > inputData.zajisteni && inputData.zastava === true
+            ? "block"
+            : "hidden"
+        }`}
       />
       <Modal
         isModalOpen={isModalOpen}
