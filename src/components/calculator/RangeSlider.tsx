@@ -6,7 +6,7 @@ interface RangeSliderProps {
   id: string;
   min: number;
   max: number;
-  skip: number;
+  step: number;
   title: string;
   unit?: string;
   defaultValue?: number;
@@ -17,7 +17,7 @@ export default function RangeSlider({
   id,
   min,
   max,
-  skip,
+  step,
   title,
   unit,
   defaultValue,
@@ -88,8 +88,8 @@ export default function RangeSlider({
         <button
           className="flex items-center justify-center rounded-full bg-primary p-3.5 text-xl text-white outline-none transition-colors duration-150 hover:bg-primary/80 focus-visible:ring-4 focus-visible:ring-primary/70"
           onClick={() =>
-            value >= min + skip &&
-            setValueAndInputData(parseFloat(value) - skip)
+            value >= min + step &&
+            setValueAndInputData(parseFloat(value) - step)
           }
         >
           <HiMinus />
@@ -107,8 +107,8 @@ export default function RangeSlider({
         <button
           className="flex items-center justify-center rounded-full bg-primary p-3.5 text-xl text-white outline-none transition-colors duration-150 hover:bg-primary/80 focus-visible:ring-4 focus-visible:ring-primary/70"
           onClick={() =>
-            value <= max - skip &&
-            setValueAndInputData(parseFloat(value) + skip)
+            value <= max - step &&
+            setValueAndInputData(parseFloat(value) + step)
           }
         >
           <HiPlus />

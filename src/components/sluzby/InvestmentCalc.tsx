@@ -51,7 +51,7 @@ export default function InvestmentCalc({
           id="renta"
           min={5000}
           max={100000}
-          skip={5000}
+          step={5000}
           defaultValue={inputData.renta}
           title="Jak velkou měsíční rentu chcete?"
           unit="Kč"
@@ -61,7 +61,7 @@ export default function InvestmentCalc({
           id={"cerpatZa"}
           min={1}
           max={30}
-          skip={1}
+          step={1}
           defaultValue={inputData.cerpatZa}
           title={"Za kolik let chcete peníze čerpat?"}
           unit={
@@ -77,7 +77,7 @@ export default function InvestmentCalc({
           id="investovat"
           min={0}
           max={10000000}
-          skip={50000}
+          step={50000}
           defaultValue={inputData.investovat}
           title="Kolik už jste investovali?"
           unit={"Kč"}
@@ -87,7 +87,7 @@ export default function InvestmentCalc({
           id="odklad"
           min={500}
           max={100000}
-          skip={1000}
+          step={1000}
           defaultValue={inputData.odklad}
           title="Kolik můžete měsíčně odkládat?"
           unit={"Kč / měsíc"}
