@@ -166,6 +166,7 @@ const FinancniNezavislost: NextPage = () => {
         <ScrollReveal>
           <LargeImageCTA
             imageSrc="/images/meeting.jpg"
+            title="Spojte se s naším investičním specialistou"
             text="Dokáže i Vaše portfolio s přehledem porážet inflaci a přitom Vám vyplácet pravidelnou rentu? Pojďme si společně zavolat. To nám dá příležitost se vzájemně poznat a zjistit, jestli spolu můžeme spolupracovat."
           >
             <Button

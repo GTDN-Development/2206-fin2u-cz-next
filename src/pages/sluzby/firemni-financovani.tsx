@@ -30,25 +30,25 @@ const testimonials = [
   {
     id: 1,
     photoSrc: "/images/testimonial.jpg",
-    name: "Jméno Příjmení",
-    position: "Specializace",
-    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla est. Aliquam id dolor. Etiam commodo dui eget wisi. Maecenas lorem. Integer vulputate sem a nibh rutrum consequat.",
+    name: "Ondřej Nádvorník, MBA",
+    position: "jednatel FINLEY AGENCY s.r.o.",
+    text: "Díky Davidu Šimanovi se nám podařilo pro náš projekt získat firemní financování od renomované banky. David byl profesionální, proaktivní a právě díky jenom zkušenostem a kontaktů se vše podařilo dohodnout a zrealizovat ve velmi krátkém čase. Davidovi tímto děkuji a rád se na něj obrátím i v budoucnu v dalších případech, kdy půjde o naše finanční plánování.",
     class: "flex",
   },
   {
     id: 2,
     photoSrc: "/images/testimonial.jpg",
-    name: "Jméno Příjmení",
-    position: "Specializace",
-    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla est. Aliquam id dolor. Etiam commodo dui eget wisi. Maecenas lorem. Integer vulputate sem a nibh rutrum consequat.",
+    name: "RST realtech, spol. s.r.o.",
+    position: "",
+    text: "S Danielem Říhou jsme navázali spolupráci díky doporučení mého obchodního partnera. Daniel nám zajistil krytí majetku podnikatelského subjektu u renomované instituce. Daniel je profesionál a proto jsme jeho služby doporučili dál. Těším se na další spolupráci v oblasti finančního plánování.",
     class: "flex sm:translate-y-10",
   },
   {
     id: 3,
     photoSrc: "/images/testimonial.jpg",
-    name: "Jméno Příjmení",
-    position: "Specializace",
-    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla est. Aliquam id dolor. Etiam commodo dui eget wisi. Maecenas lorem. Integer vulputate sem a nibh rutrum consequat.",
+    name: "Ondřej Langmajer",
+    position: "Mavi monolity",
+    text: "Na pana Šimanu jsme narazili náhodou a to reklamou na sociálních sítích. V tu dobu jsme aktivně řešili provozní úvěr pro naši společnost, ale bez úspěchu. Až pan Šimana nám s tímto problémem pomohl, navrhl konstruktivní řešení a celou věc dotáhl až do zdárného konce. Vyřešením jednoho problému ale pro p. Šimanu neskončila a proaktivně nabízel další možnosti, jak pomoci naší společnosti. Moc děkujeme za jeho služby, které budeme i nadále rádi využívat.",
     class: "flex ",
   },
 ];
@@ -176,6 +176,7 @@ const FiremniFinancovani: NextPage = () => {
         <ScrollReveal>
           <LargeImageCTA
             imageSrc="/images/meeting.jpg"
+            title="Spojte se s naším specialistou"
             text="Využijte naše služby, kontaktujte firemního specialistu. Pojďme si společně zavolat a získejte konkurenční výhodu pro Vaši firmu."
           >
             <Button
@@ -229,7 +230,7 @@ const FiremniFinancovani: NextPage = () => {
                   />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-sm font-semibold tracking-widest text-primary sm:text-base">
+                  <span className="text-sm font-semibold leading-5 tracking-widest text-primary sm:text-base">
                     {testimonial.name}
                   </span>
                   <span className="text-xs tracking-wider text-muted">

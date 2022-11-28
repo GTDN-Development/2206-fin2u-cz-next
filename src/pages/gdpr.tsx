@@ -9,10 +9,7 @@ import { globalConfig } from "src/configs/globalConfig";
 const GdprPage: NextPage = () => {
   return (
     <AppLayout navbarInitialStyle="light">
-      <Seo
-        title="Zpracování osobních údajů"
-        description="Lorem ipsum dolor sit amet"
-      />
+      <Seo title="Zpracování osobních údajů" description="" />
       <Wrapper className="pt-24 md:pb-16 md:pt-36">
         <Heading
           level={1}

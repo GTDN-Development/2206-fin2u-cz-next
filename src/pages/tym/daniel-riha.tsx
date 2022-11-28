@@ -174,7 +174,11 @@ const DanielRiha: NextPage = () => {
       {/* CTA */}
       <Wrapper size="lg" paddedContent="base">
         <ScrollReveal>
-          <LargeCTA>
+          <LargeCTA
+            title="ZAUJALA TĚ NAŠE PREZENTACE?"
+            text="Fin2u je finanční portál a online konzultant, který Vám pomůže na cestě k Vašim strategickým
+            cílům. Pokračuj dále přes výběr."
+          >
             <div className="grid w-full grid-cols-1 gap-6 lg:grid-cols-3">
               <Link href="/kontakt" passHref>
                 <Button as="a" color="light" size="sm">

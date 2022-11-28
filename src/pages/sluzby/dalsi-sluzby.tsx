@@ -140,7 +140,8 @@ const ZajisteniRizik: NextPage = () => {
         <ScrollReveal>
           <LargeImageCTA
             imageSrc="/images/meeting.jpg"
-            text="Spojte se s naším finančním specialistou. Získejte možnost individuální konzultace."
+            title="Spojte se s naším finančním specialistou"
+            text="Získejte možnost individuální konzultace."
           >
             <Button
               as="a"

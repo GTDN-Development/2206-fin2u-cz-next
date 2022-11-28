@@ -194,7 +194,7 @@ const VaclavKraut: NextPage = () => {
                 size="sm"
                 leftIcon={<HiMail />}
               >
-                {contacts.zdenekZajicek.emailLabel}
+                {contacts.vaclavKraut.emailLabel}
               </Button>
               <Button
                 as="a"

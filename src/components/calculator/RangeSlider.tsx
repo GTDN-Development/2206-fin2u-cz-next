@@ -100,6 +100,7 @@ export default function RangeSlider({
             min={min}
             max={max}
             value={value}
+            step={step}
             className="slider h-2 w-full appearance-none rounded-lg bg-body-200 opacity-80 outline-none transition duration-200 hover:opacity-100"
             onChange={(e) => setValueAndInputData(parseFloat(e.target.value))}
           />

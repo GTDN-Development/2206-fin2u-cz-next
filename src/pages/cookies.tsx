@@ -9,10 +9,7 @@ import { globalConfig } from "src/configs/globalConfig";
 const CookiesPage: NextPage = () => {
   return (
     <AppLayout navbarInitialStyle="light">
-      <Seo
-        title="Zásady používání cookies"
-        description="Lorem ipsum dolor sit amet"
-      />
+      <Seo title="Zásady používání cookies" description="" />
       <Wrapper className="pt-24 md:pb-16 md:pt-36">
         <Heading
           level={1}
