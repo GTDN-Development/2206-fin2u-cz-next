@@ -42,7 +42,7 @@ export default function MortgageCalc({ className = "" }: MortgageCalcProps) {
   }
 
   return (
-    <div className={`personalCalc flex flex-col p-5 ${className}`}>
+    <div className={`personalCalc flex flex-col py-5 ${className}`}>
       <div className="mt-24">
         <RangeSlider
           changeData={changeData}
@@ -51,7 +51,7 @@ export default function MortgageCalc({ className = "" }: MortgageCalcProps) {
           max={50000000}
           step={100000}
           defaultValue={inputData.nemovitost}
-          title={"Hodnota Vaší nemovitosti?"}
+          title={"Hodnota nemovitosti?"}
           unit={"Kč"}
         />
         <RangeSlider
@@ -85,7 +85,7 @@ export default function MortgageCalc({ className = "" }: MortgageCalcProps) {
           id={"sazba"}
           min={2}
           max={12}
-          step={0.5}
+          step={0.1}
           defaultValue={inputData.sazba}
           title={"Sazba hypotéky?"}
           unit={"%"}

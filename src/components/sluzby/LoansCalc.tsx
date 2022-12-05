@@ -41,7 +41,7 @@ export default function LoansCalc({ className = "" }: LoansCalcProps) {
     // console.log(id, value);
   }
   return (
-    <div className={`personalCalc flex flex-col p-5 ${className}`}>
+    <div className={`personalCalc flex flex-col py-5 ${className}`}>
       <div className="mt-24">
         <div className={`mb-10 flex w-full flex-row gap-6`}>
           <button

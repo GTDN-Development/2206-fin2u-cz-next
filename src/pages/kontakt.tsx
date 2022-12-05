@@ -30,24 +30,23 @@ const Contact: NextPage = () => {
             className="absolute top-0 right-0 -z-10 hidden aspect-square h-[300px] w-[300px] lg:block xl:h-[600px] xl:w-[600px]"
           />
 
-          <Wrapper
-            size="base"
-            className="grid grid-cols-1 gap-8 lg:grid-cols-2 xl:gap-16"
-          >
+          <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 lg:w-[90%] lg:grid-cols-2 xl:gap-16">
             {/* Kontaktní údaje */}
             <div className="col-span-1 flex flex-col gap-4 lg:gap-8">
               <Heading level={1} size="xl">
                 Kontakt
               </Heading>
               <p>
-              Domluvte si setkání s naším specialistou, kde společně probereme Vaše přání a cíle.
+                Domluvte si setkání s naším specialistou, kde společně probereme
+                Vaše přání a cíle.
               </p>
               <div className="mt-8 flex flex-col gap-8 rounded-xl bg-body-100 p-6 sm:p-12">
                 <Heading level={2} size="base">
                   Kontaktní informace
                 </Heading>
                 <p>
-                Působíme po celé České republice. Můžeme to řešit osobně, po telefonu či online, nebo napište přes kontaktní formulář.
+                  Působíme po celé České republice. Můžeme to řešit osobně, po
+                  telefonu či online, nebo napište přes kontaktní formulář.
                 </p>
               </div>
               <a
@@ -103,7 +102,7 @@ const Contact: NextPage = () => {
             <div className="col-span-1 rounded-xl bg-body p-6 shadow-xl sm:p-12 lg:mt-20">
               <ContactForm />
             </div>
-          </Wrapper>
+          </div>
         </Wrapper>
       </div>
 
@@ -114,7 +113,8 @@ const Contact: NextPage = () => {
             Kde nás najdete
           </Heading>
           <p className="max-w-prose text-center">
-            V případě osobní schůzky se můžeme společně potkat na adrese naší kanceláře.
+            V případě osobní schůzky se můžeme společně potkat na adrese naší
+            kanceláře.
           </p>
         </div>
         <div className="mt-20 grid grid-cols-2 gap-10 lg:grid-cols-3">
@@ -142,12 +142,12 @@ const Contact: NextPage = () => {
       {/* CTA */}
       <Wrapper size="lg" paddedContent="sm" className="mb-28">
         <ScrollReveal>
-          <LargeImageCTA 
+          <LargeImageCTA
             title="Chceš pracovat s námi?"
             text="Posuň svou kariéru nad vyšší úroveň. 
             Propojujeme know-how zkušených odborníků s technologiemi.
             Rozvíjíme nové talenty, vytváříme růstové prostředí."
-            >
+          >
             <Link href="/kariera">
               <Button as="a" color="light" leftIcon={<HiMail />}>
                 Toto je tvá příležitost

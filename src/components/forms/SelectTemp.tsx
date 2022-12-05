@@ -44,7 +44,7 @@ export default function SelectTemp({
       <div className="flex flex-row justify-between">
         <label
           htmlFor={id}
-          className="text-lg font-semibold leading-tight text-rich"
+          className="text-sm font-semibold leading-tight text-rich sm:text-lg"
         >
           {title}
         </label>

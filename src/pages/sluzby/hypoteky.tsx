@@ -64,7 +64,7 @@ const Hypoteky: NextPage = () => {
             Získáte skvělou hypotéku s nejnižším úrokem, pokud možno bez
             poplatků a s odhadem zdarma.
           </p>
-          <div className="mt-8 flex gap-5 pb-28">
+          <div className="mt-8 flex flex-col gap-5 pb-28 sm:flex-row">
             <Button as="a" href="#kalkulacka">
               Výpočet splátky
             </Button>

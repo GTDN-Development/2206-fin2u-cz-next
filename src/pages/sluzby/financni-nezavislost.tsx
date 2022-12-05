@@ -66,7 +66,7 @@ const FinancniNezavislost: NextPage = () => {
             Vaše peníze můžou pracovat stejně jako vy. Co kdyby vás živily, až
             to nebudete chtít dělat sami?
           </p>
-          <div className="mt-8 flex gap-5 pb-28">
+          <div className="mt-8 flex flex-col gap-5 pb-28 sm:flex-row">
             <Button as="a" href="#kalkulacka">
               Výpočet renty
             </Button>

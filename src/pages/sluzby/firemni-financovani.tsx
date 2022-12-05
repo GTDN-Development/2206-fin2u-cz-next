@@ -78,7 +78,7 @@ const FiremniFinancovani: NextPage = () => {
             business plán a pomůžeme s průběhem celého řešení od výběru banky po
             následný servis včetně zaměstnaneckých a daňového poradenství.
           </p>
-          <div className="mt-8 flex gap-5 pb-28">
+          <div className="mt-8 flex flex-col gap-5 pb-28 sm:flex-row">
             <Button as="a" href="kalkulacka">
               Výpočet financování
             </Button>

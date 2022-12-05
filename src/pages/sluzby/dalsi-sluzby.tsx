@@ -68,7 +68,7 @@ const ZajisteniRizik: NextPage = () => {
             příjmů a majetku, daňové poradenství včetně firemních a
             zaměstnaneckých výhod.
           </p>
-          <div className="mt-8 flex gap-5 pb-28">
+          <div className="mt-8 flex flex-col gap-5 pb-28 sm:flex-row">
             <Button as="a" href="#vice">
               Více informací
             </Button>

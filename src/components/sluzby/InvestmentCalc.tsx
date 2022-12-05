@@ -46,7 +46,7 @@ export default function InvestmentCalc({
     setInputData((prevState) => ({ ...prevState, [id]: value }));
   }
   return (
-    <div className={`personalCalc flex flex-col p-5 ${className}`}>
+    <div className={`personalCalc flex flex-col py-5 ${className}`}>
       <div className="mt-24">
         <RangeSlider
           changeData={changeData}
@@ -308,7 +308,7 @@ function Modal({ isModalOpen, setIsModalOpen, inputData, result }: ModalProps) {
                         hasIcon={false}
                         isDismissable={false}
                         title="To nám nevychází."
-                        text="Bohužel, abyste mohli pobírat požadovanou rentu, budete muset investovat delší dobu, nebo zvýšit vaší měsíční splátku."
+                        text="Bohužel, abyste mohli pobírat požadovanou rentu, budete muset investovat delší dobu, nebo pravidelně odkládat větší částku."
                         className="my-6"
                       />
                     )}

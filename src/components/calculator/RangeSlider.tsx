@@ -44,11 +44,11 @@ export default function RangeSlider({
   return (
     <div id={id} className="mx-auto mb-16 flex w-full flex-col">
       <div className="flex flex-row justify-between">
-        <span className="block text-lg font-semibold leading-tight text-rich">
+        <span className="block text-sm font-semibold leading-tight text-rich sm:text-lg">
           {title}
         </span>
         <span
-          className={`hidden h-[34px] min-w-[120px] cursor-pointer self-end text-right text-lg font-semibold leading-tight text-rich transition-opacity duration-150 hover:opacity-60 ${
+          className={`hidden h-[34px] min-w-[120px] cursor-pointer self-end text-right text-sm font-semibold leading-tight text-rich transition-opacity duration-150 hover:opacity-60 sm:text-lg ${
             contentShown === "span" && "!block"
           }`}
           onClick={() => {
@@ -86,7 +86,7 @@ export default function RangeSlider({
       </div>
       <div className="mt-6 flex w-full justify-between">
         <button
-          className="flex items-center justify-center rounded-full bg-primary p-3.5 text-xl text-white outline-none transition-colors duration-150 hover:bg-primary/80 focus-visible:ring-4 focus-visible:ring-primary/70"
+          className="flex items-center justify-center rounded-full bg-primary p-2.5 text-xl text-white outline-none transition-colors duration-150 hover:bg-primary/80 focus-visible:ring-4 focus-visible:ring-primary/70 sm:p-3.5"
           onClick={() =>
             value >= min + step &&
             setValueAndInputData(parseFloat(value) - step)
@@ -106,7 +106,7 @@ export default function RangeSlider({
           />
         </div>
         <button
-          className="flex items-center justify-center rounded-full bg-primary p-3.5 text-xl text-white outline-none transition-colors duration-150 hover:bg-primary/80 focus-visible:ring-4 focus-visible:ring-primary/70"
+          className="flex items-center justify-center rounded-full bg-primary p-2.5 text-xl text-white outline-none transition-colors duration-150 hover:bg-primary/80 focus-visible:ring-4 focus-visible:ring-primary/70 sm:p-3.5"
           onClick={() =>
             value <= max - step &&
             setValueAndInputData(parseFloat(value) + step)
