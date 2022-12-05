@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  trailingSlash: true,
   images: {
     loader: "custom",
     imageSizes: [256, 384, 512, 1024, 2048],
