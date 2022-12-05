@@ -12,29 +12,29 @@ export const contacts = {
   hypoteky: {
     phoneLabel: "+420 722 214 141",
     phoneLink: "tel:+420722214141",
-    emailLabel: "hypoteky@fin2u.cz",
-    emailLink: "mailto:hypoteky@fin2u.cz",
+    emailLabel: "info@fin2u.cz",
+    emailLink: "mailto:info@fin2u.cz",
   },
   // Firemní financování a úvěry
   uvery: {
     phoneLabel: "+420 722 214 141",
     phoneLink: "tel:+420722214141",
-    emailLabel: "uvery@fin2u.cz",
-    emailLink: "mailto:uvery@fin2u.cz",
+    emailLabel: "info@fin2u.cz",
+    emailLink: "mailto:info@fin2u.cz",
   },
   // Finanční nezávislost
   investice: {
     phoneLabel: "+420 722 214 141",
     phoneLink: "tel:+420722214141",
-    emailLabel: "investice@fin2u.cz",
-    emailLink: "mailto:investice@fin2u.cz",
+    emailLabel: "info@fin2u.cz",
+    emailLink: "mailto:info@fin2u.cz",
   },
   // Zajištění rizik
   rizika: {
     phoneLabel: "+420 722 214 141",
     phoneLink: "tel:+420722214141",
-    emailLabel: "rizika@fin2u.cz",
-    emailLink: "mailto:rizika@fin2u.cz",
+    emailLabel: "info@fin2u.cz",
+    emailLink: "mailto:info@fin2u.cz",
   },
   // -----------------------------------------------------------
   // Lidé v týmu
@@ -56,8 +56,8 @@ export const contacts = {
   ducTrungNguyen: {
     phoneLabel: "+420 775 487 778",
     phoneLink: "tel:+420775487778",
-    emailLabel: "nguyen@fin2u.cz",
-    emailLink: "mailto:nguyen@fin2u.cz",
+    emailLabel: "info@fin2u.cz",
+    emailLink: "mailto:info@fin2u.cz",
   },
   // Jan Voves
   janVoves: {

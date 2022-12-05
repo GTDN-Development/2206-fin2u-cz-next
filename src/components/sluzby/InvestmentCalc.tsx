@@ -1,8 +1,10 @@
+import Alert from "@components/Alert";
 import Button from "@components/Button";
 import RangeSlider from "@components/calculator/RangeSlider";
 import Input from "@components/forms/Input";
 import emailjs from "@emailjs/browser";
 import { Dialog, Transition } from "@headlessui/react";
+import Link from "next/link";
 import { Fragment, useEffect, useState } from "react";
 import { HiX } from "react-icons/hi";
 
@@ -87,7 +89,7 @@ export default function InvestmentCalc({
           id="odklad"
           min={500}
           max={100000}
-          step={1000}
+          step={500}
           defaultValue={inputData.odklad}
           title="Kolik můžete měsíčně odkládat?"
           unit={"Kč / měsíc"}
@@ -162,7 +164,8 @@ function Modal({ isModalOpen, setIsModalOpen, inputData, result }: ModalProps) {
             "Současně investováno: " +
             inputData.investovat.toLocaleString() +
             " Kč",
-          vysledek: "Vypočtený výsledek: " + result.toLocaleString() + " Kč",
+          vysledek:
+            "Musí měsíčně investovat: " + result.toLocaleString() + " Kč",
         },
         "user_2tNsUaIQSULo6wFXKZVCs"
       );
@@ -172,7 +175,7 @@ function Modal({ isModalOpen, setIsModalOpen, inputData, result }: ModalProps) {
     <Transition appear show={isOpen} as={Fragment}>
       <Dialog
         as="div"
-        className="relative z-10"
+        className="relative z-[1000]"
         onClose={() => setIsModalOpen(false)}
       >
         <Transition.Child
@@ -253,20 +256,26 @@ function Modal({ isModalOpen, setIsModalOpen, inputData, result }: ModalProps) {
                     as="h3"
                     className="text-xl font-bold leading-tight text-rich xl:text-2xl"
                   >
-                    Děkujeme za vyplnění dotazníku
+                    Děkujeme za použití naší kalkulačky!
                   </Dialog.Title>
                   <p className="mt-5 text-base">
-                    Vaše výsledky můžete naleznout níže
+                    Tyto výsledky jsou pouze orientační. Pro přesnou kalkulaci
+                    na míru{" "}
+                    <Link href={"/kontakt"}>
+                      <a className="c-link-3-a text-primary outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
+                        nás kontaktujte.
+                      </a>
+                    </Link>
                   </p>
                   <div className="mt-7 flex w-full flex-col gap-8">
                     <div className="flex flex-col items-center justify-center sm:flex-row sm:justify-between">
-                      <span>Při rentě v hodnotě</span>
+                      <span>Hodnota renty</span>
                       <span className="font-semibold text-rich">
                         {inputData.renta.toLocaleString()} Kč / měsíc
                       </span>
                     </div>
                     <div className="flex flex-col items-center justify-center sm:flex-row sm:justify-between">
-                      <span>které začíná splatnost za</span>
+                      <span>Doba investování</span>
                       <span className="font-semibold text-rich">
                         {inputData.cerpatZa}{" "}
                         {inputData.cerpatZa < 5
@@ -277,11 +286,32 @@ function Modal({ isModalOpen, setIsModalOpen, inputData, result }: ModalProps) {
                       </span>
                     </div>
                     <div className="flex flex-col items-center justify-center sm:flex-row sm:justify-between">
-                      <span>Měsíční investice</span>
+                      <span>Musíte měsíčně investovat</span>
                       <span className="text-xl font-bold text-rich">
                         {result.toLocaleString()} Kč
                       </span>
                     </div>
+                    {result <= inputData.odklad ? (
+                      <Alert
+                        variant="tinted"
+                        status="success"
+                        hasIcon={false}
+                        isDismissable={false}
+                        title="Výborně!"
+                        text="Můžete měsíčně odkládat dostatek prostředků na to, abyste mohli pobírat vámi zvolenou rentu."
+                        className="my-6"
+                      />
+                    ) : (
+                      <Alert
+                        variant="tinted"
+                        status="error"
+                        hasIcon={false}
+                        isDismissable={false}
+                        title="To nám nevychází."
+                        text="Bohužel, abyste mohli pobírat požadovanou rentu, budete muset investovat delší dobu, nebo zvýšit vaší měsíční splátku."
+                        className="my-6"
+                      />
+                    )}
                   </div>
                 </Dialog.Panel>
               )}

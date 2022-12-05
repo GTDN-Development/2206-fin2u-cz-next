@@ -5,6 +5,7 @@ import Input from "@components/forms/Input";
 import SelectTemp from "@components/forms/SelectTemp";
 import emailjs from "@emailjs/browser";
 import { Dialog, Transition } from "@headlessui/react";
+import Link from "next/link";
 import { Fragment, useEffect, useState } from "react";
 import { HiX } from "react-icons/hi";
 
@@ -166,9 +167,9 @@ export default function LoansCalc({ className = "" }: LoansCalcProps) {
         </Button>
       </div>
       <Alert
-        title="Chyba!"
-        text="Hodnota půjčky nesmí být vyšší než hodnota nemovitosti."
-        status="error"
+        title="Pozor!"
+        text="Hodnota půjčky nesmí být vyšší než hodnota zajištění."
+        status="warning"
         variant="tinted"
         className={` mt-5  ${
           inputData.pujcka > inputData.zajisteni && inputData.zastava === true
@@ -244,7 +245,8 @@ function Modal({ isModalOpen, setIsModalOpen, inputData, result }: ModalProps) {
           sazba: "Sazba: " + inputData.sazba + " %",
           ucelUveru: "Účel úvěru: " + inputData.ucelUveru,
           druhNemovitosti: "Druh nemovitosti: " + inputData.druhNemovitosti,
-          vysledek: "Vypočítaný výsledek: " + result.toLocaleString() + " Kč",
+          vysledek:
+            "Průměrná měsíční splátka: " + result.toLocaleString() + " Kč",
         },
         "user_2tNsUaIQSULo6wFXKZVCs"
       );
@@ -329,20 +331,26 @@ function Modal({ isModalOpen, setIsModalOpen, inputData, result }: ModalProps) {
                     as="h3"
                     className="text-xl font-bold leading-tight text-rich xl:text-2xl"
                   >
-                    Děkujeme za vyplnění dotazníku
+                    Děkujeme za použití naší kalkulačky!
                   </Dialog.Title>
                   <p className="mt-5 text-base">
-                    Vaše výsledky můžete naleznout níže
+                    Tyto výsledky jsou pouze orientační. Pro přesnou kalkulaci
+                    na míru{" "}
+                    <Link href={"/kontakt"}>
+                      <a className="c-link-3-a text-primary outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
+                        nás kontaktujte.
+                      </a>
+                    </Link>
                   </p>
                   <div className="mt-7 flex w-full flex-col gap-8">
                     <div className="flex flex-col items-center justify-center sm:flex-row sm:justify-between">
-                      <span className="">Při půjčce v hodnotě</span>
+                      <span className="">Celková výše úvěru</span>
                       <span className="font-semibold text-rich">
                         {inputData.pujcka.toLocaleString()} Kč
                       </span>
                     </div>
                     <div className="flex flex-col items-center justify-center sm:flex-row sm:justify-between">
-                      <span className="">A splatnostním období</span>
+                      <span className="">Doba splácení</span>
                       <span className="font-semibold text-rich">
                         {inputData.splatnost}{" "}
                         {inputData.splatnost < 5
@@ -353,7 +361,7 @@ function Modal({ isModalOpen, setIsModalOpen, inputData, result }: ModalProps) {
                       </span>
                     </div>
                     <div className="flex flex-col items-center justify-center sm:flex-row sm:justify-between">
-                      <span>Činní měsíční splátka</span>
+                      <span>Průměrná měsíční splátka</span>
                       <span className="text-xl font-bold text-rich">
                         {result.toLocaleString()} Kč
                       </span>

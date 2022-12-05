@@ -139,12 +139,29 @@ const DavidSimana: NextPage = () => {
             answer="Mým cílem je vybudovat portfolio, které vám doživotně bude generovat nekonečnou rentu. Držíme se toho, co funguje desítky let. Využijte strategii kde pomalu a postupně nakupujete podíly ve stovkách reálných firem, které prosperují desítky let. Ptal se Vás Váš bankéř na to, zda chcete být finančně nezávislý?"
             className="col-span-1"
           />
-          <Question
-            number="4"
-            question="Vytvářím růstové prostředí"
-            answer="Nejsem jen podnikatel, investor a manažer. Vytvářím růstové prostředí. Chci své okolí vést, motivovat a budovat. Rozvíjím a hledám nové talenty. Ať už začínáte, nebo jste člověk z branže, vyplňte dotazník ZDE a my se Vám ozveme s nabídkou odpovídající Vašim aktuálním zkušenostem."
-            className="col-span-1"
-          />
+          <ScrollReveal className={`col-span-1 flex flex-col gap-2`}>
+            <div className="flex w-full items-center justify-start gap-3 pb-2">
+              <span className="sr-only block shrink-0 grow-0 text-xl font-semibold text-primary md:text-2xl">
+                Q4
+              </span>
+              <span className="block text-lg font-semibold leading-tight text-rich md:text-xl">
+                Vytvářím růstové prostředí
+              </span>
+            </div>
+            <div className="rounded-lg bg-gray-100 p-4">
+              <p>
+                Nejsem jen podnikatel, investor a manažer. Vytvářím růstové
+                prostředí. Chci své okolí vést, motivovat a budovat. Rozvíjím a
+                hledám nové talenty. Ať už začínáte, nebo jste člověk z branže,
+                vyplňte{" "}
+                <Link href={"/kariera"} passHref>
+                  <a className="c-link-3-a text-primary">dotazník ZDE</a>
+                </Link>{" "}
+                a my se Vám ozveme s nabídkou odpovídající Vašim aktuálním
+                zkušenostem.
+              </p>
+            </div>
+          </ScrollReveal>
         </div>
       </Wrapper>
 

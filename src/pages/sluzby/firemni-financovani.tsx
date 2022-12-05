@@ -47,7 +47,7 @@ const testimonials = [
     id: 3,
     photoSrc: "/images/testimonial.jpg",
     name: "Ondřej Langmajer",
-    position: "Mavi monolity",
+    position: "MAVY Monolity s.r.o.",
     text: "Na pana Šimanu jsme narazili náhodou a to reklamou na sociálních sítích. V tu dobu jsme aktivně řešili provozní úvěr pro naši společnost, ale bez úspěchu. Až pan Šimana nám s tímto problémem pomohl, navrhl konstruktivní řešení a celou věc dotáhl až do zdárného konce. Vyřešením jednoho problému ale pro p. Šimanu neskončila a proaktivně nabízel další možnosti, jak pomoci naší společnosti. Moc děkujeme za jeho služby, které budeme i nadále rádi využívat.",
     class: "flex ",
   },
