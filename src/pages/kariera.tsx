@@ -82,7 +82,7 @@ const Carrier: NextPage = () => {
           <Benefit
             number={1}
             title="SCHŮZKY S KLIENTY"
-            text="Pokročilí systém pro akvizici klientů zastřešuje platforma Fin2u. Schůzky domluvené
+            text="Pokročilý systém pro akvizici klientů zastřešuje platforma Fin2u. Schůzky domluvené
           telefonním centrem na předem domluvený čas ve tvém diáři. Získejte možnost plánovat
           svůj čas díky flexibilní pracovní době s klienty."
           />

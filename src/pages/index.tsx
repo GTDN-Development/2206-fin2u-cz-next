@@ -190,7 +190,7 @@ const Home: NextPage = () => {
                 ref={countUpRef}
                 className="block text-4xl font-bold text-primary sm:text-6xl lg:text-8xl"
               />
-              <span className="block font-medium uppercase tracking-wider">
+              <span className="block text-center font-medium uppercase tracking-wider">
                 milionů v úvěrech
               </span>
             </ScrollReveal>
