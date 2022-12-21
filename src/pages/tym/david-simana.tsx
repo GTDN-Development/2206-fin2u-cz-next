@@ -83,7 +83,10 @@ const DavidSimana: NextPage = () => {
               Aktivně spolupracujeme s podnikateli a zaměstnanci ve středním
               managementu. Staráme se o jejich majetek komplexně v duchu
               strategie wealth-protection, často businessově propojuji své
-              klienty a hledám nové příležitosti. Pomáhám s vymyšlením logiky
+              klienty a hledám nové příležitosti.
+            </p>
+            <p>
+              Pomáhám s vymyšlením logiky
               často složitých případů. Řešíme často alternativní příjmy pro
               podnikatele. Efektivní využití obratu firmy (podíl na zisku,
               budoucí příjmy, a pod…) Ohýbáme metodiky bank pro prospěch našich
