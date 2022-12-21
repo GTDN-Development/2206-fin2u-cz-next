@@ -79,7 +79,7 @@ const FiremniFinancovani: NextPage = () => {
             následný servis včetně zaměstnaneckých a daňového poradenství.
           </p>
           <div className="mt-8 flex flex-col gap-5 pb-28 sm:flex-row">
-            <Button as="a" href="kalkulacka">
+            <Button as="a" href="#kalkulacka">
               Výpočet financování
             </Button>
             <Link href="/kontakt" passHref>

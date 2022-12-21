@@ -93,12 +93,6 @@ const DavidSimana: NextPage = () => {
               Začínáte přemýšlet nad rentou, prodáváte firmu nebo jste zdědili
               majetek v řádech milionů korun a chcete jej chránit? Používáme
               osvědčenou strategii, při které pomalu a postupně nakupujeme
-              podíly ve stovkách reálných firem.
-            </p>
-            <p>
-              Začínáte přemýšlet nad rentou, prodáváte firmu nebo jste zdědili
-              majetek v řádech milionů korun a chcete jej chránit? Používáme
-              osvědčenou strategii, při které pomalu a postupně nakupujeme
               podíly ve stovkách reálných firem, které prosperují desítky let.
             </p>
             <p>
