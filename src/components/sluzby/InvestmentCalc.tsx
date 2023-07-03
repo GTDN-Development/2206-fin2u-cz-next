@@ -145,7 +145,7 @@ function Modal({ isModalOpen, setIsModalOpen, inputData, result }: ModalProps) {
 
     function sendEmail() {
       emailjs.send(
-        "service_jlz369o",
+        "service_zvy683n",
         "template_w729jur",
         {
           email: email,
