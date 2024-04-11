@@ -1,4 +1,4 @@
-import ExportedImage from "next-image-export-optimizer";
+import Image from "next/image";
 import Heading from "./Heading";
 
 type Props = {
@@ -26,7 +26,7 @@ export default function LargeCTA({
       className={`grid w-full grid-cols-1 overflow-hidden rounded-xl md:grid-cols-2 ${className}`}
       {...rest}
     >
-      <ExportedImage
+      <Image
         src={imageSrc}
         alt={"alt"}
         width={800}

@@ -1,5 +1,5 @@
 import ScrollReveal from "@components/ScrollReveal";
-import ExportedImage from "next-image-export-optimizer";
+import Image from "next/image";
 // import Link from "next/link";
 
 type Props = {
@@ -114,7 +114,7 @@ export function TestimonialCard({
     >
       <div className="flex items-center justify-start">
         <div className="mr-5 aspect-square h-12 w-12 shrink-0 overflow-hidden rounded-full">
-          <ExportedImage
+          <Image
             src={src}
             alt={name}
             width={100}
@@ -169,7 +169,7 @@ export default function Testimonials({ className = "" }: Props) {
         >
           <div className="flex items-center justify-start">
             <div className="mr-5 aspect-square h-12 w-12 overflow-hidden rounded-full">
-              <ExportedImage
+              <Image
                 src={testimonial.photoSrc}
                 alt={testimonial.name}
                 width={100}

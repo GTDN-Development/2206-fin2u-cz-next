@@ -1,6 +1,6 @@
 import Heading from "@components/Heading";
 import ScrollReveal from "@components/ScrollReveal";
-import ExportedImage from "next-image-export-optimizer";
+import Image from "next/image";
 import Link from "next/link";
 
 type Props = {
@@ -60,7 +60,7 @@ export default function Team({ className = "" }: Props) {
             className="team-card-transition group flex cursor-pointer flex-col bg-white outline-none hover:shadow-2xl focus-visible:ring-4 focus-visible:ring-primary/70"
           >
             <div className="aspect-[16/10] w-full">
-              <ExportedImage
+              <Image
                 src={member.photoSrc}
                 alt={member.name}
                 width={800}
