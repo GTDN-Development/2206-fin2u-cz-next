@@ -122,7 +122,7 @@ const Contact: NextPage = () => {
             <Heading level={3} size="sm">
               Plzeň
             </Heading>
-            <p>Prešovská 15, 301 00 Plzeň 3</p>
+            <p>Na Roudné 272/21301 00 Plzeň 1</p>
           </div>
           <div className="col-span-1 flex flex-col gap-6">
             <Heading level={3} size="sm">

@@ -47,6 +47,13 @@ export default function Footer() {
               </a>
             </Link>
           </li>
+          <li>
+            <Link href="/spoluprace-servisni-organizace">
+              <a className="c-link-3-a font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
+                Spolupráce se servisní organizací
+              </a>
+            </Link>
+          </li>
         </ul>
       </Wrapper>
 
