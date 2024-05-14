@@ -18,6 +18,93 @@ import Link from "next/link";
 import CountUp from "react-countup";
 import { HiArrowDown } from "react-icons/hi";
 
+const companies = [
+  {
+    alt: "Česká spořitelna",
+    src: "/svg/loga-instituce/uvery/ceska-sporitelna.svg",
+  },
+  {
+    alt: "Hypoteční Banka",
+    src: "/svg/loga-instituce/uvery/hypotecni-banka.svg",
+  },
+  {
+    alt: "Komerční Banka",
+    src: "/svg/loga-instituce/uvery/kb.svg",
+  },
+  {
+    alt: "mBank",
+    src: "/svg/loga-instituce/uvery/mbank.svg",
+  },
+  {
+    alt: "Moneta",
+    src: "/svg/loga-instituce/uvery/moneta.svg",
+  },
+  {
+    alt: "Raiffeisen Bank",
+    src: "/svg/loga-instituce/uvery/raiffeisen-bank.svg",
+  },
+  {
+    alt: "Uni Credit Bank",
+    src: "/svg/loga-instituce/uvery/uni-credit.svg",
+  },
+  {
+    alt: "Amindi",
+    src: "/svg/loga-instituce/investice/amindi.svg",
+  },
+  {
+    alt: "Blackrock",
+    src: "/svg/loga-instituce/investice/blackrock.svg",
+  },
+  {
+    alt: "Conseq",
+    src: "/svg/loga-instituce/investice/conseq.svg",
+  },
+  {
+    alt: "Franklin",
+    src: "/svg/loga-instituce/investice/franklin.svg",
+  },
+  {
+    alt: "Česká spořitelna",
+    src: "/svg/loga-instituce/investice/ubs.svg",
+  },
+  {
+    alt: "Vanguard",
+    src: "/svg/loga-instituce/investice/vanguard.svg",
+  },
+  {
+    alt: "Allianz",
+    src: "/svg/loga-instituce/pojisteni/allianz.svg",
+  },
+  {
+    alt: "ČPP",
+    src: "/svg/loga-instituce/pojisteni/cpp.svg",
+  },
+  {
+    alt: "ČSOB",
+    src: "/svg/loga-instituce/pojisteni/csob.svg",
+  },
+  {
+    alt: "Generali",
+    src: "/svg/loga-instituce/pojisteni/generali.svg",
+  },
+  {
+    alt: "Česká spořitelna",
+    src: "/svg/loga-instituce/pojisteni/kb.svg",
+  },
+  {
+    alt: "Česká spořitelna",
+    src: "/svg/loga-instituce/pojisteni/kooperativa.svg",
+  },
+  {
+    alt: "kooperativa",
+    src: "/svg/loga-instituce/pojisteni/maxima.svg",
+  },
+  {
+    alt: "Uniqa",
+    src: "/svg/loga-instituce/pojisteni/uniqa.svg",
+  },
+];
+
 // To Do
 // Integrace typeform -> Hotovo
 // Socky FB, IG, LinkedIN - X -> Doplnit finální odkazy
@@ -95,7 +182,7 @@ const Home: NextPage = () => {
               Spolupracujeme
             </Heading>
           </ScrollReveal>
-          <BrandsCarousel />
+          <BrandsCarousel companies={companies} />
         </div>
       </Hero>
 

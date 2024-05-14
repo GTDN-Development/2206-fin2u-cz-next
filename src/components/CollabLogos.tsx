@@ -1,5 +1,6 @@
 import Heading from "@components/Heading";
 import ScrollReveal from "@components/ScrollReveal";
+import BrandsCarousel from "./home/BrandsCarousel";
 
 type Props = {
   variant?: "hlavni-strana" | "uvery" | "investice" | "pojisteni";
@@ -24,8 +25,8 @@ const uvery = [
     src: "/svg/loga-instituce/uvery/mbank.svg",
   },
   {
-    alt: "Moneta",
-    src: "/svg/loga-instituce/uvery/moneta.svg",
+    alt: "Kooperativa",
+    src: "/svg/loga-instituce/uvery/kooperativa.svg",
   },
   {
     alt: "Raiffeisen Bank",
@@ -34,6 +35,14 @@ const uvery = [
   {
     alt: "Uni Credit Bank",
     src: "/svg/loga-instituce/uvery/uni-credit.svg",
+  },
+  {
+    alt: "Generali",
+    src: "/svg/loga-instituce/uvery/generali.svg",
+  },
+  {
+    alt: "CPP",
+    src: "/svg/loga-instituce/uvery/cpp.svg",
   },
 ];
 
@@ -117,26 +126,7 @@ export default function CollabLogos({
       </ScrollReveal>
 
       {/* Služba Hypotéky a Firemní úvěry */}
-      {variant === "uvery" && (
-        <div className="grid w-full grid-cols-2 justify-between gap-5 md:grid-cols-4 xl:grid-cols-7">
-          {uvery.map((logo, i) => (
-            <ScrollReveal
-              key={i}
-              className="col-span-1 flex w-full items-center justify-center p-3"
-            >
-              <div className="h-[50px] w-[150px]">
-                <img
-                  src={logo.src}
-                  alt={logo.alt}
-                  width="150"
-                  height="50"
-                  className="h-full w-full invert"
-                />
-              </div>
-            </ScrollReveal>
-          ))}
-        </div>
-      )}
+      {variant === "uvery" && <BrandsCarousel companies={uvery} />}
 
       {/* Služba Finanční nezávislost (investice) */}
       {variant === "investice" && (
