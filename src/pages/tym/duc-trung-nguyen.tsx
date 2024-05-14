@@ -9,7 +9,7 @@ import Wrapper from "@components/Wrapper";
 import { contacts } from "@configs/contacts";
 import AppLayout from "@layouts/AppLayout";
 import type { NextPage } from "next";
-import ExportedImage from "next-image-export-optimizer";
+import Image from "next/image";
 import Link from "next/link";
 import { HiMail, HiPhone } from "react-icons/hi";
 
@@ -63,7 +63,7 @@ const DucTrungNguyen: NextPage = () => {
           staggerChildrenIncrement="200"
           className="grid grid-cols-1 items-center gap-10 pt-10 md:grid-cols-2 md:pt-20"
         >
-          <ExportedImage
+          <Image
             src={"/images/poradci/duc-trung-nguyen.jpg"}
             alt="Profilovka"
             width={500}
@@ -154,7 +154,7 @@ const DucTrungNguyen: NextPage = () => {
             >
               <div className="flex items-center justify-start">
                 <div className="mr-5 aspect-square h-12 w-12 shrink-0 overflow-hidden rounded-full">
-                  <ExportedImage
+                  <Image
                     src={testimonial.photoSrc}
                     alt={testimonial.name}
                     width={100}

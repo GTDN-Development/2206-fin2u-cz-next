@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next build && next export && next-image-export-optimizer",
+    "export": "next build && next export",
     "start": "next start",
     "lint": "next lint",
     "prettier": "prettier --write ."
@@ -22,7 +22,6 @@
     "@typeform/embed-react": "^2.1.0",
     "copy-to-clipboard": "^3.3.1",
     "next": "^12.2.2",
-    "next-image-export-optimizer": "^0.12.2",
     "next-seo": "^5.4.0",
     "react": "18.2.0",
     "react-cookie-consent": "^8.0.1",
