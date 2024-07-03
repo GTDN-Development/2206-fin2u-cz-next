@@ -160,7 +160,7 @@ const Home: NextPage = () => {
 
         <ScrollReveal delay="600" className="my-48">
           <Image
-            src="/images/cely-tym.jpg"
+            src="/images/team-new.jpg"
             alt="Náš tým"
             width={1920}
             height={1080}
