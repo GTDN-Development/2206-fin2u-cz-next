@@ -21,18 +21,6 @@ const team = [
     photoSrc: "/images/poradci/duc-trung-nguyen.jpg",
   },
   {
-    name: "Jan Voves",
-    position: "Obchodní konzultant",
-    linkHref: "/tym/jan-voves",
-    photoSrc: "/images/poradci/jan-voves.jpg",
-  },
-  {
-    name: "Daniel Říha",
-    position: "Investiční poradce, Analytik",
-    linkHref: "/tym/daniel-riha",
-    photoSrc: "/images/poradci/daniel-riha.jpg",
-  },
-  {
     name: "Zdeněk Zajíček",
     position: "Manažer, úvěrový specialista",
     linkHref: "/tym/zdenek-zajicek",
