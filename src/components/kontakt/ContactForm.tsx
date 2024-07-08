@@ -34,7 +34,7 @@ export default function ContactForm({ className = "" }: Props) {
           "service_zvy683n",
           "template_slf3tzq",
           e.target,
-          "user_2tNsUaIQSULo6wFXKZVCs"
+          "peXEQ-b1oFp3uAQvI"
         )
         .then(
           (result) => {

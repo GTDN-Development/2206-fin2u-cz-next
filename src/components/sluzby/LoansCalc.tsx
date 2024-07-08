@@ -248,7 +248,7 @@ function Modal({ isModalOpen, setIsModalOpen, inputData, result }: ModalProps) {
           vysledek:
             "Průměrná měsíční splátka: " + result.toLocaleString() + " Kč",
         },
-        "user_2tNsUaIQSULo6wFXKZVCs"
+        "peXEQ-b1oFp3uAQvI"
       );
     }
   }

@@ -167,7 +167,7 @@ function Modal({ isModalOpen, setIsModalOpen, inputData, result }: ModalProps) {
           vysledek:
             "Musí měsíčně investovat: " + result.toLocaleString() + " Kč",
         },
-        "user_2tNsUaIQSULo6wFXKZVCs"
+        "peXEQ-b1oFp3uAQvI"
       );
     }
   }
