@@ -27,10 +27,22 @@ const team = [
     photoSrc: "/images/poradci/zdenek-zajicek.jpg",
   },
   {
-    name: "Václav Kraut",
+    name: "Milan Sinkule",
+    position: "finanční poradce",
+    linkHref: "/tym/milan-sinkule",
+    photoSrc: "/images/poradci/milan-sinkule.jpg",
+  },
+  {
+    name: "Jiří Primus ",
     position: "Investiční poradce",
-    linkHref: "/tym/vaclav-kraut",
-    photoSrc: "/images/poradci/vaclav-kraut.jpg",
+    linkHref: "/tym/jiri-primus",
+    photoSrc: "/images/poradci/jiri-primus.png",
+  },
+  {
+    name: "Jan Fořt",
+    position: "finanční konzultant",
+    linkHref: "/tym/jan-fort",
+    photoSrc: "/images/poradci/jan-fort.jpeg",
   },
 ];
 
