@@ -32,7 +32,7 @@ const testimonials = [
   },
   {
     id: 3,
-    photoSrc: "/images/reference/iva-martanova.png",
+    photoSrc: "/images/reference/iva-martanova.jpg",
     name: "Iva Martanova ",
     position: "Finanční plánování",
     text: "Jiří Primus mi skvěle pomohl s investicemi, životním pojištěním, pojištěním aut a optimalizací důchodového připojištění pro vyšší výnosy. Oceňuji jeho profesionální přístup, jasné vysvětlení a hledání nejlepších řešení. Mohu ho jedině doporučit!",
@@ -64,7 +64,7 @@ const ZdenekZajicek: NextPage = () => {
           className="grid grid-cols-1 items-center gap-10 pt-10 md:grid-cols-2 md:pt-20"
         >
           <Image
-            src={"/images/poradci/jiri-primus.png"}
+            src={"/images/poradci/jiri-primus.jpg"}
             alt="Profilovka"
             width={500}
             height={400}

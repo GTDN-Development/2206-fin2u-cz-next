@@ -64,7 +64,7 @@ const ZdenekZajicek: NextPage = () => {
           className="grid grid-cols-1 items-center gap-10 pt-10 md:grid-cols-2 md:pt-20"
         >
           <Image
-            src={"/images/poradci/jan-fort.jpeg"}
+            src={"/images/poradci/jan-fort.jpg"}
             alt="Profilovka"
             width={500}
             height={400}

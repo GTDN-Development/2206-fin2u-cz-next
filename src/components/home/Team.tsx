@@ -36,13 +36,13 @@ const team = [
     name: "Jiří Primus ",
     position: "Investiční poradce",
     linkHref: "/tym/jiri-primus",
-    photoSrc: "/images/poradci/jiri-primus.png",
+    photoSrc: "/images/poradci/jiri-primus.jpg",
   },
   {
     name: "Jan Fořt",
     position: "finanční konzultant",
     linkHref: "/tym/jan-fort",
-    photoSrc: "/images/poradci/jan-fort.jpeg",
+    photoSrc: "/images/poradci/jan-fort.jpg",
   },
 ];
 
