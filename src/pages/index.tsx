@@ -35,10 +35,10 @@ const companies = [
     alt: "mBank",
     src: "/svg/loga-instituce/uvery/mbank.svg",
   },
-  {
-    alt: "Moneta",
-    src: "/svg/loga-instituce/uvery/moneta.svg",
-  },
+  // {
+  //   alt: "Moneta",
+  //   src: "/svg/loga-instituce/uvery/moneta.svg",
+  // },
   {
     alt: "Raiffeisen Bank",
     src: "/svg/loga-instituce/uvery/raiffeisen-bank.svg",

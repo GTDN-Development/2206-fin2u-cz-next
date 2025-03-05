@@ -16,44 +16,44 @@ import { HiMail, HiPhone } from "react-icons/hi";
 const testimonials = [
   {
     id: 1,
-    photoSrc: "/images/testimonial.jpg",
-    name: "Josef Lahodný",
-    position: "Životní pojištění a rekonstrukce zděděné nemovitosti",
-    text: "Výborný a spolehlivý finanční poradce. Dělá svoji práci znamenitě, skvělá komunikace, profesionalita a ochota. Určitě není typ poradce, kterého zajímá jen podepsání smlouvy. Díky preciznosti, vytrvalosti a profesionálnímu přístupu mi pomohl v získání hypotéky, abych mohl zrekonstruovat zděděný rodinný domek. Vřele doporučuji všem. Budu-li potřebovat cokoli zajistit v rámci financí, obrátím se opět sem! Člověk si občas musí nechat poradit.",
+    photoSrc: "/images/reference/lukas-froster.jpeg",
+    name: "Lukáš Forster ",
+    position: "Finanční plánování ",
+    text: "Pan Primus, je profík na svém místě pomohl mi s úvěrem pro podnikatele a  navíc mi výhodněji a levněji pojistil služební auta. Doporučuji ",
     class: "flex",
   },
   {
     id: 2,
-    photoSrc: "/images/reference/marie-lahodna.jpg",
-    name: "Marie Lahodná",
-    position: "Investice",
-    text: "Investiční poradenství, které je transparentní, diskrétní a důvěryhodné a jehož cílem je ochrana vašeho majetku. Na spolupráci si nejvíce cením vysoké profesionality, transparentnosti, flexibility a jasných argumentů při návrzích na změnu portfolia, které reagují na měnící se podmínky finančního trhu. Pokud hledáte poradce, který nabízí služby západního světa, tak tohle je jasná volba. Z vlastní zkušenosti doporučuji!",
+    photoSrc: "/images/reference/jiri-sali.png",
+    name: "Jiří Sali",
+    position: "Finanční plánování ",
+    text: "S panem Primusem jsme řešili komplikované refinancování hypotéky, což bohužel nebylo v silách mého původního poradce. Pan Primus našel řešení, jak hypotéku nastavit podle mých představ. Společně jsme také optimalizovali pojištění nemovitosti a vozidla. Má přátelský a osobní přístup. Mohu ho doporučit.",
     class: "flex sm:translate-y-10",
   },
   {
     id: 3,
-    photoSrc: "/images/reference/hana-hlavonova.jpg",
-    name: "Hana Hlavoňová",
-    position: "Investice",
-    text: "Vašek mi pomohl s investicí se zajímavým výnosem. Pravidelně osobně kontroluje, jestli je vše v pořádku a nikdy není problém zavolat s jakýmkoliv dotazem. Doporučuji a těším se na další spolupráci.",
-    class: "flex",
+    photoSrc: "/images/reference/iva-martanova.jpg",
+    name: "Iva Martanova ",
+    position: "Finanční plánování",
+    text: "Jiří Primus mi skvěle pomohl s investicemi, životním pojištěním, pojištěním aut a optimalizací důchodového připojištění pro vyšší výnosy. Oceňuji jeho profesionální přístup, jasné vysvětlení a hledání nejlepších řešení. Mohu ho jedině doporučit!",
+    class: "flex ",
   },
 ];
 
-const VaclavKraut: NextPage = () => {
+const ZdenekZajicek: NextPage = () => {
   return (
     <AppLayout navbarInitialStyle="light">
-      <Seo title="Václav Kraut" description="Investiční poradce" />
+      <Seo title="Zdeněk Zajíček" description="Manažer, úvěrový specialisa" />
 
       {/* Služby */}
       <Wrapper paddedContent="lg">
         {/* Úvod */}
         <SectionHeader
           gradient="left"
-          kicker="Investiční poradce"
-          heading="Václav Kraut"
+          kicker="investiční specialista"
+          heading="jiří Primus"
           caption={
-            "Mým heslem je profesionální a otevřený přístup na prvním místě. S každým svým klientem si buduji vztah, jelikož si vážím jejich důvěry, kterou ve mě vkládají a dělám vždy vše, co je v mých silách, abych je nezklamal."
+            "Jsem Jiří Primus a pomáhám lidem chytře spravovat finance. Ve světě financí se pohybuji již dva roky a mým cílem je pomoci vám dosáhnout finanční stability a růstu. Ať už řešíte investice, budování rezerv nebo efektivní finanční"
           }
         />
 
@@ -64,7 +64,7 @@ const VaclavKraut: NextPage = () => {
           className="grid grid-cols-1 items-center gap-10 pt-10 md:grid-cols-2 md:pt-20"
         >
           <Image
-            src={"/images/poradci/vaclav-kraut.jpg"}
+            src={"/images/poradci/jiri-primus.jpg"}
             alt="Profilovka"
             width={500}
             height={400}
@@ -74,23 +74,26 @@ const VaclavKraut: NextPage = () => {
           />
           <div className="col-span-1 flex flex-col gap-7">
             <p>
-              Jmenuji se Václav a v podnikání se pohybuji již 9 let. Investování
-              jako takové mne zajímá již od střední školy, věnuji se mu naplno
-              poslední 3 roky a rozhodl jsem se své portfolio rozšířit i o další
-              finanční produkty jako jsou úvěry a pojištění. Mým heslem je
-              profesionální a otevřený přístup na prvním místě, s každým svým
-              klientem si buduji vztah, jelikož si vážím jejich důvěry, kterou
-              ve mě vkládají a dělám vždy vše, co je v mých silách, abych je
-              nezklamal. Zaměřuji se také na správu firemního majetku a firemní
-              financování, jelikož jsem v minulosti sám poznal jaké to je řídit
-              firmu a jak může externí kapitál pomoci růstu firmy.
+              Ve světě financí se vyznám a vím, jak zajistit, aby vaše peníze
+              pracovaly pro vás. Spolupracuji s jednotlivci, podnikateli i
+              manažery, kteří hledají efektivní řešení pro správu majetku,
+              plánování budoucnosti a ochranu finančních zdrojů. Každý klient má
+              jiné cíle – někdo chce zajistit svou rodinu, jiný buduje firmu
+              nebo přemýšlí o rentě. Pomohu vám sestavit strategii na míru, ať
+              už jde o financování bydlení, investice nebo optimalizaci příjmů.
+            </p>
+            <p>
+              Využívám osvědčené metody a moderní finanční nástroje, abyste měli
+              jistotu správných rozhodnutí. Přemýšlíte, jak nejlépe spravovat
+              své finance? Pojďme se pobavit o možnostech, které vám přinesou
+              stabilitu, růst a klidnější budoucnost.
             </p>
             <div className="flex gap-4">
               <Badge size="lg" hasDot={true}>
-                Investice
+                Expertní znalosti
               </Badge>
               <Badge size="lg" hasDot={true}>
-                Klientská péče
+                Individuální strategie
               </Badge>
             </div>
           </div>
@@ -100,26 +103,27 @@ const VaclavKraut: NextPage = () => {
         <div className="grid grid-cols-1 gap-x-10 gap-y-20 pt-20 md:grid-cols-2 md:gap-y-32 md:pt-32 lg:gap-x-16">
           <Question
             number="1"
-            question="Investování"
-            answer="Investování je nejčastější téma které s klienty řeším. Každému klientovi řeším jeho portfolio individuálně, dle jeho přání a cílů. I v dnešní komplikované situaci se lidem vždy snažím vysvětlit proč je důležité začít investovat co nejdříve a nečekat na perfektní příležitost."
+            question="Jak nastavit finanční plán podle vašich potřeb?"
+            answer="Pomohu vám nastavit finanční strategii, která odpovídá vašim cílům a životní situaci. Ať už řešíte financování bydlení, zajištění rodiny, budoucnost vašich dětí nebo plánujete bezstarostný důchod, společně najdeme to nejlepší řešení, které vám přinese stabilitu a klid do budoucna."
             className="col-span-1"
           />
           <Question
             number="1"
-            question="Firemní financování"
-            answer="Každý podnikatel ví, že využití bankovního kapitálu mu může pomoci rapidně zrychlit růst jeho podniku, ať už jde o nákup materiálu, strojů či provoz další pobočky. Všechny tyto a další věci dokáži s klientem prodiskutovat a najít nejlepší způsob, jak daných kroků dosáhnout."
+            question="Firemní & business plánování "
+            answer="Pomáhám podnikatelům s financováním jejich strategických cílů a s optimalizací  finančních toků. Spolu s odborníky hledáme šitá řešení pro firmy všech velikostí. "
             className="col-span-1"
           />
           <Question
             number="1"
-            question="Komplexní plán na míru"
-            answer="S každým klientem, ať už se jedná o studenta, rodinu, podnikatele či majitele malé nebo velké firmy, řeším jeho potřeby a cíle individuálně."
+            question="Investiční poradenství  "
+            answer="Hledáte způsob, jak efektivně investovat a zajistit si finanční nezávislost? Pomohu vám sestavit stabilní investiční portfolio s dlouhodobým výnosem.  "
             className="col-span-1"
           />
           <Question
             number="1"
-            question="Ušetření času"
-            answer="Schůzky řeším osobně, online či telefonicky. Uvědomuji si totiž, že klientův čas je to nejcennější co má a je potřeba, aby ho využíval efektivně. Veškerou komunikaci s bankou, pojišťovnou či investiční společností vyřeším za Vás."
+            question="Podporuji růst a rozvoj talentů"
+            answer="Věřím, že úspěch nevzniká náhodou – je výsledkem správných rozhodnutí, vedení a neustálého  rozvoje. Pomáhám lidem objevit jejich potenciál, najít nové příležitosti a růst jak profesně, tak  finančně. 
+Ať už začínáte svou cestu, nebo už v oboru působíte, rád s vámi proberu možnosti spolupráce.  Vyplňte krátký dotazník ZDE a společně najdeme cestu, která odpovídá vašim zkušenostem i  cílům. "
             className="col-span-1"
           />
         </div>
@@ -178,7 +182,7 @@ const VaclavKraut: NextPage = () => {
           <LargeCTA
             title="ZAUJALA TĚ NAŠE PREZENTACE?"
             text="Fin2u je finanční portál a online konzultant, který Vám pomůže na cestě k Vašim strategickým
-            cílům. Pokračuj dále přes výběr."
+             cílům. Pokračuj dále přes výběr."
           >
             <div className="grid w-full grid-cols-1 gap-6 lg:grid-cols-3">
               <Link href="/kontakt" passHref>
@@ -188,23 +192,23 @@ const VaclavKraut: NextPage = () => {
               </Link>
               <Button
                 as="a"
-                href={contacts.vaclavKraut.emailLink}
+                href={contacts.zdenekZajicek.emailLink}
                 variant="tinted"
                 color="light"
                 size="sm"
                 leftIcon={<HiMail />}
               >
-                {contacts.vaclavKraut.emailLabel}
+                {contacts.zdenekZajicek.emailLabel}
               </Button>
               <Button
                 as="a"
-                href={contacts.vaclavKraut.phoneLink}
+                href={contacts.zdenekZajicek.phoneLink}
                 variant="tinted"
                 color="light"
                 size="sm"
                 leftIcon={<HiPhone />}
               >
-                {contacts.vaclavKraut.phoneLabel}
+                {contacts.zdenekZajicek.phoneLabel}
               </Button>
             </div>
           </LargeCTA>
@@ -214,4 +218,4 @@ const VaclavKraut: NextPage = () => {
   );
 };
 
-export default VaclavKraut;
+export default ZdenekZajicek;
