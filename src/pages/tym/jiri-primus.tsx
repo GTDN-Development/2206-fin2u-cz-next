@@ -192,23 +192,23 @@ Ať už začínáte svou cestu, nebo už v oboru působíte, rád s vámi prober
               </Link>
               <Button
                 as="a"
-                href={contacts.zdenekZajicek.emailLink}
+                href={contacts.davidSimana.emailLink}
                 variant="tinted"
                 color="light"
                 size="sm"
                 leftIcon={<HiMail />}
               >
-                {contacts.zdenekZajicek.emailLabel}
+                {contacts.davidSimana.emailLabel}
               </Button>
               <Button
                 as="a"
-                href={contacts.zdenekZajicek.phoneLink}
+                href={contacts.davidSimana.phoneLink}
                 variant="tinted"
                 color="light"
                 size="sm"
                 leftIcon={<HiPhone />}
               >
-                {contacts.zdenekZajicek.phoneLabel}
+                {contacts.davidSimana.phoneLabel}
               </Button>
             </div>
           </LargeCTA>
