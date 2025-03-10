@@ -43,14 +43,14 @@ const testimonials = [
 const ZdenekZajicek: NextPage = () => {
   return (
     <AppLayout navbarInitialStyle="light">
-      <Seo title="Milan Sinkule " description="Manažer, úvěrový specialisa" />
+      <Seo title="Milan Sinkule" description="Finanční poradce" />
 
       {/* Služby */}
       <Wrapper paddedContent="lg">
         {/* Úvod */}
         <SectionHeader
           gradient="left"
-          kicker="finanční poradce. "
+          kicker="Finanční poradce."
           heading="Milan Sinkule"
           caption={
             "Rád se probouzím do dalšího dne s vědomím, že to, co dělám dává mě i lidem, kteří mi důvěřují smysl a že pro ně mohu udělat maximum. Proto si zakládám na co nejprofesionálnějším přístupu a zároveň na co nejpevnějších mezilidských vztazích. Vzájemná důvěra je pro mě naprostý základ."

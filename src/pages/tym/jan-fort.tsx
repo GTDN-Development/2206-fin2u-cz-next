@@ -43,7 +43,7 @@ const testimonials = [
 const ZdenekZajicek: NextPage = () => {
   return (
     <AppLayout navbarInitialStyle="light">
-      <Seo title="Zdeněk Zajíček" description="Manažer, úvěrový specialisa" />
+      <Seo title="Jan Fořt" description="Specialista na úvěry a investice" />
 
       {/* Služby */}
       <Wrapper paddedContent="lg">
@@ -51,7 +51,7 @@ const ZdenekZajicek: NextPage = () => {
         <SectionHeader
           gradient="left"
           kicker="Specialista na úvěry a investice"
-          heading="Jan Fořt "
+          heading="Jan Fořt"
           caption={
             "Rád se probouzím do dalšího dne s vědomím, že to, co dělám dává mě i lidem, kteří mi důvěřují smysl a že pro ně mohu udělat maximum. Proto si zakládám na co nejprofesionálnějším přístupu a zároveň na co nejpevnějších mezilidských vztazích. Vzájemná důvěra je pro mě naprostý základ."
           }

@@ -43,7 +43,7 @@ const testimonials = [
 const ZdenekZajicek: NextPage = () => {
   return (
     <AppLayout navbarInitialStyle="light">
-      <Seo title="Zdeněk Zajíček" description="Manažer, úvěrový specialisa" />
+      <Seo title="Jiří Primus" description="Investiční specialista" />
 
       {/* Služby */}
       <Wrapper paddedContent="lg">
