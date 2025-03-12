@@ -1,8 +1,8 @@
 import SocialLinks from "@components/SocialLinks";
 import Wrapper from "@components/Wrapper";
 import Link from "next/link";
-import { AgencyCredit } from "src/pages/AgencyCredit";
 import { mainRoutes } from "../../../configs/routes";
+import { AgencyCredit } from "../../../pages/AgencyCredit";
 // import FooterAuthor from "./FooterAuthor";
 
 export default function Footer() {
