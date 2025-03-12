@@ -1,6 +1,7 @@
 import SocialLinks from "@components/SocialLinks";
 import Wrapper from "@components/Wrapper";
 import Link from "next/link";
+import { AgencyCredit } from "src/pages/AgencyCredit";
 import { mainRoutes } from "../../../configs/routes";
 // import FooterAuthor from "./FooterAuthor";
 
@@ -55,6 +56,7 @@ export default function Footer() {
             </Link>
           </li>
         </ul>
+        <AgencyCredit />
       </Wrapper>
 
       {/* Autor webu - podpis */}
